@@ -26,7 +26,9 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "paths": {
-            "primeng/*": ["src/app/components/*/public_api"]
+            "@qius.solutions/qiusng/*": [
+                "src/app/components/*/public_api"
+            ]
         }
     },
     "angularCompilerOptions": {
