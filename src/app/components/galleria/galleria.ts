@@ -27,16 +27,16 @@ import {
     forwardRef
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { SharedModule, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
+import { SharedModule, PrimeTemplate, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { animate, style, transition, trigger, AnimationEvent } from '@angular/animations';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
+import { ChevronLeftIcon } from '@qius.solutions/qiusng/icons/chevronleft';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { WindowMaximizeIcon } from '@qius.solutions/qiusng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@qius.solutions/qiusng/icons/windowminimize';
 
 @Component({
     selector: 'p-galleria',

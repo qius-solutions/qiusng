@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { StyleClassModule } from 'primeng/styleclass';
+import { AutoCompleteModule } from '@qius.solutions/qiusng/autocomplete';
+import { StyleClassModule } from '@qius.solutions/qiusng/styleclass';
 import { AppMenuComponent } from './app.menu.component';
 import { AppMenuItemComponent } from './app.menuitem.component';
 

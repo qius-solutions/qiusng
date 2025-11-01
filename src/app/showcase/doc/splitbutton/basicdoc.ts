@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -69,7 +69,7 @@ export class BasicDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'split-button-basic-demo',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DynamicDialogRef } from '@qius.solutions/qiusng/dynamicdialog';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
 

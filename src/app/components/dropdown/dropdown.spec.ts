@@ -5,11 +5,11 @@ import { Dropdown, DropdownItem } from './dropdown';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
-import { TooltipModule } from 'primeng/tooltip';
-import { OverlayModule } from 'primeng/overlay';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { OverlayModule } from '@qius.solutions/qiusng/overlay';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
+import { SearchIcon } from '@qius.solutions/qiusng/icons/search';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
     template: `

@@ -1,11 +1,11 @@
 import { NgModule, Component, Input, Output, EventEmitter, ElementRef, ContentChild, ChangeDetectionStrategy, ViewEncapsulation, ContentChildren, QueryList, TemplateRef, AfterContentInit, ViewContainerRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, Footer, PrimeTemplate } from 'primeng/api';
-import { BlockableUI } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
+import { SharedModule, Footer, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { BlockableUI } from '@qius.solutions/qiusng/api';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { MinusIcon } from 'primeng/icons/minus';
-import { PlusIcon } from 'primeng/icons/plus';
+import { MinusIcon } from '@qius.solutions/qiusng/icons/minus';
+import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
 
 type PanelIconPosition = 'start' | 'end' | 'center';
 

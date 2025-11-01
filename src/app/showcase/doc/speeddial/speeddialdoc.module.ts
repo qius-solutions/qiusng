@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MessagesModule } from 'primeng/messages';
-import { SpeedDialModule } from 'primeng/speeddial';
-import { ToastModule } from 'primeng/toast';
-import { TooltipModule } from 'primeng/tooltip';
+import { MessagesModule } from '@qius.solutions/qiusng/messages';
+import { SpeedDialModule } from '@qius.solutions/qiusng/speeddial';
+import { ToastModule } from '@qius.solutions/qiusng/toast';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { AccessibilityDoc } from './accessibilitydoc';

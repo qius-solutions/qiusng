@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputTextareaModule } from 'primeng/inputtextarea';
-import { KeyFilterModule } from 'primeng/keyfilter';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { InputTextareaModule } from '@qius.solutions/qiusng/inputtextarea';
+import { KeyFilterModule } from '@qius.solutions/qiusng/keyfilter';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { AccessibilityDoc } from './accessibilitydoc';

@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, EventEmitter, forwardRef, Input, NgModule, OnInit, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { StarFillIcon } from 'primeng/icons/starfill';
-import { StarIcon } from 'primeng/icons/star';
-import { BanIcon } from 'primeng/icons/ban';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { StarFillIcon } from '@qius.solutions/qiusng/icons/starfill';
+import { StarIcon } from '@qius.solutions/qiusng/icons/star';
+import { BanIcon } from '@qius.solutions/qiusng/icons/ban';
 
 export const RATING_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

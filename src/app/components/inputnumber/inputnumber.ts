@@ -19,13 +19,13 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { TimesIcon } from 'primeng/icons/times';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { AngleUpIcon } from '@qius.solutions/qiusng/icons/angleup';
+import { AngleDownIcon } from '@qius.solutions/qiusng/icons/angledown';
 
 export const INPUTNUMBER_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

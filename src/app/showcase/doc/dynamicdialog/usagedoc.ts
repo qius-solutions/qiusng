@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@qius.solutions/qiusng/dynamicdialog';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -24,7 +24,7 @@ export class UsageDoc {
     code: Code = {
         typescript: `
 import { Component, OnDestroy } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@qius.solutions/qiusng/dynamicdialog';
 import { Product } from '../../domain/product';
 import { ProductListDemo } from './productlistdemo';
 

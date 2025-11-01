@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -88,7 +88,7 @@ export class PopupDoc implements OnInit {
 
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'menu-popup-demo',

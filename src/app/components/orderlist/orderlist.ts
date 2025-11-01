@@ -19,17 +19,17 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { SharedModule, PrimeTemplate, FilterService } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { SharedModule, PrimeTemplate, FilterService } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { ObjectUtils, UniqueComponentId } from '@qius.solutions/qiusng/utils';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
-import { AngleDoubleDownIcon } from 'primeng/icons/angledoubledown';
-import { AngleDoubleUpIcon } from 'primeng/icons/angledoubleup';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { SearchIcon } from 'primeng/icons/search';
+import { AngleDoubleDownIcon } from '@qius.solutions/qiusng/icons/angledoubledown';
+import { AngleDoubleUpIcon } from '@qius.solutions/qiusng/icons/angledoubleup';
+import { AngleUpIcon } from '@qius.solutions/qiusng/icons/angleup';
+import { AngleDownIcon } from '@qius.solutions/qiusng/icons/angledown';
+import { SearchIcon } from '@qius.solutions/qiusng/icons/search';
 
 export interface OrderListFilterOptions {
     filter?: (value?: any) => void;

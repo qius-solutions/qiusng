@@ -29,14 +29,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { Subscription } from 'rxjs';
-import { TimesIcon } from 'primeng/icons/times';
-import { EyeSlashIcon } from 'primeng/icons/eyeslash';
-import { EyeIcon } from 'primeng/icons/eye';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { EyeSlashIcon } from '@qius.solutions/qiusng/icons/eyeslash';
+import { EyeIcon } from '@qius.solutions/qiusng/icons/eye';
 
 @Directive({
     selector: '[pPassword]',

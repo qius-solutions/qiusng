@@ -21,20 +21,20 @@ import {
     Inject
 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Message, PrimeNGConfig } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { MessageService } from 'primeng/api';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
+import { Message, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MessageService } from '@qius.solutions/qiusng/api';
+import { ObjectUtils, UniqueComponentId } from '@qius.solutions/qiusng/utils';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { Subscription } from 'rxjs';
 import { trigger, state, style, transition, animate, query, animateChild, AnimationEvent } from '@angular/animations';
-import { ZIndexUtils } from 'primeng/utils';
-import { CheckIcon } from 'primeng/icons/check';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { TimesIcon } from 'primeng/icons/times';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
+import { InfoCircleIcon } from '@qius.solutions/qiusng/icons/infocircle';
+import { TimesCircleIcon } from '@qius.solutions/qiusng/icons/timescircle';
+import { ExclamationTriangleIcon } from '@qius.solutions/qiusng/icons/exclamationtriangle';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
     selector: 'p-toastItem',

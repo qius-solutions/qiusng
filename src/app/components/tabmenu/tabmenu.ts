@@ -21,12 +21,12 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
+import { MenuItem, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { ChevronLeftIcon } from '@qius.solutions/qiusng/icons/chevronleft';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
 
 @Component({
     selector: 'p-tabMenu',

@@ -1,15 +1,15 @@
 import { NgModule, Component, OnInit, Input, Output, ChangeDetectorRef, EventEmitter, TemplateRef, OnChanges, SimpleChanges, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
-import { PrimeTemplate, SelectItem } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
-import { SharedModule } from 'primeng/api';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { DropdownModule } from '@qius.solutions/qiusng/dropdown';
+import { PrimeTemplate, SelectItem } from '@qius.solutions/qiusng/api';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { SharedModule } from '@qius.solutions/qiusng/api';
+import { InputNumberModule } from '@qius.solutions/qiusng/inputnumber';
+import { AngleDoubleLeftIcon } from '@qius.solutions/qiusng/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from '@qius.solutions/qiusng/icons/angledoubleright';
+import { AngleLeftIcon } from '@qius.solutions/qiusng/icons/angleleft';
+import { AngleRightIcon } from '@qius.solutions/qiusng/icons/angleright';
 
 @Component({
     selector: 'p-paginator',

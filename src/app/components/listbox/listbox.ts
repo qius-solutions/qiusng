@@ -19,14 +19,14 @@ import {
     OnDestroy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService, TranslationKeys, PrimeNGConfig } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils } from 'primeng/utils';
+import { SharedModule, PrimeTemplate, Footer, Header, FilterService, TranslationKeys, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { ObjectUtils } from '@qius.solutions/qiusng/utils';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { Subscription } from 'rxjs';
-import { SearchIcon } from 'primeng/icons/search';
-import { CheckIcon } from 'primeng/icons/check';
+import { SearchIcon } from '@qius.solutions/qiusng/icons/search';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
 
 export const LISTBOX_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

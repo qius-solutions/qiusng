@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Code } from '../../domain/code';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@qius.solutions/qiusng/api';
 import { NodeService } from '../../service/nodeservice';
 
 @Component({
@@ -46,7 +46,7 @@ export class FilterDoc implements OnInit {
 
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@qius.solutions/qiusng/api';
 import { NodeService } from '../../service/nodeservice';
 
 @Component({

@@ -1,7 +1,7 @@
 import { NgModule, Directive, AfterViewInit, ElementRef, NgZone, OnDestroy, Optional, Inject, Renderer2, PLATFORM_ID } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { PrimeNGConfig } from 'primeng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
 
 @Directive({
     selector: '[pRipple]',

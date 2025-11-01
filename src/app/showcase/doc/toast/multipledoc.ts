@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -42,7 +42,7 @@ export class MultipleDoc {
 </div>`,
         typescript: `
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'toast-multiple-demo',

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 interface Country {
@@ -95,7 +95,7 @@ export class GroupDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@qius.solutions/qiusng/api';
 
 interface Country {
     name: string,

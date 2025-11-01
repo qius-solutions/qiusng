@@ -1,9 +1,9 @@
 import { NgModule, Component, Input, Output, EventEmitter, forwardRef, ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { CheckIcon } from 'primeng/icons/check';
-import { TimesIcon } from 'primeng/icons/times';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 export const TRISTATECHECKBOX_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

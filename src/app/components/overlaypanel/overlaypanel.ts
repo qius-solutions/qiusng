@@ -21,11 +21,11 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { TimesIcon } from 'primeng/icons/times';
-import { RippleModule } from 'primeng/ripple';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { Subscription } from 'rxjs';
 
 @Component({

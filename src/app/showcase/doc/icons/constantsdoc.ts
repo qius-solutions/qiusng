@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuItem, PrimeIcons } from 'primeng/api';
+import { MenuItem, PrimeIcons } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -37,7 +37,7 @@ export class ConstantsDoc {
     code: Code = {
         typescript: `
 import { Component } from '@angular/core';
-import { PrimeIcons, MenuItem } from 'primeng/api';
+import { PrimeIcons, MenuItem } from '@qius.solutions/qiusng/api';
         
 @Component({
     selector: 'prime-icons-constants-demo',

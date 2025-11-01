@@ -3,8 +3,8 @@ import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { SharedModule } from '@qius.solutions/qiusng/api';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { Calendar } from './calendar';
 
 describe('Calendar', () => {

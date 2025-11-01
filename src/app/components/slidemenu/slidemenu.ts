@@ -23,14 +23,14 @@ import {
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@qius.solutions/qiusng/dom';
+import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
-import { ZIndexUtils } from 'primeng/utils';
-import { TooltipModule } from 'primeng/tooltip';
-import { CaretRightIcon } from 'primeng/icons/caretright';
-import { CaretLeftIcon } from 'primeng/icons/caretleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { CaretRightIcon } from '@qius.solutions/qiusng/icons/caretright';
+import { CaretLeftIcon } from '@qius.solutions/qiusng/icons/caretleft';
+import { AngleRightIcon } from '@qius.solutions/qiusng/icons/angleright';
 
 @Component({
     selector: 'p-slideMenuSub',

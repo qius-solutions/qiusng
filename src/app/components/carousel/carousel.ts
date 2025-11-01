@@ -20,14 +20,14 @@ import {
     Inject,
     PLATFORM_ID
 } from '@angular/core';
-import { PrimeTemplate, SharedModule, Header, Footer } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
+import { PrimeTemplate, SharedModule, Header, Footer } from '@qius.solutions/qiusng/api';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { UniqueComponentId } from 'primeng/utils';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
+import { UniqueComponentId } from '@qius.solutions/qiusng/utils';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
+import { ChevronLeftIcon } from '@qius.solutions/qiusng/icons/chevronleft';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
+import { ChevronUpIcon } from '@qius.solutions/qiusng/icons/chevronup';
 
 @Component({
     selector: 'p-carousel',

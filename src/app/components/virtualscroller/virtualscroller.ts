@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ContentChildren, ElementRef, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
+import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
 
 @Component({
     selector: 'p-virtualScroller',

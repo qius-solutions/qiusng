@@ -24,18 +24,18 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils } from 'primeng/utils';
-import { CheckIcon } from 'primeng/icons/check';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { Overlay, OverlayModule } from '@qius.solutions/qiusng/overlay';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { ObjectUtils } from '@qius.solutions/qiusng/utils';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
+import { SearchIcon } from '@qius.solutions/qiusng/icons/search';
+import { TimesCircleIcon } from '@qius.solutions/qiusng/icons/timescircle';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
 
 export const MULTISELECT_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

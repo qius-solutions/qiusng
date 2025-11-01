@@ -22,14 +22,14 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { TooltipModule } from 'primeng/tooltip';
-import { RippleModule } from 'primeng/ripple';
-import { SharedModule, PrimeTemplate, BlockableUI } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { SharedModule, PrimeTemplate, BlockableUI } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { Subscription } from 'rxjs';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
+import { ChevronLeftIcon } from '@qius.solutions/qiusng/icons/chevronleft';
 
 let idx: number = 0;
 

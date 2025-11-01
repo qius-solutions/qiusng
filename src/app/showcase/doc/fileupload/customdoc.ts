@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -47,7 +47,7 @@ export class CustomDoc {
 </div>`,
         typescript: `
 import { Component, Input } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'file-upload-custom-demo',

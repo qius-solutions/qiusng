@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { OverlayPanelModule } from 'primeng/overlaypanel';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { OverlayPanelModule } from '@qius.solutions/qiusng/overlaypanel';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { TableModule } from '@qius.solutions/qiusng/table';
+import { ToastModule } from '@qius.solutions/qiusng/toast';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { BasicDoc } from './basicdoc';

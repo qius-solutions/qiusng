@@ -14,8 +14,8 @@ export class ImportDoc {
     @Input() title: string;
 
     code: Code = {
-        typescript: `import { ProgressBarModule } from 'primeng/progressbar';
+        typescript: `import { ProgressBarModule } from '@qius.solutions/qiusng/progressbar';
 // For dynamic progressbar demo
-import { ToastModule } from 'primeng/toast';`
+import { ToastModule } from '@qius.solutions/qiusng/toast';`
     };
 }

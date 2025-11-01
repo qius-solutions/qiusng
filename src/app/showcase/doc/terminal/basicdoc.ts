@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy } from '@angular/core';
 import { Code } from '../../domain/code';
-import { TerminalService } from 'primeng/terminal';
+import { TerminalService } from '@qius.solutions/qiusng/terminal';
 import { Subscription } from 'rxjs';
 
 @Component({

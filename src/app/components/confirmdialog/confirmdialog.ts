@@ -22,16 +22,16 @@ import {
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent, useAnimation, animation } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { Footer, SharedModule, PrimeTemplate, PrimeNGConfig, TranslationKeys, ConfirmEventType } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { Confirmation } from 'primeng/api';
-import { ConfirmationService } from 'primeng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { Footer, SharedModule, PrimeTemplate, PrimeNGConfig, TranslationKeys, ConfirmEventType } from '@qius.solutions/qiusng/api';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { Confirmation } from '@qius.solutions/qiusng/api';
+import { ConfirmationService } from '@qius.solutions/qiusng/api';
 import { Subscription } from 'rxjs';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
-import { TimesIcon } from 'primeng/icons/times';
-import { CheckIcon } from 'primeng/icons/check';
+import { UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}', style({ transform: 'none', opacity: 1 }))]);
 

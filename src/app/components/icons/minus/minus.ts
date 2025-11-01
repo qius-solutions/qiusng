@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { BaseIcon } from 'primeng/baseicon';
+import { BaseIcon } from '@qius.solutions/qiusng/baseicon';
 
 @Component({
     selector: 'MinusIcon',

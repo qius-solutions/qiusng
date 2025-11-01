@@ -24,16 +24,16 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { BlockableUI, Message, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { MessagesModule } from 'primeng/messages';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { RippleModule } from 'primeng/ripple';
+import { BlockableUI, Message, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { MessagesModule } from '@qius.solutions/qiusng/messages';
+import { ProgressBarModule } from '@qius.solutions/qiusng/progressbar';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { Subscription } from 'rxjs';
-import { PlusIcon } from 'primeng/icons/plus';
-import { UploadIcon } from 'primeng/icons/upload';
-import { TimesIcon } from 'primeng/icons/times';
+import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
+import { UploadIcon } from '@qius.solutions/qiusng/icons/upload';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
     selector: 'p-fileUpload',

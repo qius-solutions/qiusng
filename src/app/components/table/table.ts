@@ -30,27 +30,27 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, OverlayService, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { DropdownModule } from 'primeng/dropdown';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputTextModule } from 'primeng/inputtext';
-import { PaginatorModule } from 'primeng/paginator';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, OverlayService, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { CalendarModule } from '@qius.solutions/qiusng/calendar';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
+import { DropdownModule } from '@qius.solutions/qiusng/dropdown';
+import { InputNumberModule } from '@qius.solutions/qiusng/inputnumber';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { PaginatorModule } from '@qius.solutions/qiusng/paginator';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
+import { SelectButtonModule } from '@qius.solutions/qiusng/selectbutton';
+import { TriStateCheckboxModule } from '@qius.solutions/qiusng/tristatecheckbox';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { Subject, Subscription } from 'rxjs';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { FilterIcon } from 'primeng/icons/filter';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
+import { ArrowDownIcon } from '@qius.solutions/qiusng/icons/arrowdown';
+import { ArrowUpIcon } from '@qius.solutions/qiusng/icons/arrowup';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
+import { FilterIcon } from '@qius.solutions/qiusng/icons/filter';
+import { SortAltIcon } from '@qius.solutions/qiusng/icons/sortalt';
+import { SortAmountDownIcon } from '@qius.solutions/qiusng/icons/sortamountdown';
+import { SortAmountUpAltIcon } from '@qius.solutions/qiusng/icons/sortamountupalt';
+import { SpinnerIcon } from '@qius.solutions/qiusng/icons/spinner';
 
 @Injectable()
 export class TableService {

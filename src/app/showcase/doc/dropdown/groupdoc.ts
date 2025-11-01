@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -89,7 +89,7 @@ export class GroupDoc {
 </div>`,
 
         typescript: `
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@qius.solutions/qiusng/api';
 import { Component } from '@angular/core';
 
 @Component({

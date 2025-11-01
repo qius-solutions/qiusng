@@ -24,7 +24,7 @@ export class SetLocaleDoc {
     code: Code = {
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'app-root',

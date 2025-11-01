@@ -1,14 +1,14 @@
 import { NgModule, Component, Input, ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
+import { MenuItem, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
-import { TooltipModule } from 'primeng/tooltip';
-import { DomHandler } from 'primeng/dom';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { AngleDownIcon } from '@qius.solutions/qiusng/icons/angledown';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
+import { AngleRightIcon } from '@qius.solutions/qiusng/icons/angleright';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
 
 export class BasePanelMenuItem {
     constructor(private ref: ChangeDetectorRef) {}

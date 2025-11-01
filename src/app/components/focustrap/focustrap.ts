@@ -1,4 +1,4 @@
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
 
 import { CommonModule } from '@angular/common';
 import { Directive, ElementRef, HostListener, Input, NgModule } from '@angular/core';

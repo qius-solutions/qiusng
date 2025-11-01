@@ -19,22 +19,22 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { SharedModule, PrimeTemplate, FilterService } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { SharedModule, PrimeTemplate, FilterService } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { CdkDragDrop, DragDropModule, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { AngleDoubleDownIcon } from 'primeng/icons/angledoubledown';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleDoubleUpIcon } from 'primeng/icons/angledoubleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { SearchIcon } from 'primeng/icons/search';
-import { HomeIcon } from 'primeng/icons/home';
+import { ObjectUtils, UniqueComponentId } from '@qius.solutions/qiusng/utils';
+import { AngleDoubleDownIcon } from '@qius.solutions/qiusng/icons/angledoubledown';
+import { AngleDoubleLeftIcon } from '@qius.solutions/qiusng/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from '@qius.solutions/qiusng/icons/angledoubleright';
+import { AngleDoubleUpIcon } from '@qius.solutions/qiusng/icons/angledoubleup';
+import { AngleDownIcon } from '@qius.solutions/qiusng/icons/angledown';
+import { AngleLeftIcon } from '@qius.solutions/qiusng/icons/angleleft';
+import { AngleRightIcon } from '@qius.solutions/qiusng/icons/angleright';
+import { AngleUpIcon } from '@qius.solutions/qiusng/icons/angleup';
+import { SearchIcon } from '@qius.solutions/qiusng/icons/search';
+import { HomeIcon } from '@qius.solutions/qiusng/icons/home';
 
 export interface PickListFilterOptions {
     filter?: (value?: any) => void;

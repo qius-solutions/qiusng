@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from '@qius.solutions/qiusng/image';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { TemplatesDoc } from './templatesdoc';

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -164,7 +164,7 @@ export class TriggerEventDoc implements OnInit {
 
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'context-menu-trigger-event-demo',
@@ -306,7 +306,7 @@ export class ContextMenuTriggerEventDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { ContextMenuModule } from '@qius.solutions/qiusng/contextmenu';
 import { ContextMenuDemo } from './contextmenudemo';
 
 @NgModule({

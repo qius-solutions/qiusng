@@ -14,6 +14,6 @@ export class ImportDoc {
     @Input() title: string;
 
     code: Code = {
-        typescript: `import { InputNumberModule } from 'primeng/inputnumber';`
+        typescript: `import { InputNumberModule } from '@qius.solutions/qiusng/inputnumber';`
     };
 }

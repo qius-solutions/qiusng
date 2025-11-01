@@ -170,7 +170,7 @@ export class ChartVerticalBarDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@qius.solutions/qiusng/chart';
 import { ChartDemo } from './chartdemo';
 
 @NgModule({

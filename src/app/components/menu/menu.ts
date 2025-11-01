@@ -1,12 +1,12 @@
 import { NgModule, Component, ElementRef, OnDestroy, Input, Output, EventEmitter, Renderer2, ViewChild, Inject, forwardRef, ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, ViewRef, PLATFORM_ID } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig } from 'primeng/api';
-import { ZIndexUtils } from 'primeng/utils';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@qius.solutions/qiusng/dom';
+import { MenuItem, OverlayService, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 
 @Component({
     selector: '[pMenuItemContent]',

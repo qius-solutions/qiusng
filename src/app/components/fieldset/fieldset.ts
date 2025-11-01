@@ -1,11 +1,11 @@
 import { NgModule, Component, Input, Output, EventEmitter, ElementRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, QueryList, ContentChildren, TemplateRef } from '@angular/core';
 import { trigger, state, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate } from 'primeng/api';
-import { BlockableUI } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
-import { PlusIcon } from 'primeng/icons/plus';
-import { MinusIcon } from 'primeng/icons/minus';
+import { SharedModule, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { BlockableUI } from '@qius.solutions/qiusng/api';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
+import { MinusIcon } from '@qius.solutions/qiusng/icons/minus';
 
 let idx: number = 0;
 

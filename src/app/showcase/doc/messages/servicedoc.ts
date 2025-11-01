@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Message, MessageService } from 'primeng/api';
+import { Message, MessageService } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -64,7 +64,7 @@ export class ServiceDoc {
 </div>`,
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { Message, MessageService } from 'primeng/api';
+import { Message, MessageService } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'messages-service-demo',

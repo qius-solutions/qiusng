@@ -24,19 +24,19 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
+import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { AutoFocusModule } from '@qius.solutions/qiusng/autofocus';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { Overlay, OverlayModule } from '@qius.solutions/qiusng/overlay';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
+import { ObjectUtils, UniqueComponentId } from '@qius.solutions/qiusng/utils';
+import { TimesCircleIcon } from '@qius.solutions/qiusng/icons/timescircle';
+import { SpinnerIcon } from '@qius.solutions/qiusng/icons/spinner';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
 
 export const AUTOCOMPLETE_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

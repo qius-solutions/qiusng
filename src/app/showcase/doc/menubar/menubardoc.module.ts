@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenubarModule } from 'primeng/menubar';
+import { MenubarModule } from '@qius.solutions/qiusng/menubar';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { TemplateDoc } from './templatedoc';
@@ -11,7 +11,7 @@ import { MenuItemDoc } from './menuitemdoc';
 import { PropsDoc } from './propsdoc';
 import { StyleDoc } from './styledoc';
 import { TemplatesDoc } from './templatesdoc';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
 import { AccessibilityDoc } from './accessibilitydoc';
 
 @NgModule({

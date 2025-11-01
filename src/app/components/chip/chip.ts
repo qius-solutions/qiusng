@@ -1,7 +1,7 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, EventEmitter, TemplateRef, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
+import { TimesCircleIcon } from '@qius.solutions/qiusng/icons/timescircle';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-chip',

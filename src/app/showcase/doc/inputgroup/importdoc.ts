@@ -14,8 +14,8 @@ export class ImportDoc {
     @Input() title: string;
 
     code: Code = {
-        typescript: `import { InputTextModule } from 'primeng/inputtext';
-import { CheckboxModule } from 'primeng/checkbox';
-import { RadioButtonModule } from 'primeng/radiobutton';`
+        typescript: `import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { CheckboxModule } from '@qius.solutions/qiusng/checkbox';
+import { RadioButtonModule } from '@qius.solutions/qiusng/radiobutton';`
     };
 }

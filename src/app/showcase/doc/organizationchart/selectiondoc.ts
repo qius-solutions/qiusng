@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -106,7 +106,7 @@ export class SelectionDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'organization-chart-selection-demo',

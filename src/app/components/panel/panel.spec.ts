@@ -2,7 +2,7 @@ import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Panel } from './panel';
-import { PlusIcon } from 'primeng/icons/plus';
+import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
 
 describe('Panel', () => {
     let panel: Panel;

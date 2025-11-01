@@ -1,8 +1,8 @@
 import { NgModule, Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, AfterContentInit, TemplateRef, QueryList, ContentChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { TimesIcon } from 'primeng/icons/times';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
     selector: 'p-inplaceDisplay',

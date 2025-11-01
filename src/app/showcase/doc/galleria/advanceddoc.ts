@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, Input, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
-import { Galleria } from 'primeng/galleria';
+import { Galleria } from '@qius.solutions/qiusng/galleria';
 import { Code } from '../../domain/code';
 import { PhotoService } from '../../service/photoservice';
 
@@ -221,7 +221,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
 </div>`,
         typescript: `
 import { ChangeDetectorRef, Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
-import { Galleria } from 'primeng/galleria';
+import { Galleria } from '@qius.solutions/qiusng/galleria';
 import { PhotoService } from '../../service/photoservice';
 
 @Component({

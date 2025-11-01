@@ -21,7 +21,7 @@ export class NgxTranslateDoc {
     code: Code = {
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

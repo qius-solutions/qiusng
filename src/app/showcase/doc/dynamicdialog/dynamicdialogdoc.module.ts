@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { DialogModule } from '@qius.solutions/qiusng/dialog';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { TableModule } from '@qius.solutions/qiusng/table';
+import { ToastModule } from '@qius.solutions/qiusng/toast';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { OpenDoc } from './opendoc';
@@ -19,7 +19,7 @@ import { PassingDataDoc } from './passingdatadoc';
 import { CloseDoc } from './closedoc';
 import { ProductListDemoDoc } from './productlistdemodoc';
 import { EventsDoc } from './eventsdoc';
-import { TagModule } from 'primeng/tag';
+import { TagModule } from '@qius.solutions/qiusng/tag';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, RouterModule, FormsModule, TagModule, DialogModule, ButtonModule, AppDocModule, ToastModule, TableModule],

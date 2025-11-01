@@ -1,16 +1,16 @@
 import { NgModule, Component, Input, ElementRef, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, AfterContentInit, ContentChildren, QueryList, Output, EventEmitter, ChangeDetectorRef, ViewChild, Inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { SharedModule, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
+import { SharedModule, PrimeTemplate, PrimeNGConfig } from '@qius.solutions/qiusng/api';
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { SafeUrl } from '@angular/platform-browser';
-import { DomHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils';
-import { RefreshIcon } from 'primeng/icons/refresh';
-import { EyeIcon } from 'primeng/icons/eye';
-import { UndoIcon } from 'primeng/icons/undo';
-import { SearchMinusIcon } from 'primeng/icons/searchminus';
-import { SearchPlusIcon } from 'primeng/icons/searchplus';
-import { TimesIcon } from 'primeng/icons/times';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { RefreshIcon } from '@qius.solutions/qiusng/icons/refresh';
+import { EyeIcon } from '@qius.solutions/qiusng/icons/eye';
+import { UndoIcon } from '@qius.solutions/qiusng/icons/undo';
+import { SearchMinusIcon } from '@qius.solutions/qiusng/icons/searchminus';
+import { SearchPlusIcon } from '@qius.solutions/qiusng/icons/searchplus';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
     selector: 'p-image',

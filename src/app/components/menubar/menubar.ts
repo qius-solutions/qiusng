@@ -21,15 +21,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { ZIndexUtils } from 'primeng/utils';
-import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 import { debounce, filter, interval, Subject, Subscription } from 'rxjs';
-import { BarsIcon } from 'primeng/icons/bars';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { BarsIcon } from '@qius.solutions/qiusng/icons/bars';
+import { AngleDownIcon } from '@qius.solutions/qiusng/icons/angledown';
+import { AngleRightIcon } from '@qius.solutions/qiusng/icons/angleright';
 
 @Injectable()
 export class MenubarService {

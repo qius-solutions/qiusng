@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Message } from 'primeng/api';
+import { Message } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({

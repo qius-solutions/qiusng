@@ -20,7 +20,7 @@ export class AppendToDoc {
 
     code: Code = {
         typescript: `
-import { PrimeNGConfig, OverlayOptions } from 'primeng/api';
+import { PrimeNGConfig, OverlayOptions } from '@qius.solutions/qiusng/api';
 
 this.primengConfig.overlayOptions: OverlayOptions = {
     appendTo: 'body'

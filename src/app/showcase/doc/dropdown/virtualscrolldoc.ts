@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -44,7 +44,7 @@ export class VirtualScrollDoc {
 </div>`,
 
         typescript: `
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@qius.solutions/qiusng/api';
 import { Component } from '@angular/core';
 
 @Component({

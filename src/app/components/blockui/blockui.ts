@@ -1,8 +1,8 @@
 import { NgModule, Component, Input, AfterViewInit, OnDestroy, ElementRef, ViewChild, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, ContentChildren, QueryList, TemplateRef, Inject, Renderer2 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { PrimeNGConfig, PrimeTemplate } from 'primeng/api';
-import { ZIndexUtils } from 'primeng/utils';
-import { DomHandler } from 'primeng/dom';
+import { PrimeNGConfig, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
 
 @Component({
     selector: 'p-blockUI',

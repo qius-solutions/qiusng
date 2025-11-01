@@ -1,7 +1,7 @@
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, Inject, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { Subscription } from 'rxjs';
 import { AppConfig } from '../../domain/appconfig';
 import { AppConfigService } from '../../service/appconfigservice';

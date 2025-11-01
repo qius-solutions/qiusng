@@ -22,18 +22,18 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { Subscription } from 'rxjs';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { TimesIcon } from 'primeng/icons/times';
-import { CalendarIcon } from 'primeng/icons/calendar';
+import { ChevronLeftIcon } from '@qius.solutions/qiusng/icons/chevronleft';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
+import { ChevronUpIcon } from '@qius.solutions/qiusng/icons/chevronup';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { CalendarIcon } from '@qius.solutions/qiusng/icons/calendar';
 
 export const CALENDAR_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

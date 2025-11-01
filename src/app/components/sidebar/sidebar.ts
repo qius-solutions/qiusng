@@ -19,11 +19,11 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { ZIndexUtils } from 'primeng/utils';
-import { TimesIcon } from 'primeng/icons/times';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);
 

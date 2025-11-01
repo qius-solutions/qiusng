@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { ContextMenuModule } from 'primeng/contextmenu';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { ToastModule } from 'primeng/toast';
-import { TreeModule } from 'primeng/tree';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { ContextMenuModule } from '@qius.solutions/qiusng/contextmenu';
+import { InputSwitchModule } from '@qius.solutions/qiusng/inputswitch';
+import { ToastModule } from '@qius.solutions/qiusng/toast';
+import { TreeModule } from '@qius.solutions/qiusng/tree';
 import { AppDocModule } from '../../layout/doc/app.doc.module';
 import { AppCodeModule } from '../../layout/doc/code/app.code.component';
 import { AccessibilityDoc } from './accessibilitydoc';

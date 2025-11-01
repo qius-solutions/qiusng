@@ -1,9 +1,9 @@
 import { NgModule, Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEncapsulation, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@qius.solutions/qiusng/api';
 import { RouterModule, Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { TooltipModule } from 'primeng/tooltip';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 
 @Component({
     selector: 'p-steps',

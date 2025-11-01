@@ -27,23 +27,23 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, SharedModule, SortMeta, TreeNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { PaginatorModule } from 'primeng/paginator';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, SharedModule, SortMeta, TreeNode } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { PaginatorModule } from '@qius.solutions/qiusng/paginator';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
+import { ObjectUtils } from '@qius.solutions/qiusng/utils';
 import { Subject, Subscription } from 'rxjs';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { MinusIcon } from 'primeng/icons/minus';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
+import { SortAmountDownIcon } from '@qius.solutions/qiusng/icons/sortamountdown';
+import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
+import { ArrowDownIcon } from '@qius.solutions/qiusng/icons/arrowdown';
+import { ArrowUpIcon } from '@qius.solutions/qiusng/icons/arrowup';
+import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
+import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
+import { MinusIcon } from '@qius.solutions/qiusng/icons/minus';
+import { SortAltIcon } from '@qius.solutions/qiusng/icons/sortalt';
+import { SortAmountUpAltIcon } from '@qius.solutions/qiusng/icons/sortamountupalt';
+import { SpinnerIcon } from '@qius.solutions/qiusng/icons/spinner';
 
 @Injectable()
 export class TreeTableService {

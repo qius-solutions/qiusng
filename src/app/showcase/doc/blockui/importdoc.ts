@@ -16,6 +16,6 @@ export class ImportDoc {
     @Input() title: string;
 
     code: Code = {
-        typescript: `import { BlockUIModule } from 'primeng/blockui';`
+        typescript: `import { BlockUIModule } from '@qius.solutions/qiusng/blockui';`
     };
 }

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { Scroller } from 'primeng/scroller';
+import { Scroller } from '@qius.solutions/qiusng/scroller';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -57,7 +57,7 @@ export class ProgrammaticDoc implements OnInit {
 
         typescript: `
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Scroller } from 'primeng/scroller';
+import { Scroller } from '@qius.solutions/qiusng/scroller';
 
 @Component({
     selector: 'scroller-programmatic-demo',

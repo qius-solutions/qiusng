@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { TooltipModule } from 'primeng/tooltip';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 import { AppCodeModule } from './code/app.code.component';
 import { AppDocApiSection } from './docapisection/app.docapisection.component';
 import { AppDocSectionsComponent } from './docsection/app.docsection.component';

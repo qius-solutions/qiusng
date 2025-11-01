@@ -20,13 +20,13 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { SharedModule, PrimeTemplate, MenuItem } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { DomHandler } from 'primeng/dom';
+import { SharedModule, PrimeTemplate, MenuItem } from '@qius.solutions/qiusng/api';
+import { ButtonModule } from '@qius.solutions/qiusng/button';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { RouterModule } from '@angular/router';
-import { PlusIcon } from 'primeng/icons/plus';
+import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
 
 @Component({
     selector: 'p-speedDial',

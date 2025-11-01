@@ -19,14 +19,14 @@ import {
     OnDestroy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ObjectUtils } from 'primeng/utils';
-import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from 'primeng/api';
-import { PaginatorModule } from 'primeng/paginator';
-import { BlockableUI } from 'primeng/api';
+import { ObjectUtils } from '@qius.solutions/qiusng/utils';
+import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { PaginatorModule } from '@qius.solutions/qiusng/paginator';
+import { BlockableUI } from '@qius.solutions/qiusng/api';
 import { Subscription } from 'rxjs';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { ThLargeIcon } from 'primeng/icons/thlarge';
-import { BarsIcon } from 'primeng/icons/bars';
+import { SpinnerIcon } from '@qius.solutions/qiusng/icons/spinner';
+import { ThLargeIcon } from '@qius.solutions/qiusng/icons/thlarge';
+import { BarsIcon } from '@qius.solutions/qiusng/icons/bars';
 
 @Component({
     selector: 'p-dataView',

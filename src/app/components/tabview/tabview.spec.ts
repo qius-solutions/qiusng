@@ -3,9 +3,9 @@ import { By } from '@angular/platform-browser';
 import { TabView, TabPanel } from './tabview';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
-import { Tooltip } from 'primeng/tooltip';
-import { PrimeTemplate } from 'primeng/api';
-import { TimesIcon } from 'primeng/icons/times';
+import { Tooltip } from '@qius.solutions/qiusng/tooltip';
+import { PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
     template: `<p-tabView>

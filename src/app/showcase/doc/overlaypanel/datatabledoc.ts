@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { OverlayPanel } from 'primeng/overlaypanel';
+import { MessageService } from '@qius.solutions/qiusng/api';
+import { OverlayPanel } from '@qius.solutions/qiusng/overlaypanel';
 import { Code } from '../../domain/code';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
@@ -145,8 +145,8 @@ export class DataTableDoc implements OnInit {
 
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { OverlayPanel } from 'primeng/overlaypanel';
+import { MessageService } from '@qius.solutions/qiusng/api';
+import { OverlayPanel } from '@qius.solutions/qiusng/overlaypanel';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
 

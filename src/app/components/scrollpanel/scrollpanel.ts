@@ -19,8 +19,8 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { PrimeTemplate } from 'primeng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { PrimeTemplate } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-scrollPanel',

@@ -24,14 +24,14 @@ import {
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent, animation, useAnimation } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { Header, Footer, SharedModule, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { RippleModule } from 'primeng/ripple';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { Header, Footer, SharedModule, PrimeTemplate, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { FocusTrapModule } from '@qius.solutions/qiusng/focustrap';
+import { RippleModule } from '@qius.solutions/qiusng/ripple';
+import { UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
+import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
+import { WindowMaximizeIcon } from '@qius.solutions/qiusng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@qius.solutions/qiusng/icons/windowminimize';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);
 

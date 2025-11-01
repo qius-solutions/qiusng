@@ -23,9 +23,9 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { SpinnerIcon } from 'primeng/icons/spinner';
+import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { DomHandler } from '@qius.solutions/qiusng/dom';
+import { SpinnerIcon } from '@qius.solutions/qiusng/icons/spinner';
 
 export type ScrollerToType = 'to-start' | 'to-end' | undefined;
 
