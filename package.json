@@ -1,7 +1,17 @@
 {
-    "name": "@qius/qiusng",
+    "name": "@qius.solutions/qiusng",
     "version": "15.4.1",
     "license": "SEE LICENSE IN LICENSE.md",
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "angular",
+        "primeng",
+        "qiusng",
+        "ui-components",
+        "qius-solutions"
+    ],
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -23,7 +33,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primeng.git"
+        "url": "https://github.com/qius-solutions/qiusng.git"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~15.2.1",
@@ -77,8 +87,6 @@
         "karma-jasmine-html-reporter": "^1.7.0",
         "ng-packagr": "~15.0.0",
         "prettier": "2.7.1",
-        "@qius/qiusicons": "^6.0.1",
-        "@qius/qiusflex": "^3.2.1",
         "prismjs": "^1.29.0",
         "quill": "1.3.7",
         "rxjs": "~7.5.0",
@@ -90,7 +98,9 @@
     },
     "dependencies": {
         "@docsearch/js": "^3.3.3",
-        "@types/react": "^18.0.28"
+        "@types/react": "^18.0.28",
+        "@qius.solutions/qiusicons": "^6.0.1",
+        "@qius.solutions/qiusflex": "^3.2.2"
     },
     "description": "QiusNG - Components library powered by Qius Solutions",
     "author": "Qius Solutions <qius.solutions@gmail.com>"
