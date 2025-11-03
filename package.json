@@ -21,7 +21,7 @@
         "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
         "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
         "build:lib": "npm run build:check && npm run build:package",
-        "build:package": "BROWSERSLIST_ENV=library ng build qiusng-library && gulp build-assets",
+        "build-package": "ng build qiusng-library && gulp build-assets",
         "build:check": "npm run format:check && npm run security:check && npm run test:headless",
         "security:check": "npm audit --production --audit-level high",
         "dev:ssr": "ng run qiusng:serve-ssr",
@@ -98,8 +98,8 @@
     "dependencies": {
         "@docsearch/js": "^3.3.3",
         "@types/react": "^18.0.28",
-        "@qius.solutions/qiusicons": "^7.0.0",
-        "@qius.solutions/qiusflex": "^4.0.3"
+        "@qius.solutions/qiusicons": "^7.0.1",
+        "@qius.solutions/qiusflex": "^4.0.5"
     },
     "description": "QiusNG - Components library powered by Qius Solutions",
     "author": "Qius Solutions <qius.solutions@gmail.com>"
