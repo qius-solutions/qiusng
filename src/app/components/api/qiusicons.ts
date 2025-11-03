@@ -1,4 +1,4 @@
-export class PrimeIcons {
+export class QiusIcons {
     public static readonly ALIGN_CENTER = 'pi pi-align-center';
     public static readonly ALIGN_JUSTIFY = 'pi pi-align-justify';
     public static readonly ALIGN_LEFT = 'pi pi-align-left';
@@ -166,7 +166,7 @@ export class PrimeIcons {
     public static readonly PLUS_CIRCLE = 'pi pi-plus-circle';
     public static readonly POUND = 'pi pi-pound';
     public static readonly POWER_OFF = 'pi pi-power-off';
-    public static readonly PRIME = 'pi pi-prime';
+    public static readonly PRIME = 'pi pi-qius';
     public static readonly PRINT = 'pi pi-print';
     public static readonly QRCODE = 'pi pi-qrcode';
     public static readonly QUESTION = 'pi pi-question';

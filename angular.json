@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "primeng-library": {
+        "qiusng-library": {
             "root": "src",
             "projectType": "library",
             "architect": {
@@ -16,7 +16,7 @@
                 }
             }
         },
-        "primeng": {
+        "qiusng": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -30,7 +30,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/primeng/browser",
+                        "outputPath": "dist/qiusng/browser",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": [
@@ -48,7 +48,7 @@
                         ],
                         "styles": [
                             "src/styles.scss",
-                            "node_modules/primeicons/primeicons.css"
+                            "node_modules/qiusicons/qiusicons.css"
                         ],
                         "scripts": [
                             "./node_modules/prismjs/prism.js",
@@ -105,10 +105,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "primeng:build:production"
+                            "browserTarget": "qiusng:build:production"
                         },
                         "development": {
-                            "browserTarget": "primeng:build:development"
+                            "browserTarget": "qiusng:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -116,7 +116,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "primeng:build"
+                        "browserTarget": "qiusng:build"
                     }
                 },
                 "test": {
@@ -141,7 +141,7 @@
                 "server": {
                     "builder": "@angular-devkit/build-angular:server",
                     "options": {
-                        "outputPath": "dist/primeng/server",
+                        "outputPath": "dist/qiusng/server",
                         "main": "server.ts",
                         "tsConfig": "tsconfig.server.json",
                         "inlineStyleLanguage": "scss"
@@ -163,12 +163,12 @@
                     "builder": "@nguniversal/builders:ssr-dev-server",
                     "configurations": {
                         "development": {
-                            "browserTarget": "primeng:build:development",
-                            "serverTarget": "primeng:server:development"
+                            "browserTarget": "qiusng:build:development",
+                            "serverTarget": "qiusng:server:development"
                         },
                         "production": {
-                            "browserTarget": "primeng:build:production",
-                            "serverTarget": "primeng:server:production"
+                            "browserTarget": "qiusng:build:production",
+                            "serverTarget": "qiusng:server:production"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -182,12 +182,12 @@
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "primeng:build:production",
-                            "serverTarget": "primeng:server:production"
+                            "browserTarget": "qiusng:build:production",
+                            "serverTarget": "qiusng:server:production"
                         },
                         "development": {
-                            "browserTarget": "primeng:build:development",
-                            "serverTarget": "primeng:server:development"
+                            "browserTarget": "qiusng:build:development",
+                            "serverTarget": "qiusng:server:development"
                         }
                     },
                     "defaultConfiguration": "production"

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, EventEmitter, forwardRef, Input, NgModule, OnInit, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { StarFillIcon } from '@qius.solutions/qiusng/icons/starfill';
 import { StarIcon } from '@qius.solutions/qiusng/icons/star';
 import { BanIcon } from '@qius.solutions/qiusng/icons/ban';
@@ -53,7 +53,7 @@ export const RATING_VALUE_ACCESSOR: any = {
     }
 })
 export class Rating implements OnInit, ControlValueAccessor {
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     onIconTemplate: TemplateRef<any>;
 

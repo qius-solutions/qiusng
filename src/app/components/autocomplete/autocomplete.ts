@@ -24,7 +24,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { OverlayOptions, OverlayService, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { AutoFocusModule } from '@qius.solutions/qiusng/autofocus';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
@@ -368,7 +368,7 @@ export class AutoComplete implements AfterViewChecked, AfterContentInit, OnDestr
 
     @ViewChild('overlay') overlayViewChild: Overlay;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Output() completeMethod: EventEmitter<any> = new EventEmitter();
 
@@ -478,7 +478,7 @@ export class AutoComplete implements AfterViewChecked, AfterContentInit, OnDestr
         public renderer: Renderer2,
         public cd: ChangeDetectorRef,
         public differs: IterableDiffers,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         public overlayService: OverlayService,
         private zone: NgZone
     ) {

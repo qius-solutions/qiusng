@@ -25,11 +25,11 @@ describe('ProgressSpinner', () => {
 
     it('should get style and styleClass', () => {
         progressspinner.style = { height: '300px' };
-        progressspinner.styleClass = 'PrimeNG ROCKS!';
+        progressspinner.styleClass = 'QiusNG ROCKS!';
         fixture.detectChanges();
 
         const progressSpinnerEl = fixture.debugElement.query(By.css('.p-progress-spinner'));
-        expect(progressSpinnerEl.nativeElement.className).toContain('PrimeNG ROCKS!');
+        expect(progressSpinnerEl.nativeElement.className).toContain('QiusNG ROCKS!');
         expect(progressSpinnerEl.nativeElement.style.height).toEqual('300px');
     });
 });

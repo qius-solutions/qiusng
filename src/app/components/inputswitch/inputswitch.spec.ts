@@ -41,24 +41,24 @@ describe('InputSwitch', () => {
 
     it('should change style and styleClass', () => {
         inputswitch.style = { height: '300px' };
-        inputswitch.styleClass = 'Primeng ROCKS!';
+        inputswitch.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const inputSwitchEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(inputSwitchEl.className).toContain('Primeng ROCKS!');
+        expect(inputSwitchEl.className).toContain('Qiusng ROCKS!');
         expect(inputSwitchEl.style.height).toContain('300px');
     });
 
     it('should get a name inputId and tabindex', () => {
         inputswitch.tabindex = 5;
-        inputswitch.inputId = 'Primeng!';
-        inputswitch.name = 'Primeng ROCKS!';
+        inputswitch.inputId = 'Qiusng!';
+        inputswitch.name = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const inputSwitchEl = fixture.debugElement.query(By.css('input')).nativeElement;
         expect(inputSwitchEl.tabIndex).toEqual(5);
-        expect(inputSwitchEl.name).toEqual('Primeng ROCKS!');
-        expect(inputSwitchEl.id).toEqual('Primeng!');
+        expect(inputSwitchEl.name).toEqual('Qiusng ROCKS!');
+        expect(inputSwitchEl.id).toEqual('Qiusng!');
     });
 
     it('should checked when click', () => {

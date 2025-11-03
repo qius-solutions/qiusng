@@ -9,7 +9,7 @@ import { DynamicDialogConfig } from './dynamicdialog-config';
 import { DynamicDialogRef } from './dynamicdialog-ref';
 
 @Component({
-    template: ` <h2>PrimeNG ROCKS!</h2> `
+    template: ` <h2>QiusNG ROCKS!</h2> `
 })
 export class TestComponent {
     constructor(public ref: DynamicDialogRef, public config: DynamicDialogConfig) {}
@@ -65,7 +65,7 @@ describe('DynamicDialog', () => {
         const titleEl = dynamicDialogEl.getElementsByClassName('p-dialog-title')[0];
         const testComponentHeader = dynamicDialogEl.getElementsByTagName('h2')[0];
         expect(titleEl.textContent).toEqual('Demo Header');
-        expect(testComponentHeader.textContent).toEqual('PrimeNG ROCKS!');
+        expect(testComponentHeader.textContent).toEqual('QiusNG ROCKS!');
         let dynamicDialogTitlebarIconEl = document.querySelector('.p-dynamic-dialog .p-dialog-header-icon') as HTMLElement;
         dynamicDialogTitlebarIconEl.click();
         fixture.detectChanges();

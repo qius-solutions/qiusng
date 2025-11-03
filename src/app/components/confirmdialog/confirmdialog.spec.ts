@@ -47,13 +47,13 @@ describe('ConfirmDialog', () => {
     });
 
     it('should display the header', () => {
-        confirmDialog.header = 'PrimengRocks!';
+        confirmDialog.header = 'QiusngRocks!';
         confirmDialog.visible = true;
         fixture.detectChanges();
 
         const confirmDialogEl = fixture.debugElement.query(By.css('.p-dialog-title')).nativeElement;
         expect(confirmDialogEl).toBeTruthy();
-        expect(confirmDialogEl.textContent).toContain('PrimengRocks!');
+        expect(confirmDialogEl.textContent).toContain('QiusngRocks!');
     });
 
     it('should display the close icon when closable is true', () => {
@@ -89,24 +89,24 @@ describe('ConfirmDialog', () => {
 
     it('should change buttonStyles', () => {
         confirmDialog.visible = true;
-        confirmDialog.rejectButtonStyleClass = 'Primeng ROCKS!';
-        confirmDialog.acceptButtonStyleClass = 'Primeng ROCKS!';
+        confirmDialog.rejectButtonStyleClass = 'Qiusng ROCKS!';
+        confirmDialog.acceptButtonStyleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
-        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[0].nativeElement.className).toContain('Primeng ROCKS!');
-        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[1].nativeElement.className).toContain('Primeng ROCKS!');
+        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[0].nativeElement.className).toContain('Qiusng ROCKS!');
+        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[1].nativeElement.className).toContain('Qiusng ROCKS!');
     });
 
     it('should change icons', () => {
         confirmDialog.visible = true;
-        confirmDialog.icon = 'Primeng ROCKS!';
-        confirmDialog.acceptIcon = 'Primeng ROCKS!';
-        confirmDialog.rejectIcon = 'Primeng ROCKS!';
+        confirmDialog.icon = 'Qiusng ROCKS!';
+        confirmDialog.acceptIcon = 'Qiusng ROCKS!';
+        confirmDialog.rejectIcon = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
-        expect(fixture.debugElement.query(By.css('.p-confirm-dialog-icon')).nativeElement.className).toContain('Primeng ROCKS!');
-        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[0].query(By.css('i')).nativeElement.className).toContain('Primeng ROCKS!');
-        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[1].nativeElement.icon).toContain('Primeng ROCKS!');
+        expect(fixture.debugElement.query(By.css('.p-confirm-dialog-icon')).nativeElement.className).toContain('Qiusng ROCKS!');
+        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[0].query(By.css('i')).nativeElement.className).toContain('Qiusng ROCKS!');
+        expect(fixture.debugElement.query(By.css('.p-dialog-footer')).children[1].nativeElement.icon).toContain('Qiusng ROCKS!');
     });
 
     it('should not show accept button', () => {

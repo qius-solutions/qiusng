@@ -22,7 +22,7 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from '@qius.solutions/qiusng/api';
+import { BlockableUI, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
@@ -799,7 +799,7 @@ export class Tree implements OnInit, AfterContentInit, OnChanges, OnDestroy, Blo
 
     @Output() onFilter: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('filter') filterViewChild: ElementRef;
 
@@ -853,7 +853,7 @@ export class Tree implements OnInit, AfterContentInit, OnChanges, OnDestroy, Blo
 
     public dragStopSubscription: Subscription;
 
-    constructor(public el: ElementRef, @Optional() public dragDropService: TreeDragDropService, public config: PrimeNGConfig, private cd: ChangeDetectorRef) {}
+    constructor(public el: ElementRef, @Optional() public dragDropService: TreeDragDropService, public config: QiusNGConfig, private cd: ChangeDetectorRef) {}
 
     ngOnInit() {
         if (this.droppableNodes) {

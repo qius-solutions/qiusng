@@ -19,7 +19,7 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
@@ -103,7 +103,7 @@ export class Sidebar implements AfterViewInit, AfterContentInit, OnDestroy {
 
     @Input() transitionOptions: string = '150ms cubic-bezier(0, 0, 0.2, 1)';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Output() onShow: EventEmitter<any> = new EventEmitter();
 
@@ -139,7 +139,7 @@ export class Sidebar implements AfterViewInit, AfterContentInit, OnDestroy {
 
     closeIconTemplate: TemplateRef<any>;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public config: PrimeNGConfig) {}
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public config: QiusNGConfig) {}
 
     ngAfterViewInit() {
         this.initialized = true;

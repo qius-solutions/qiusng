@@ -24,7 +24,7 @@ import { ProductService } from '../../service/productservice';
                 <ng-template pTemplate="body" let-product>
                     <tr>
                         <td>{{ product.name }}</td>
-                        <td><img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2" /></td>
+                        <td><img src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2" /></td>
                         <td>{{ product.price }}</td>
                         <td>
                             <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)"></p-tag>
@@ -83,7 +83,7 @@ export class ProductListDemoDoc implements OnInit {
     <ng-template pTemplate="body" let-product>
         <tr>
             <td>{{ product.name }}</td>
-            <td><img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2"/></td>
+            <td><img src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2"/></td>
             <td>{{ product.price }}</td>
             <td>
                 <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)"></p-tag>
@@ -109,7 +109,7 @@ export class ProductListDemoDoc implements OnInit {
         <ng-template pTemplate="body" let-product>
             <tr>
                 <td>{{ product.name }}</td>
-                <td><img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2"/></td>
+                <td><img src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2"/></td>
                 <td>{{ product.price }}</td>
                 <td>
                     <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)"></p-tag>

@@ -1,6 +1,6 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, TemplateRef, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { QiusTemplate } from '@qius.solutions/qiusng/api';
 import { SharedModule } from '@qius.solutions/qiusng/api';
 
 @Component({
@@ -37,7 +37,7 @@ export class Tag {
 
     @Input() rounded: boolean;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     iconTemplate: TemplateRef<any>;
 

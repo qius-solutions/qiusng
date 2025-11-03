@@ -8,7 +8,7 @@ import { Component, EventEmitter } from '@angular/core';
     template: `<p-pickList [source]="sourceCars" [target]="targetCars">
         <ng-template let-car pTemplate="item">
             <div class="p-clearfix">
-                <img src="https://primefaces.org/cdn/primeng/images/demo/car/{{ car.brand }}.png" style="display:inline-block;margin:2px 0 2px 2px" width="48" />
+                <img src="https://qius.solutions.org/cdn/qiusng/images/demo/car/{{ car.brand }}.png" style="display:inline-block;margin:2px 0 2px 2px" width="48" />
                 <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{ car.brand }} - {{ car.year }} - {{ car.color }}</div>
             </div>
         </ng-template>
@@ -62,18 +62,18 @@ describe('PickList', () => {
 
     it('should change style and styleClass', () => {
         picklist.style = { height: '300px' };
-        picklist.styleClass = 'Primeng ROCKS!';
+        picklist.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const picklistEl = fixture.debugElement.query(By.css('div'));
-        expect(picklistEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(picklistEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(picklistEl.nativeElement.style.height).toEqual('300px');
     });
 
     it('should show sourceHeader and targetHeader', () => {
         fixture.detectChanges();
 
-        picklist.sourceHeader = 'Primeng';
+        picklist.sourceHeader = 'Qiusng';
         picklist.targetHeader = 'ROCKS!';
         fixture.detectChanges();
 
@@ -81,7 +81,7 @@ describe('PickList', () => {
         const headerEls = fixture.debugElement.queryAll(By.css('.p-picklist-header'));
         expect(headerEls).toBeTruthy();
         expect(headerEls.length).toEqual(2);
-        expect(headerEls[0].nativeElement.textContent).toEqual('Primeng');
+        expect(headerEls[0].nativeElement.textContent).toEqual('Qiusng');
         expect(headerEls[1].nativeElement.textContent).toEqual('ROCKS!');
     });
 
@@ -136,14 +136,14 @@ describe('PickList', () => {
 
     it('should use input placeholders', () => {
         picklist.filterBy = 'brand';
-        picklist.sourceFilterPlaceholder = 'Primeng';
+        picklist.sourceFilterPlaceholder = 'Qiusng';
         picklist.targetFilterPlaceholder = 'ROCKS!';
         fixture.detectChanges();
 
         picklist.cd.detectChanges();
         const headerEls = fixture.debugElement.queryAll(By.css('.p-picklist-filter'));
         expect(headerEls.length).toEqual(2);
-        expect(headerEls[0].query(By.css('input')).nativeElement.placeholder).toEqual('Primeng');
+        expect(headerEls[0].query(By.css('input')).nativeElement.placeholder).toEqual('Qiusng');
         expect(headerEls[1].query(By.css('input')).nativeElement.placeholder).toEqual('ROCKS!');
     });
 

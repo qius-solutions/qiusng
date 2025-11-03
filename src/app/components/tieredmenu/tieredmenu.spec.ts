@@ -33,13 +33,13 @@ describe('TieredMenu', () => {
     });
 
     it('should change style and styleClass', () => {
-        tieredmenu.styleClass = 'Primeng ROCKS!';
+        tieredmenu.styleClass = 'Qiusng ROCKS!';
         tieredmenu.style = { height: '300px' };
         fixture.detectChanges();
 
         const tieredmenuEl = fixture.debugElement.query(By.css('div'));
         const styleEl = tieredmenuEl.styles.height;
-        expect(tieredmenuEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(tieredmenuEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(styleEl).toEqual('300px');
     });
 

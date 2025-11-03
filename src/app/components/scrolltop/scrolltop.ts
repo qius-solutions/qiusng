@@ -3,7 +3,7 @@ import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { animate, state, style, transition, trigger, AnimationEvent } from '@angular/animations';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { ChevronUpIcon } from '@qius.solutions/qiusng/icons/chevronup';
 
 @Component({
@@ -69,7 +69,7 @@ export class ScrollTop implements OnInit, OnDestroy {
 
     @Input() hideTransitionOptions: string = '.15s';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     iconTemplate: TemplateRef<any>;
 
@@ -83,7 +83,7 @@ export class ScrollTop implements OnInit, OnDestroy {
 
     private window: Window;
 
-    constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: any, private renderer: Renderer2, public el: ElementRef, private cd: ChangeDetectorRef, public config: PrimeNGConfig) {
+    constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: any, private renderer: Renderer2, public el: ElementRef, private cd: ChangeDetectorRef, public config: QiusNGConfig) {
         this.window = this.document.defaultView;
     }
 

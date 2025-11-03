@@ -1,7 +1,7 @@
 import { NgModule, Component, OnDestroy, Input, Output, EventEmitter, AfterContentInit, Optional, ElementRef, ChangeDetectionStrategy, ContentChildren, QueryList, TemplateRef, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, style, transition, animate } from '@angular/animations';
-import { Message, PrimeTemplate, MessageService } from '@qius.solutions/qiusng/api';
+import { Message, QiusTemplate, MessageService } from '@qius.solutions/qiusng/api';
 import { Subscription, timer } from 'rxjs';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
@@ -95,7 +95,7 @@ export class Messages implements AfterContentInit, OnDestroy {
 
     @Input() hideTransitionOptions: string = '200ms cubic-bezier(0.86, 0, 0.07, 1)';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Output() valueChange: EventEmitter<Message[]> = new EventEmitter<Message[]>();
 

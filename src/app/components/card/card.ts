@@ -1,6 +1,6 @@
 import { NgModule, Component, Input, ElementRef, ContentChild, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, Header, Footer, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { SharedModule, Header, Footer, QiusTemplate } from '@qius.solutions/qiusng/api';
 import { BlockableUI } from '@qius.solutions/qiusng/api';
 
 @Component({
@@ -51,7 +51,7 @@ export class Card implements AfterContentInit, BlockableUI {
 
     @ContentChild(Footer) footerFacet;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     headerTemplate: TemplateRef<any>;
 

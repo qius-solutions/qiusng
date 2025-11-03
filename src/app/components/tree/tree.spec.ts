@@ -60,8 +60,8 @@ class TestTreeComponent implements OnInit {
                 collapsedIcon: 'pi pi-folder',
                 children: [
                     { label: 'barcelona.jpg', icon: 'pi pi-file-image-o', data: 'Barcelona Photo' },
-                    { label: 'logo.jpg', icon: 'pi pi-file-image-o', data: 'PrimeFaces Logo' },
-                    { label: 'primeui.png', icon: 'pi pi-file-image-o', data: 'PrimeUI Logo' }
+                    { label: 'logo.jpg', icon: 'pi pi-file-image-o', data: 'QiusSolutions Logo' },
+                    { label: 'qiusui.png', icon: 'pi pi-file-image-o', data: 'QiusUI Logo' }
                 ]
             },
             {
@@ -172,8 +172,8 @@ describe('Tree', () => {
                 collapsedIcon: 'pi pi-folder',
                 children: [
                     { label: 'barcelona.jpg', icon: 'pi pi-file-image-o', data: 'Barcelona Photo' },
-                    { label: 'logo.jpg', icon: 'pi pi-file-image-o', data: 'PrimeFaces Logo' },
-                    { label: 'primeui.png', icon: 'pi pi-file-image-o', data: 'PrimeUI Logo' }
+                    { label: 'logo.jpg', icon: 'pi pi-file-image-o', data: 'QiusSolutions Logo' },
+                    { label: 'qiusui.png', icon: 'pi pi-file-image-o', data: 'QiusUI Logo' }
                 ]
             },
             {

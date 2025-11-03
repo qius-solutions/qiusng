@@ -3,7 +3,7 @@ import { ArchitectureDoc } from '../../doc/theming/architecturedoc';
 import { BuiltInThemesDoc } from '../../doc/theming/builtinthemesdoc';
 import { CSSVariablesDoc } from '../../doc/theming/cssvariablesdoc';
 import { CustomThemeDoc } from '../../doc/theming/customthemedoc';
-import { PrimeFlexDoc } from '../../doc/theming/primeflexdoc';
+import { QiusFlexDoc } from '../../doc/theming/qiusflexdoc';
 import { ScalingDoc } from '../../doc/theming/scalingdoc';
 import { ScopedCSSDoc } from '../../doc/theming/scopedcssdoc';
 import { SwitchThemesDoc } from '../../doc/theming/switchthemesdoc';
@@ -46,9 +46,9 @@ export class ThemingComponent {
             component: ScalingDoc
         },
         {
-            id: 'primeflex',
-            label: 'PrimeFlex',
-            component: PrimeFlexDoc
+            id: 'qiusflex',
+            label: 'QiusFlex',
+            component: QiusFlexDoc
         },
         {
             id: 'utils',

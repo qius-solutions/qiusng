@@ -20,7 +20,7 @@ import {
 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MenuItem, OverlayService, QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { animate, style, transition, trigger, AnimationEvent } from '@angular/animations';
@@ -394,7 +394,7 @@ export class TieredMenu implements AfterContentInit, OnDestroy {
 
     @Output() onHide: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     submenuIconTemplate: TemplateRef<any>;
 
@@ -418,7 +418,7 @@ export class TieredMenu implements AfterContentInit, OnDestroy {
 
     private window: Window;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public config: PrimeNGConfig, public overlayService: OverlayService) {
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public config: QiusNGConfig, public overlayService: OverlayService) {
         this.window = this.document.defaultView as Window;
     }
 

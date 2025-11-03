@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, forwardRef, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ObjectUtils } from '@qius.solutions/qiusng/utils';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
 
 export const CHECKBOX_VALUE_ACCESSOR: any = {
@@ -106,7 +106,7 @@ export class Checkbox implements ControlValueAccessor {
 
     @Output() onChange: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     checkboxIconTemplate: TemplateRef<any>;
 

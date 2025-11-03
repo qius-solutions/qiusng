@@ -43,11 +43,11 @@ describe('Menu', () => {
 
     it('should change style and styleClass', () => {
         menu.style = { height: '300px' };
-        menu.styleClass = 'Primeng ROCKS!';
+        menu.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const containerEl = fixture.debugElement.query(By.css('.p-menu'));
-        expect(containerEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(containerEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(containerEl.nativeElement.className).toContain(menu.styleClass);
         expect(containerEl.nativeElement.style.height).toEqual(menu.style.height);
         expect(containerEl.nativeElement.style.height).toEqual('300px');
@@ -104,8 +104,8 @@ describe('Menu', () => {
             {
                 label: 'File',
                 items: [
-                    { label: 'New', icon: 'pi pi-fw pi-plus', style: { height: '300px' }, styleClass: 'Primeng ROCKS!' },
-                    { label: 'Download', icon: 'pi pi-fw pi-download', style: { height: '300px' }, styleClass: 'Primeng ROCKS!' }
+                    { label: 'New', icon: 'pi pi-fw pi-plus', style: { height: '300px' }, styleClass: 'Qiusng ROCKS!' },
+                    { label: 'Download', icon: 'pi pi-fw pi-download', style: { height: '300px' }, styleClass: 'Qiusng ROCKS!' }
                 ]
             }
         ];
@@ -114,7 +114,7 @@ describe('Menu', () => {
         const menuItemsEl = fixture.debugElement.queryAll(By.css('.p-menuitem'));
         expect(menuItemsEl.length).toEqual(2);
         for (let menuItem of menuItemsEl) {
-            expect(menuItem.nativeElement.className).toContain('Primeng ROCKS!');
+            expect(menuItem.nativeElement.className).toContain('Qiusng ROCKS!');
             expect(menuItem.nativeElement.style.height).toContain('300px');
         }
     });
@@ -138,17 +138,17 @@ describe('Menu', () => {
         menu.model = [
             {
                 label: 'File',
-                items: [{ label: 'New', icon: 'primeng', target: 'primeng', title: 'primeng', url: 'primeng' }]
+                items: [{ label: 'New', icon: 'qiusng', target: 'qiusng', title: 'qiusng', url: 'qiusng' }]
             }
         ];
         fixture.detectChanges();
 
         const menuItemLink = fixture.debugElement.query(By.css('.p-menuitem-link'));
         const iconEl = fixture.debugElement.query(By.css('.p-menuitem-icon'));
-        expect(menuItemLink.nativeElement.href).toContain('primeng');
-        expect(menuItemLink.nativeElement.target).toContain('primeng');
-        expect(menuItemLink.nativeElement.title).toContain('primeng');
-        expect(iconEl.nativeElement.className).toContain('primeng');
+        expect(menuItemLink.nativeElement.href).toContain('qiusng');
+        expect(menuItemLink.nativeElement.target).toContain('qiusng');
+        expect(menuItemLink.nativeElement.title).toContain('qiusng');
+        expect(iconEl.nativeElement.className).toContain('qiusng');
     });
 
     it('should have a disabled item', () => {

@@ -2,7 +2,7 @@ import { AnimationEvent } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, forwardRef, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TreeNode } from '@qius.solutions/qiusng/api';
+import { OverlayOptions, OverlayService, QiusNGConfig, QiusTemplate, SharedModule, TreeNode } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
 import { SearchIcon } from '@qius.solutions/qiusng/icons/search';
@@ -232,7 +232,7 @@ export class TreeSelect implements AfterContentInit {
         this.updateTreeState();
     }
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('container') containerEl: ElementRef;
 
@@ -328,7 +328,7 @@ export class TreeSelect implements AfterContentInit {
 
     onModelTouched: Function = () => {};
 
-    constructor(public config: PrimeNGConfig, public cd: ChangeDetectorRef, public el: ElementRef, public overlayService: OverlayService) {}
+    constructor(public config: QiusNGConfig, public cd: ChangeDetectorRef, public el: ElementRef, public overlayService: OverlayService) {}
 
     ngOnInit() {
         this.updateTreeState();

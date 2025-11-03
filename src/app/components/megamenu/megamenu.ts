@@ -1,6 +1,6 @@
 import { NgModule, Component, ElementRef, Input, Renderer2, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, AfterContentInit, ContentChildren, QueryList, TemplateRef, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { MegaMenuItem, MenuItem, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MegaMenuItem, MenuItem, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -174,7 +174,7 @@ export class MegaMenu implements AfterContentInit {
 
     @Input() orientation: string = 'horizontal';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     activeItem: any;
 

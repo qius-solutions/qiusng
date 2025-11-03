@@ -2,7 +2,7 @@ import { NgModule, Component, ElementRef, OnDestroy, Input, Output, EventEmitter
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomHandler, ConnectedOverlayScrollHandler } from '@qius.solutions/qiusng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { MenuItem, OverlayService, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -243,7 +243,7 @@ export class Menu implements OnDestroy {
         public el: ElementRef,
         public renderer: Renderer2,
         private cd: ChangeDetectorRef,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         public overlayService: OverlayService
     ) {}
 

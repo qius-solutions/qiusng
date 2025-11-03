@@ -23,7 +23,7 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { SpinnerIcon } from '@qius.solutions/qiusng/icons/spinner';
 
@@ -300,7 +300,7 @@ export class Scroller implements OnInit, AfterContentInit, AfterViewChecked, OnD
 
     @ViewChild('content') contentViewChild: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Output() onLazyLoad: EventEmitter<any> = new EventEmitter();
 

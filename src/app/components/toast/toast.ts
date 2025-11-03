@@ -21,9 +21,9 @@ import {
     Inject
 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Message, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { Message, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { MessageService } from '@qius.solutions/qiusng/api';
 import { ObjectUtils, UniqueComponentId } from '@qius.solutions/qiusng/utils';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -236,7 +236,7 @@ export class Toast implements OnInit, AfterContentInit, OnDestroy {
 
     @ViewChild('container') containerViewChild: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     messageSubscription: Subscription;
 
@@ -248,7 +248,7 @@ export class Toast implements OnInit, AfterContentInit, OnDestroy {
 
     template: TemplateRef<any>;
 
-    constructor(@Inject(DOCUMENT) private document: Document, private renderer: Renderer2, public messageService: MessageService, private cd: ChangeDetectorRef, public config: PrimeNGConfig) {}
+    constructor(@Inject(DOCUMENT) private document: Document, private renderer: Renderer2, public messageService: MessageService, private cd: ChangeDetectorRef, public config: QiusNGConfig) {}
 
     styleElement: any;
 

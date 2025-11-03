@@ -1,7 +1,7 @@
 import { NgModule, Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, AfterContentInit, TemplateRef, QueryList, ContentChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
@@ -66,7 +66,7 @@ export class Inplace implements AfterContentInit {
 
     @Input() closeIcon: string;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Output() onActivate: EventEmitter<any> = new EventEmitter();
 

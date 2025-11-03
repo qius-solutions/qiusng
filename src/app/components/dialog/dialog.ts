@@ -25,7 +25,7 @@ import {
 import { trigger, style, transition, animate, AnimationEvent, animation, useAnimation } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
-import { Header, Footer, SharedModule, PrimeTemplate, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { Header, Footer, SharedModule, QiusTemplate, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { FocusTrapModule } from '@qius.solutions/qiusng/focustrap';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
@@ -228,7 +228,7 @@ export class Dialog implements AfterContentInit, OnInit, OnDestroy {
 
     @ContentChild(Footer) footerFacet: QueryList<Footer>;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('titlebar') headerViewChild: ElementRef;
 
@@ -318,7 +318,7 @@ export class Dialog implements AfterContentInit, OnInit, OnDestroy {
 
     private window: Window;
 
-    constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: any, public el: ElementRef, public renderer: Renderer2, public zone: NgZone, private cd: ChangeDetectorRef, public config: PrimeNGConfig) {
+    constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: any, public el: ElementRef, public renderer: Renderer2, public zone: NgZone, private cd: ChangeDetectorRef, public config: QiusNGConfig) {
         this.window = this.document.defaultView as Window;
     }
 

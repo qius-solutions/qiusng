@@ -19,7 +19,7 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { PrimeNGConfig, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, SharedModule } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { DynamicDialogConfig } from './dynamicdialog-config';
@@ -202,7 +202,7 @@ export class DynamicDialogComponent implements AfterViewInit, OnDestroy {
         public config: DynamicDialogConfig,
         private dialogRef: DynamicDialogRef,
         public zone: NgZone,
-        public primeNGConfig: PrimeNGConfig
+        public qiusNGConfig: QiusNGConfig
     ) {}
 
     ngAfterViewInit() {
@@ -221,7 +221,7 @@ export class DynamicDialogComponent implements AfterViewInit, OnDestroy {
 
     moveOnTop() {
         if (this.config.autoZIndex !== false) {
-            ZIndexUtils.set('modal', this.container, (this.config.baseZIndex || 0) + this.primeNGConfig.zIndex.modal);
+            ZIndexUtils.set('modal', this.container, (this.config.baseZIndex || 0) + this.qiusNGConfig.zIndex.modal);
             this.wrapper.style.zIndex = String(parseInt(this.container.style.zIndex, 10) - 1);
         }
     }

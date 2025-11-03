@@ -7,7 +7,7 @@ export class JsonService {
 
     getVersions() {
         return this.http
-            .get<any>('https://www.primefaces.org/primeng/versions.json')
+            .get<any>('https://www.qius.solutions.org/qiusng/versions.json')
             .toPromise()
             .then((res) => res.versions)
             .then((data) => {
@@ -17,7 +17,7 @@ export class JsonService {
 
     getAnnouncement() {
         return this.http
-            .get<any>('https://www.primefaces.org/cdn/news/primeng.json')
+            .get<any>('https://www.qius.solutions.org/cdn/news/qiusng.json')
             .toPromise()
             .then((data) => {
                 return data;

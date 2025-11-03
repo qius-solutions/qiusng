@@ -6,9 +6,9 @@ import { Code } from '../../domain/code';
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
             <p>
-                Themes are created with SASS using the <i>primeng-sass-theme</i> project available at <a href="http://github.com/primefaces/primeng-sass-theme">github</a>. This repository contains all the scss files for the components and the
+                Themes are created with SASS using the <i>qiusng-sass-theme</i> project available at <a href="http://github.com/qius.solutions/qiusng-sass-theme">github</a>. This repository contains all the scss files for the components and the
                 variables of the built-in themes so that you may customize an existing theme or create your own. The scss variables used in a theme are available at the
-                <a href="https://www.primefaces.org/designer/api/primeng/15.0.0">SASS API</a> documentation.
+                <a href="https://www.qius.solutions.org/designer/api/qiusng/15.0.0">SASS API</a> documentation.
             </p>
             <p>
                 There are 3 alternatives to create your own theme. First option is using the Visual Editor, second one is compiling a theme with command line sass and final alternative is embedding scss files within your project to let your build
@@ -19,18 +19,18 @@ import { Code } from '../../domain/code';
 
             <h3>Visual Editor</h3>
             <p>
-                <a href="https://designer.primeng.org">Visual Editor</a> is an easy way to quickly customize an existing theme without dealing with the details of the SASS API. The editor allows changing common settings like primary color for
+                <a href="https://designer.qiusng.org">Visual Editor</a> is an easy way to quickly customize an existing theme without dealing with the details of the SASS API. The editor allows changing common settings like primary color for
                 built-in themes. Once you have completed the design, click the download button to access the generated <i>theme.css</i> file and import it to your project as an asset. In near future, an advanced UI Designer will be available with the
                 ability to edit all variables and components where you'll also be able to save your themes when accessed with an account.
             </p>
 
             <h3>Theme SCSS</h3>
             <p>
-                The theme scss is available as open source at <a href="http://github.com/primefaces/primeng-sass-theme">primeng-sass-theme</a> repository. The <i>theme-base</i> folder contains the theming structure of the components, themes under
+                The theme scss is available as open source at <a href="http://github.com/qius.solutions/qiusng-sass-theme">qiusng-sass-theme</a> repository. The <i>theme-base</i> folder contains the theming structure of the components, themes under
                 <i>themes</i> folder import the base and define the SCSS variables. The <i>themes</i> folder also contains all the built-in themes so you can customize their code as well.
             </p>
             <p>
-                To create your own theme, <a href="https://github.com/primefaces/primeng-sass-theme/releases">download</a> the release matching your PrimeNG version and access the <i>themes/mytheme</i> folder. The sass variables to customize are
+                To create your own theme, <a href="https://github.com/qius.solutions/qiusng-sass-theme/releases">download</a> the release matching your QiusNG version and access the <i>themes/mytheme</i> folder. The sass variables to customize are
                 available under the <i>variables</i> folder. The <i>_fonts</i> file can be used to define a custom font for your project whereas the optional <i>_extensions</i> file is provided to add overrides to the components designs. The
                 <i>theme.scss</i> file imports the theme files along with the <i>theme-base</i> folder at the root to combine everything together. Next step would be compilation of the scss that can either be command line or within your project.
             </p>

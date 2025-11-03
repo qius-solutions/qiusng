@@ -29,9 +29,9 @@ export class TargetDoc {
 
     code: Code = {
         basic: `
-import { PrimeNGConfig, OverlayOptions } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, OverlayOptions } from '@qius.solutions/qiusng/api';
 
-this.primengConfig.overlayOptions: OverlayOptions = {
+this.qiusngConfig.overlayOptions: OverlayOptions = {
     appendTo: 'body'
 };`
     };

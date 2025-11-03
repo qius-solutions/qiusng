@@ -9,7 +9,7 @@ import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
         <button type="text" (click)="op1.toggle($event)"></button>
         <button type="text" (click)="op1.toggle($event)"></button>
         <p-overlayPanel #op1>
-            <img src="https://primefaces.org/cdn/primeng/images/demo/galleria/galleria1.jpg" alt="Galleria 1" />
+            <img src="https://qius.solutions.org/cdn/qiusng/images/demo/galleria/galleria1.jpg" alt="Galleria 1" />
         </p-overlayPanel>
         <a (click)="outSideClick()" class="outside-anchor"></a>
     `
@@ -35,13 +35,13 @@ describe('OverlayPanel', () => {
 
     it('should change style and styleClass', () => {
         overlaypanel.style = { height: '300px' };
-        overlaypanel.styleClass = 'Primeng rocks!';
+        overlaypanel.styleClass = 'Qiusng rocks!';
         const buttonEl = fixture.debugElement.query(By.css('button')).nativeElement;
         buttonEl.click();
         fixture.detectChanges();
 
         const containerEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(containerEl.className).toContain('Primeng rocks!');
+        expect(containerEl.className).toContain('Qiusng rocks!');
         expect(containerEl.style.height).toContain('300px');
     });
 

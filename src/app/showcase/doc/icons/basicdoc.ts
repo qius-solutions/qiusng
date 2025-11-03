@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'basic-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>PrimeIcons use the <i>pi pi-&#123;icon&#125;</i> syntax such as <i>pi pi-check</i>. A standalone icon can be displayed using an element such as <i>i</i> or <i>span</i></p>
+            <p>QiusIcons use the <i>pi pi-&#123;icon&#125;</i> syntax such as <i>pi pi-check</i>. A standalone icon can be displayed using an element such as <i>i</i> or <i>span</i></p>
         </app-docsectiontext>
         <div class="card flex justify-content-center gap-3">
             <i class="pi pi-check"></i>

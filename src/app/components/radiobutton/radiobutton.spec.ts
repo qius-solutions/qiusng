@@ -27,28 +27,28 @@ describe('RadioButton', () => {
     });
 
     it('should change name inputId value style styleClass label labelStyleClass and tabIndex', () => {
-        radiobutton.name = 'primeng';
-        radiobutton.inputId = 'prime';
-        radiobutton.value = 'Primeng';
+        radiobutton.name = 'qiusng';
+        radiobutton.inputId = 'qius';
+        radiobutton.value = 'Qiusng';
         radiobutton.style = { height: '300px' };
-        radiobutton.styleClass = 'Primeng ROCKS!';
-        radiobutton.label = 'Prime';
-        radiobutton.labelStyleClass = 'Primeng ROCKS';
+        radiobutton.styleClass = 'Qiusng ROCKS!';
+        radiobutton.label = 'Qius';
+        radiobutton.labelStyleClass = 'Qiusng ROCKS';
         radiobutton.tabindex = 13;
         fixture.detectChanges();
 
         const radiobuttonEl = fixture.debugElement.query(By.css('div'));
         const inputEl = fixture.debugElement.query(By.css('input'));
         const labelEl = fixture.debugElement.query(By.css('label'));
-        expect(inputEl.nativeElement.name).toEqual('primeng');
-        expect(inputEl.nativeElement.value).toEqual('Primeng');
-        expect(inputEl.nativeElement.id).toEqual('prime');
+        expect(inputEl.nativeElement.name).toEqual('qiusng');
+        expect(inputEl.nativeElement.value).toEqual('Qiusng');
+        expect(inputEl.nativeElement.id).toEqual('qius');
         expect(inputEl.nativeElement.tabIndex).toEqual(13);
-        expect(radiobuttonEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(radiobuttonEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(radiobuttonEl.nativeElement.style.height).toEqual('300px');
-        expect(labelEl.nativeElement.className).toContain('Primeng ROCKS');
-        expect(labelEl.nativeElement.textContent).toEqual('Prime');
-        expect(labelEl.nativeElement.htmlFor).toEqual('prime');
+        expect(labelEl.nativeElement.className).toContain('Qiusng ROCKS');
+        expect(labelEl.nativeElement.textContent).toEqual('Qius');
+        expect(labelEl.nativeElement.htmlFor).toEqual('qius');
     });
 
     it('should display active state initially when checked by default', () => {
@@ -64,9 +64,9 @@ describe('RadioButton', () => {
     });
 
     it('should disabled', () => {
-        radiobutton.value = 'prime';
+        radiobutton.value = 'qius';
         radiobutton.disabled = true;
-        radiobutton.label = 'prime';
+        radiobutton.label = 'qius';
         radiobutton.cd.detectChanges();
 
         const handleClickSpy = spyOn(radiobutton, 'handleClick').and.callThrough();
@@ -116,7 +116,7 @@ describe('RadioButton', () => {
     });
 
     it('should click label', () => {
-        radiobutton.label = 'prime';
+        radiobutton.label = 'qius';
         fixture.detectChanges();
 
         let value;
@@ -145,12 +145,12 @@ describe('RadioButton', () => {
     });
 
     it('should call writeValue', () => {
-        radiobutton.label = 'prime';
-        radiobutton.value = 'prime';
+        radiobutton.label = 'qius';
+        radiobutton.value = 'qius';
         fixture.detectChanges();
 
         const writeValueSpy = spyOn(radiobutton, 'writeValue').and.callThrough();
-        radiobutton.writeValue('prime');
+        radiobutton.writeValue('qius');
         fixture.detectChanges();
 
         expect(writeValueSpy).toHaveBeenCalled();

@@ -26,16 +26,16 @@ describe('Button', () => {
     });
 
     it('should display the label and have a text only class', () => {
-        button.label = 'PrimeNG';
+        button.label = 'QiusNG';
         fixture.detectChanges();
 
         const buttonEl = fixture.debugElement.query(By.css('.p-button'));
-        expect(buttonEl.nativeElement.textContent).toContain('PrimeNG');
+        expect(buttonEl.nativeElement.textContent).toContain('QiusNG');
         expect(buttonEl.nativeElement.children.length).toEqual(1);
     });
 
     it('should display the icon and icon to be on the left by default ', () => {
-        button.label = 'PrimeNG';
+        button.label = 'QiusNG';
         button.icon = 'pi pi-times';
         fixture.detectChanges();
 
@@ -52,19 +52,19 @@ describe('Button', () => {
     });
 
     it('should display the icon on the right and have a label', () => {
-        button.label = 'PrimeNG';
+        button.label = 'QiusNG';
         button.icon = 'pi pi-times';
         button.iconPos = 'right';
         fixture.detectChanges();
 
         const buttonEl = fixture.debugElement.query(By.css('.p-button'));
         expect(buttonEl.nativeElement.children[0].className).toContain('p-button-icon-right');
-        expect(buttonEl.nativeElement.children[1].textContent).toContain('PrimeNG');
+        expect(buttonEl.nativeElement.children[1].textContent).toContain('QiusNG');
     });
 
     it('should display the icon on the right', () => {
         button.icon = 'pi pi-times';
-        button.label = 'PRIMENG';
+        button.label = 'QIUSNG';
         button.iconPos = 'right';
         fixture.detectChanges();
 

@@ -27,11 +27,11 @@ describe('PanelMenu', () => {
 
     it('should change style and styleClass', () => {
         panelmenu.style = { height: '300px' };
-        panelmenu.styleClass = 'Primeng ROCKS!';
+        panelmenu.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const panelMenuEl = fixture.debugElement.query(By.css('.p-panelmenu'));
-        expect(panelMenuEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(panelMenuEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(panelMenuEl.nativeElement.style.height).toContain('300px');
     });
 
@@ -81,7 +81,7 @@ describe('PanelMenu', () => {
                     { label: 'Quit', icon: 'pi pi-fw pi-times' }
                 ],
                 style: { height: '300px' },
-                styleClass: 'Primeng ROCKS!',
+                styleClass: 'Qiusng ROCKS!',
                 disabled: true
             }
         ];
@@ -89,7 +89,7 @@ describe('PanelMenu', () => {
 
         const panelHeaderEl = fixture.debugElement.query(By.css('.p-panelmenu-header'));
         expect(panelHeaderEl.nativeElement.className).toContain('p-disabled');
-        expect(panelHeaderEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(panelHeaderEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(panelHeaderEl.nativeElement.style.height).toContain('300px');
     });
 
@@ -97,7 +97,7 @@ describe('PanelMenu', () => {
         panelmenu.model = [
             {
                 label: 'File',
-                icon: 'Primeng ROCKS!',
+                icon: 'Qiusng ROCKS!',
                 items: [
                     {
                         label: 'New',
@@ -111,18 +111,18 @@ describe('PanelMenu', () => {
                     { separator: true },
                     { label: 'Quit', icon: 'pi pi-fw pi-times' }
                 ],
-                title: 'primeng',
-                target: 'primeng',
-                url: 'primeng'
+                title: 'qiusng',
+                target: 'qiusng',
+                url: 'qiusng'
             }
         ];
         fixture.detectChanges();
 
         const panelHeaderLinkEl = fixture.debugElement.query(By.css('.p-panelmenu-header-link'));
-        expect(panelHeaderLinkEl.nativeElement.href).toContain('primeng');
-        expect(panelHeaderLinkEl.nativeElement.title).toEqual('primeng');
-        expect(panelHeaderLinkEl.nativeElement.target).toEqual('primeng');
-        expect(panelHeaderLinkEl.query(By.css('.p-menuitem-icon')).nativeElement.className).toContain('Primeng ROCKS!');
+        expect(panelHeaderLinkEl.nativeElement.href).toContain('qiusng');
+        expect(panelHeaderLinkEl.nativeElement.title).toEqual('qiusng');
+        expect(panelHeaderLinkEl.nativeElement.target).toEqual('qiusng');
+        expect(panelHeaderLinkEl.query(By.css('.p-menuitem-icon')).nativeElement.className).toContain('Qiusng ROCKS!');
     });
 
     it('should change child visible ', () => {
@@ -158,11 +158,11 @@ describe('PanelMenu', () => {
                         label: 'New',
                         icon: 'pi pi-fw pi-plus',
                         style: { height: '300px' },
-                        styleClass: 'Primeng ROCKS!'
+                        styleClass: 'Qiusng ROCKS!'
                     },
-                    { label: 'Open', icon: 'pi pi-fw pi-external-link', style: { height: '300px' }, styleClass: 'Primeng ROCKS!' },
+                    { label: 'Open', icon: 'pi pi-fw pi-external-link', style: { height: '300px' }, styleClass: 'Qiusng ROCKS!' },
                     { separator: true },
-                    { label: 'Quit', icon: 'pi pi-fw pi-times', style: { height: '300px' }, styleClass: 'Primeng ROCKS!' }
+                    { label: 'Quit', icon: 'pi pi-fw pi-times', style: { height: '300px' }, styleClass: 'Qiusng ROCKS!' }
                 ]
             }
         ];
@@ -170,7 +170,7 @@ describe('PanelMenu', () => {
 
         const menuItemLinks = fixture.debugElement.queryAll(By.css('.p-menuitem'));
         for (let menuItemLink of menuItemLinks) {
-            expect(menuItemLink.nativeElement.className).toContain('Primeng ROCKS!');
+            expect(menuItemLink.nativeElement.className).toContain('Qiusng ROCKS!');
             expect(menuItemLink.nativeElement.style.height).toContain('300px');
         }
     });
@@ -179,30 +179,30 @@ describe('PanelMenu', () => {
         panelmenu.model = [
             {
                 label: 'File',
-                icon: 'Primeng ROCKS!',
+                icon: 'Qiusng ROCKS!',
                 items: [
                     {
                         label: 'New',
-                        icon: 'Primeng ROCKS!',
-                        title: 'primeng',
-                        target: 'primeng',
-                        url: 'primeng',
+                        icon: 'Qiusng ROCKS!',
+                        title: 'qiusng',
+                        target: 'qiusng',
+                        url: 'qiusng',
                         disabled: true
                     },
                     {
                         label: 'Open',
-                        icon: 'Primeng ROCKS!',
-                        title: 'primeng',
-                        target: 'primeng',
-                        url: 'primeng',
+                        icon: 'Qiusng ROCKS!',
+                        title: 'qiusng',
+                        target: 'qiusng',
+                        url: 'qiusng',
                         disabled: true
                     },
                     {
                         label: 'Quit',
-                        icon: 'Primeng ROCKS!',
-                        title: 'primeng',
-                        target: 'primeng',
-                        url: 'primeng',
+                        icon: 'Qiusng ROCKS!',
+                        title: 'qiusng',
+                        target: 'qiusng',
+                        url: 'qiusng',
                         disabled: true
                     }
                 ]
@@ -211,10 +211,10 @@ describe('PanelMenu', () => {
         fixture.detectChanges();
 
         const panelHeaderLinkEl = fixture.debugElement.query(By.css('.p-menuitem-link'));
-        expect(panelHeaderLinkEl.nativeElement.href).toContain('primeng');
-        expect(panelHeaderLinkEl.nativeElement.title).toEqual('primeng');
-        expect(panelHeaderLinkEl.nativeElement.target).toEqual('primeng');
-        expect(panelHeaderLinkEl.query(By.css('.p-menuitem-icon')).nativeElement.className).toContain('Primeng ROCKS!');
+        expect(panelHeaderLinkEl.nativeElement.href).toContain('qiusng');
+        expect(panelHeaderLinkEl.nativeElement.title).toEqual('qiusng');
+        expect(panelHeaderLinkEl.nativeElement.target).toEqual('qiusng');
+        expect(panelHeaderLinkEl.query(By.css('.p-menuitem-icon')).nativeElement.className).toContain('Qiusng ROCKS!');
     });
 
     it('should show items and call toggle', () => {

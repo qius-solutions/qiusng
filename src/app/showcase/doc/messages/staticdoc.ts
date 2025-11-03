@@ -10,8 +10,8 @@ import { Code } from '../../domain/code';
         <div class="card">
             <p-messages severity="info">
                 <ng-template pTemplate>
-                    <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" width="32" />
-                    <div class="ml-2">Always bet on Prime.</div>
+                    <img src="https://qius.solutions.org/cdn/qiusng/images/qiusng.svg" width="32" />
+                    <div class="ml-2">Always bet on Qius.</div>
                 </ng-template>
             </p-messages>
         </div>
@@ -27,16 +27,16 @@ export class StaticDoc {
         basic: `
 <p-messages severity="info">
     <ng-template pTemplate>
-        <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" width="32" />
-        <div class="ml-2">Always bet on Prime.</div>
+        <img src="https://qius.solutions.org/cdn/qiusng/images/qiusng.svg" width="32" />
+        <div class="ml-2">Always bet on Qius.</div>
     </ng-template>
 </p-messages>`,
         html: `
 <div class="card">
     <p-messages severity="info">
         <ng-template pTemplate>
-            <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" width="32" />
-            <div class="ml-2">Always bet on Prime.</div>
+            <img src="https://qius.solutions.org/cdn/qiusng/images/qiusng.svg" width="32" />
+            <div class="ml-2">Always bet on Qius.</div>
         </ng-template>
     </p-messages>
 </div>`,

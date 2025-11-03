@@ -19,7 +19,7 @@ import {
     OnDestroy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService, TranslationKeys, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { SharedModule, QiusTemplate, Footer, Header, FilterService, TranslationKeys, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { ObjectUtils } from '@qius.solutions/qiusng/utils';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
@@ -218,7 +218,7 @@ export class Listbox implements AfterContentInit, OnInit, ControlValueAccessor, 
 
     @ContentChild(Footer) footerFacet;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     public _options: any[];
 
@@ -262,7 +262,7 @@ export class Listbox implements AfterContentInit, OnInit, ControlValueAccessor, 
 
     translationSubscription: Subscription;
 
-    constructor(public el: ElementRef, public cd: ChangeDetectorRef, public filterService: FilterService, public config: PrimeNGConfig) {}
+    constructor(public el: ElementRef, public cd: ChangeDetectorRef, public filterService: FilterService, public config: QiusNGConfig) {}
 
     @Input() get options(): any[] {
         return this._options;

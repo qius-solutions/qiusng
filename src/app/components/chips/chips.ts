@@ -1,7 +1,7 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, forwardRef, Inject, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
 import { TimesCircleIcon } from '@qius.solutions/qiusng/icons/timescircle';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
@@ -112,7 +112,7 @@ export class Chips implements AfterContentInit, ControlValueAccessor {
 
     @ViewChild('inputtext') inputViewChild: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     public itemTemplate: TemplateRef<any>;
 

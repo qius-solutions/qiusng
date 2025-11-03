@@ -7,7 +7,7 @@ import { Code } from '../../domain/code';
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
             <p>
-                A single message is specified by <i>Message</i> interface in PrimeNG that defines the <i>id</i>, <i>severity</i>, <i>summary</i> and <i>detail</i> as the properties. Messages to display can either be defined using the value property
+                A single message is specified by <i>Message</i> interface in QiusNG that defines the <i>id</i>, <i>severity</i>, <i>summary</i> and <i>detail</i> as the properties. Messages to display can either be defined using the value property
                 which should an array of Message instances or using a <i>MessageService</i> are defined using the <i>value</i> property which should an array of Message instances.
             </p>
         </app-docsectiontext>

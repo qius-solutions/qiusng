@@ -38,7 +38,7 @@ import { EditableColumn, Table, TableModule } from './table';
                 </tr>
             </ng-template>
             <ng-template pTemplate="summary">
-                <div style="text-align: left">Always Bet On Prime!</div>
+                <div style="text-align: left">Always Bet On Qius!</div>
             </ng-template>
         </p-table>
 

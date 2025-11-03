@@ -29,7 +29,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { OverlayService, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
 import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
@@ -446,7 +446,7 @@ export class Password implements AfterContentInit, OnInit {
 
     showIconTemplate: TemplateRef<any>;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     overlayVisible: boolean = false;
 
@@ -481,7 +481,7 @@ export class Password implements AfterContentInit, OnInit {
         @Inject(PLATFORM_ID) private platformId: any,
         private renderer: Renderer2,
         private cd: ChangeDetectorRef,
-        private config: PrimeNGConfig,
+        private config: QiusNGConfig,
         public el: ElementRef,
         public overlayService: OverlayService
     ) {}

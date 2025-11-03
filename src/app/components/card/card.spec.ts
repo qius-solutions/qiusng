@@ -9,7 +9,7 @@ import { ButtonModule } from '../button/button';
 @Component({
     template: `<p-card [header]="header" [subheader]="subheader" [style]="style" [styleClass]="styleClass">
         <p-header>
-            <img src="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            <img src="Card" src="https://qius.solutions.org/cdn/qiusng/images/usercard.png" />
         </p-header>
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
@@ -56,28 +56,28 @@ describe('Card', () => {
     });
 
     it('should display the title', () => {
-        fixture.componentInstance.header = 'Primeng ROCKS!';
+        fixture.componentInstance.header = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const cardEl = fixture.debugElement.query(By.css('.p-card-title')).nativeElement;
-        expect(cardEl.textContent).toEqual(' Primeng ROCKS! ');
+        expect(cardEl.textContent).toEqual(' Qiusng ROCKS! ');
     });
 
     it('should display the subtitle', () => {
-        fixture.componentInstance.subheader = 'Primeng ROCKS!';
+        fixture.componentInstance.subheader = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const cardEl = fixture.debugElement.query(By.css('.p-card-subtitle')).nativeElement;
-        expect(cardEl.textContent).toEqual(' Primeng ROCKS! ');
+        expect(cardEl.textContent).toEqual(' Qiusng ROCKS! ');
     });
 
     it('should change style and styleClass', () => {
-        fixture.componentInstance.styleClass = 'Primeng ROCKS!';
+        fixture.componentInstance.styleClass = 'Qiusng ROCKS!';
         fixture.componentInstance.style = { height: '300px' };
         fixture.detectChanges();
 
         const cardEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(cardEl.className).toContain('Primeng ROCKS!');
+        expect(cardEl.className).toContain('Qiusng ROCKS!');
         expect(cardEl.style.height).toEqual('300px');
     });
 

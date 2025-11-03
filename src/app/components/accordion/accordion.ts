@@ -1,7 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, forwardRef, Inject, Input, NgModule, OnDestroy, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, Header, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { BlockableUI, Header, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { Subscription } from 'rxjs';
 import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
 import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
@@ -112,7 +112,7 @@ export class AccordionTab implements AfterContentInit, OnDestroy {
 
     @ContentChildren(Header) headerFacet: QueryList<Header>;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     private _selected: boolean;
 

@@ -20,7 +20,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { OverlayOptions, OverlayService, QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { Overlay, OverlayModule } from '@qius.solutions/qiusng/overlay';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -439,7 +439,7 @@ export class CascadeSelect implements OnInit, AfterContentInit {
 
     @Output() onBeforeHide: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     /* @deprecated */
     _showTransitionOptions: string;
@@ -485,7 +485,7 @@ export class CascadeSelect implements OnInit, AfterContentInit {
 
     onModelTouched: Function = () => {};
 
-    constructor(private el: ElementRef, private cd: ChangeDetectorRef, private config: PrimeNGConfig, public overlayService: OverlayService) {}
+    constructor(private el: ElementRef, private cd: ChangeDetectorRef, private config: QiusNGConfig, public overlayService: OverlayService) {}
 
     ngOnInit() {
         this.updateSelectionPath();

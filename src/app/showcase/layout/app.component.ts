@@ -17,7 +17,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     public newsActive: boolean;
 
-    storageKey = 'primeng';
+    storageKey = 'qiusng';
 
     ngOnInit() {
         if (isPlatformBrowser(this.platformId)) {

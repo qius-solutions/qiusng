@@ -20,7 +20,7 @@ import {
     Inject,
     PLATFORM_ID
 } from '@angular/core';
-import { PrimeTemplate, SharedModule, Header, Footer } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule, Header, Footer } from '@qius.solutions/qiusng/api';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { UniqueComponentId } from '@qius.solutions/qiusng/utils';
@@ -187,7 +187,7 @@ export class Carousel implements AfterContentInit {
 
     @ContentChild(Footer) footerFacet;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     _numVisible: number = 1;
 

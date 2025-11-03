@@ -38,7 +38,7 @@ const useStackBlitz = (props: Props) => {
         title: title,
         template: 'node',
         description:
-            'PrimeNG is an open source UI library for Angular featuring a rich set of 90+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 370+ ready to use UI blocks to build spectacular applications in no time.',
+            'QiusNG is an open source UI library for Angular featuring a rich set of 90+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with QiusBlock, which has 370+ ready to use UI blocks to build spectacular applications in no time.',
         files: _files
     };
 

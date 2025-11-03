@@ -19,10 +19,10 @@ describe('Panel', () => {
     });
 
     it('should display the header', () => {
-        panel.header = 'PrimeNG Panel Header';
+        panel.header = 'QiusNG Panel Header';
         fixture.detectChanges();
         const headerEl = fixture.debugElement.query(By.css('.p-panel-title'));
-        expect(headerEl.nativeElement.textContent).toContain('PrimeNG Panel Header');
+        expect(headerEl.nativeElement.textContent).toContain('QiusNG Panel Header');
     });
 
     it('should not render toggle icon when not toggleable', () => {

@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'fieldset-basic-demo',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>PrimeIcons is available at npm, run the following command to download it to your project.</p>
+            <p>QiusIcons is available at npm, run the following command to download it to your project.</p>
         </app-docsectiontext>
         <div class="card flex justify-content-center">
             <p-fieldset legend="Header">

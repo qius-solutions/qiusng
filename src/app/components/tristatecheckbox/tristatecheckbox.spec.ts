@@ -28,7 +28,7 @@ describe('TriStateCheckbox', () => {
 
     it('should disabled', () => {
         tristate.disabled = true;
-        tristate.label = 'Primeng!';
+        tristate.label = 'Qiusng!';
         fixture.detectChanges();
 
         const toggleSpy = spyOn(tristate, 'toggle').and.callThrough();
@@ -45,40 +45,40 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should get a label', () => {
-        tristate.label = 'Primeng!';
+        tristate.label = 'Qiusng!';
         fixture.detectChanges();
 
         const labelEl = fixture.debugElement.query(By.css('label')).nativeElement;
-        expect(labelEl.textContent).toContain('Primeng!');
+        expect(labelEl.textContent).toContain('Qiusng!');
     });
 
     it('should change stlye and styleClass', () => {
-        tristate.styleClass = 'Primeng ROCKS!';
+        tristate.styleClass = 'Qiusng ROCKS!';
         tristate.style = { height: '300px' };
         fixture.detectChanges();
 
         const tristatecheckboxEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(tristatecheckboxEl.className).toContain('Primeng ROCKS!');
+        expect(tristatecheckboxEl.className).toContain('Qiusng ROCKS!');
         expect(tristatecheckboxEl.style.height).toContain('300px');
     });
 
     it('should get a name inputId and tabIndex', () => {
-        tristate.label = 'Primeng!';
+        tristate.label = 'Qiusng!';
         tristate.tabindex = 5;
-        tristate.inputId = 'Primeng';
-        tristate.name = 'Primeng ROCKS!';
+        tristate.inputId = 'Qiusng';
+        tristate.name = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const helperInputEl = fixture.debugElement.query(By.css('input')).nativeElement;
         const labelEl = fixture.debugElement.query(By.css('label')).nativeElement;
         expect(helperInputEl.tabIndex).toEqual(5);
-        expect(helperInputEl.id).toEqual('Primeng');
-        expect(helperInputEl.name).toEqual('Primeng ROCKS!');
-        expect(labelEl.htmlFor).toEqual('Primeng');
+        expect(helperInputEl.id).toEqual('Qiusng');
+        expect(helperInputEl.name).toEqual('Qiusng ROCKS!');
+        expect(labelEl.htmlFor).toEqual('Qiusng');
     });
 
     it('should value is true when click and listen onChange', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;
@@ -100,7 +100,7 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should value is true when click to label', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;
@@ -122,7 +122,7 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should value is false when click twice', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;
@@ -145,7 +145,7 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should value is null when click three time', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;
@@ -166,7 +166,7 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should call onFocus', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;
@@ -188,7 +188,7 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should call onKeydown', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;
@@ -203,7 +203,7 @@ describe('TriStateCheckbox', () => {
     });
 
     it('should call onKeydown', () => {
-        tristate.label = 'Primeng';
+        tristate.label = 'Qiusng';
         fixture.detectChanges();
 
         let value;

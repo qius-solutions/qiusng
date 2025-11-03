@@ -5,12 +5,12 @@
 
     background: var(--home-blocks-bg);
 
-    .prime-blocks {
+    .qius-blocks {
         transform: rotateX(55deg) rotateY(0deg) rotateZ(-45deg);
         margin: -12rem 0;
 
         &.blocks-animation {
-            .prime-block {
+            .qius-block {
                 .block-sidebar,
                 .block-header,
                 .block-sidebar-list,
@@ -22,7 +22,7 @@
             }
         }
 
-        .prime-block {
+        .qius-block {
             background: var(--home-blocks-block-bg);
             box-shadow: var(--home-blocks-block-shadow);
             border-left: var(--home-blocks-border-left);
@@ -208,7 +208,7 @@
 }
 
 @media screen and (max-width: $landingBreakpointXL) {
-    .landing-blocks .prime-blocks {
+    .landing-blocks .qius-blocks {
         margin: -24rem 0;
         transform: rotateX(55deg) rotateY(0deg) rotateZ(-45deg) scale(0.6);
     }
