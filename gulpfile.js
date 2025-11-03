@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     flatten = require('gulp-flatten');
 
 gulp.task('build-css', function () {
-    return gulp.src(['src/app/components/common/common.css', 'src/app/components/**/*.css']).pipe(concat('primeng.css')).pipe(gulp.dest('dist/resources'));
+    return gulp.src(['src/app/components/common/common.css', 'src/app/components/**/*.css']).pipe(concat('qiusng.css')).pipe(gulp.dest('dist/resources'));
 });
 
 gulp.task('build-css-prod', function () {
@@ -25,10 +25,10 @@ gulp.task('build-css-prod', function () {
             'src/app/components/ripple/ripple.css',
             'src/app/components/tooltip/tooltip.css'
         ])
-        .pipe(concat('primeng.css'))
+        .pipe(concat('qiusng.css'))
         .pipe(gulp.dest('dist/resources'))
         .pipe(uglifycss({ uglyComments: true }))
-        .pipe(rename('primeng.min.css'))
+        .pipe(rename('qiusng.min.css'))
         .pipe(gulp.dest('dist/resources'));
 });
 

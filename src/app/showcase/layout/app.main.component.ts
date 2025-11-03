@@ -1,7 +1,7 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
-import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { Subscription } from 'rxjs';
 import { AppConfig } from '../domain/appconfig';
 import { AppConfigService } from '../service/appconfigservice';
@@ -18,14 +18,14 @@ export class AppMainComponent implements OnInit {
 
     config: AppConfig;
 
-    news_key = 'primenews';
+    news_key = 'qiusnews';
 
     public subscription: Subscription;
 
-    constructor(@Inject(PLATFORM_ID) private platformId: any, private router: Router, private configService: AppConfigService, private primengConfig: PrimeNGConfig, public app: AppComponent) {}
+    constructor(@Inject(PLATFORM_ID) private platformId: any, private router: Router, private configService: AppConfigService, private qiusngConfig: QiusNGConfig, public app: AppComponent) {}
 
     ngOnInit() {
-        this.primengConfig.ripple = true;
+        this.qiusngConfig.ripple = true;
         this.config = this.configService.config;
         this.subscription = this.configService.configUpdate$.subscribe((config) => {
             this.config = config;

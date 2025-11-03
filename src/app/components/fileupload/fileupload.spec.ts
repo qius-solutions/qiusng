@@ -4,7 +4,7 @@ import { FileUpload } from './fileupload';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ProgressBarModule } from '@qius.solutions/qiusng/progressbar';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
-import { PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { QiusTemplate } from '@qius.solutions/qiusng/api';
 import { MessagesModule } from '@qius.solutions/qiusng/messages';
 import { HttpClientModule } from '@angular/common/http';
 import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
@@ -18,7 +18,7 @@ describe('FileUpload', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [NoopAnimationsModule, ProgressBarModule, MessagesModule, ButtonModule, HttpClientModule, PlusIcon, TimesIcon, UploadIcon],
-            declarations: [FileUpload, PrimeTemplate]
+            declarations: [FileUpload, QiusTemplate]
         });
 
         fixture = TestBed.createComponent(FileUpload);
@@ -47,10 +47,10 @@ describe('FileUpload', () => {
 
     it('should change style, styleClass, chooseLabel, uploadLabel, cancelLabel, showUploadButton and showCancelButton (advanced)', () => {
         fileupload.style = { height: '300px' };
-        fileupload.styleClass = 'Primeng ROCKS!';
-        fileupload.chooseLabel = 'primeng';
-        fileupload.uploadLabel = 'primeng';
-        fileupload.cancelLabel = 'primeng';
+        fileupload.styleClass = 'Qiusng ROCKS!';
+        fileupload.chooseLabel = 'qiusng';
+        fileupload.uploadLabel = 'qiusng';
+        fileupload.cancelLabel = 'qiusng';
         fixture.detectChanges();
 
         const fileuploadEl = fixture.debugElement.query(By.css('div'));
@@ -58,13 +58,13 @@ describe('FileUpload', () => {
         const cancelButton = fixture.debugElement.queryAll(By.css('button'))[1];
         const chooseButton = fixture.debugElement.query(By.css('.p-fileupload-choose'));
         expect(fileuploadEl).toBeTruthy();
-        expect(fileuploadEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(fileuploadEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(fileuploadEl.nativeElement.style.height).toContain('300px');
         expect(uploadButton).toBeTruthy();
         expect(cancelButton).toBeTruthy();
-        expect(uploadButton.nativeElement.textContent).toEqual('primeng');
-        expect(cancelButton.nativeElement.textContent).toEqual('primeng');
-        expect(chooseButton.nativeElement.textContent).toEqual('primeng');
+        expect(uploadButton.nativeElement.textContent).toEqual('qiusng');
+        expect(cancelButton.nativeElement.textContent).toEqual('qiusng');
+        expect(chooseButton.nativeElement.textContent).toEqual('qiusng');
     });
 
     it('should call onFileSelect (advanced)', () => {
@@ -76,7 +76,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -97,7 +97,7 @@ describe('FileUpload', () => {
         expect(fileNameEl).toBeTruthy();
         expect(fileNameEl).toBeTruthy();
         expect(removeButtonEl).toBeTruthy();
-        expect(fileNameEl.nativeElement.textContent).toEqual('primeng.txt');
+        expect(fileNameEl.nativeElement.textContent).toEqual('qiusng.txt');
         expect(fileSizeEl.nativeElement.textContent).toEqual('179 B');
         expect(fileupload.hasFiles()).toEqual(true);
         expect(uploadButton.nativeElement.disabled).toEqual(false);
@@ -116,7 +116,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -124,7 +124,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'qiusng.txt');
         event = {
             target: { files: [blobFile] },
             stopPropagation() {},
@@ -149,7 +149,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -157,7 +157,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'qiusng.txt');
         event = {
             target: { files: [blobFile] },
             stopPropagation() {},
@@ -187,13 +187,13 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     },
                     {
                         lastModified: 1533276674179,
-                        name: 'primeng2.txt',
+                        name: 'qiusng2.txt',
                         size: 123,
                         type: 'text/plain'
                     }
@@ -201,8 +201,8 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
-        let blobFile2 = new File([blob], 'primeng2.txt');
+        let blobFile = new File([blob], 'qiusng.txt');
+        let blobFile2 = new File([blob], 'qiusng2.txt');
         event = {
             target: { files: [blobFile, blobFile2] },
             stopPropagation() {},
@@ -230,7 +230,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -256,7 +256,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -271,7 +271,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276684178,
-                        name: 'prime.txt',
+                        name: 'qius.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -319,7 +319,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -334,7 +334,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276684178,
-                        name: 'prime.txt',
+                        name: 'qius.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -379,7 +379,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'qiusng.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -387,7 +387,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'qiusng.txt');
         event = {
             target: { files: [blobFile] },
             stopPropagation() {},

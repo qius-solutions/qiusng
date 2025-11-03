@@ -24,7 +24,7 @@ import {
     ViewRef
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { FilterService, OverlayOptions, QiusNGConfig, QiusTemplate, SelectItem, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { AutoFocusModule } from '@qius.solutions/qiusng/autofocus';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { Overlay, OverlayModule } from '@qius.solutions/qiusng/overlay';
@@ -427,7 +427,7 @@ export class Dropdown implements OnInit, AfterViewInit, AfterContentInit, AfterV
 
     @ViewChild('overlay') overlayViewChild: Overlay;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     private _disabled: boolean;
 
@@ -574,7 +574,7 @@ export class Dropdown implements OnInit, AfterViewInit, AfterContentInit, AfterV
 
     listId: string;
 
-    constructor(public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public zone: NgZone, public filterService: FilterService, public config: PrimeNGConfig) {}
+    constructor(public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public zone: NgZone, public filterService: FilterService, public config: QiusNGConfig) {}
 
     ngAfterContentInit() {
         this.templates.forEach((item) => {

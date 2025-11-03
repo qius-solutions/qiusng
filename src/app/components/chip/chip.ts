@@ -1,7 +1,7 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, EventEmitter, TemplateRef, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TimesCircleIcon } from '@qius.solutions/qiusng/icons/timescircle';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-chip',
@@ -52,7 +52,7 @@ export class Chip implements AfterContentInit {
 
     removeIconTemplate: TemplateRef<any>;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     ngAfterContentInit() {
         this.templates.forEach((item) => {

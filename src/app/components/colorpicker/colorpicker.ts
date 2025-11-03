@@ -3,7 +3,7 @@ import { trigger, state, style, transition, animate, AnimationEvent } from '@ang
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomHandler, ConnectedOverlayScrollHandler } from '@qius.solutions/qiusng/dom';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { OverlayService, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { OverlayService, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 
 export const COLORPICKER_VALUE_ACCESSOR: any = {
@@ -147,7 +147,7 @@ export class ColorPicker implements ControlValueAccessor, OnDestroy {
         public el: ElementRef,
         public renderer: Renderer2,
         public cd: ChangeDetectorRef,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         public overlayService: OverlayService
     ) {
         this.window = this.document.defaultView as Window;

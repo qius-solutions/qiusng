@@ -9,7 +9,7 @@ import { ProductService } from '../../service/productservice';
         <app-docsectiontext [title]="title" [id]="id">
             <p>
                 DataView supports <i>list</i> and <i>grid</i> display modes defined with the <i>layout</i> property. The helper <i>DataViewLayoutOptions</i> component can be used to switch between the modes however this component is optional and you
-                may use your own UI to switch modes as well. As in <i>list</i> layout, the <i>grid</i> layout also requires PrimeFlex Grid classes to define how the grid is displayed per screen sizes.
+                may use your own UI to switch modes as well. As in <i>list</i> layout, the <i>grid</i> layout also requires QiusFlex Grid classes to define how the grid is displayed per screen sizes.
             </p>
         </app-docsectiontext>
         <div class="card">
@@ -22,7 +22,7 @@ import { ProductService } from '../../service/productservice';
                 <ng-template let-product pTemplate="listItem">
                     <div class="col-12">
                         <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                            <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                            <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                             <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <div class="text-2xl font-bold text-900">{{ product.name }}</div>
@@ -54,7 +54,7 @@ import { ProductService } from '../../service/productservice';
                                 <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product)"></p-tag>
                             </div>
                             <div class="flex flex-column align-items-center gap-3 py-5">
-                                <img class="w-9 shadow-2 border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                                <img class="w-9 shadow-2 border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                                 <div class="text-2xl font-bold">{{ product.name }}</div>
                                 <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
                             </div>
@@ -112,7 +112,7 @@ export class LayoutDoc {
     <ng-template let-product pTemplate="listItem">
         <div class="col-12">
             <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                 <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                     <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                         <div class="text-2xl font-bold text-900">{{ product.name }}</div>
@@ -144,7 +144,7 @@ export class LayoutDoc {
                     <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product)"></p-tag>
                 </div>
                 <div class="flex flex-column align-items-center gap-3 py-5">
-                    <img class="w-9 shadow-2 border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                    <img class="w-9 shadow-2 border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                     <div class="text-2xl font-bold">{{ product.name }}</div>
                     <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
                 </div>
@@ -168,7 +168,7 @@ export class LayoutDoc {
         <ng-template let-product pTemplate="listItem">
             <div class="col-12">
                 <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                    <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                    <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                     <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                         <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                             <div class="text-2xl font-bold text-900">{{ product.name }}</div>
@@ -200,7 +200,7 @@ export class LayoutDoc {
                         <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product)"></p-tag>
                     </div>
                     <div class="flex flex-column align-items-center gap-3 py-5">
-                        <img class="w-9 shadow-2 border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                        <img class="w-9 shadow-2 border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                         <div class="text-2xl font-bold">{{ product.name }}</div>
                         <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
                     </div>

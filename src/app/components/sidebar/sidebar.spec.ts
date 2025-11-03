@@ -34,14 +34,14 @@ describe('Sidebar', () => {
     it('should change style and styleClass', fakeAsync(() => {
         sidebar.modal = false;
         sidebar.style = { height: '300px' };
-        sidebar.styleClass = 'Primeng rocks!';
+        sidebar.styleClass = 'Qiusng rocks!';
         const buttonEl = fixture.debugElement.children[1].nativeElement;
         buttonEl.click();
         fixture.detectChanges();
 
         tick(150);
         const containerEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(containerEl.className).toContain('Primeng rocks!');
+        expect(containerEl.className).toContain('Qiusng rocks!');
         expect(containerEl.style.height).toContain('300px');
         flush();
     }));

@@ -24,7 +24,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { BlockableUI, Message, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { BlockableUI, Message, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { MessagesModule } from '@qius.solutions/qiusng/messages';
@@ -239,7 +239,7 @@ export class FileUpload implements AfterViewInit, AfterContentInit, OnInit, OnDe
 
     @Output() onImageError: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('advancedfileinput') advancedFileInput: ElementRef;
 
@@ -316,7 +316,7 @@ export class FileUpload implements AfterViewInit, AfterContentInit, OnInit, OnDe
         public zone: NgZone,
         private http: HttpClient,
         public cd: ChangeDetectorRef,
-        public config: PrimeNGConfig
+        public config: QiusNGConfig
     ) {}
 
     ngAfterContentInit() {

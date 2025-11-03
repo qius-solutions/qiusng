@@ -23,7 +23,7 @@ describe('UIMessage', () => {
 
     it('should change severity to success and text', () => {
         message.severity = 'success';
-        message.text = 'Primeng Rocks!';
+        message.text = 'Qiusng Rocks!';
         fixture.detectChanges();
 
         const messageEl = fixture.debugElement.query(By.css('div'));
@@ -32,7 +32,7 @@ describe('UIMessage', () => {
         expect(messageEl.nativeElement).toBeTruthy();
         expect(messageEl.nativeElement.className).toContain('p-inline-message-success');
         expect(iconEl.nativeElement.parentElement.tagName.toLowerCase()).toEqual('checkicon');
-        expect(textEl.nativeElement.textContent).toContain('Primeng Rocks!');
+        expect(textEl.nativeElement.textContent).toContain('Qiusng Rocks!');
     });
 
     it('should change severity to info', () => {

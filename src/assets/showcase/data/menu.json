@@ -481,7 +481,7 @@
                 },
                 {
                     "name": "Visual Editor",
-                    "href": "https://designer.primeng.org"
+                    "href": "https://designer.qiusng.org"
                 },
                 {
                     "name": "Colors",
@@ -489,7 +489,7 @@
                 },
                 {
                     "name": "SASS API",
-                    "href": "https://www.primefaces.org/designer/api/primeng/15.0.0"
+                    "href": "https://www.qius.solutions.org/designer/api/qiusng/15.0.0"
                 }
             ]
         },
@@ -503,7 +503,7 @@
             "icon": "pi pi-eye",
             "children": [
                 {
-                    "name": "Prime Icons",
+                    "name": "Qius Icons",
                     "routerLink": "/icons"
                 },
                 {
@@ -518,14 +518,14 @@
             "routerLink": "/templates"
         },
         {
-            "name": "PrimeBlocks",
+            "name": "QiusBlocks",
             "icon": "pi pi-server",
-            "href": "https://blocks.primeng.org"
+            "href": "https://blocks.qiusng.org"
         },
         {
-            "name": "PrimeFlex CSS",
+            "name": "QiusFlex CSS",
             "icon": "pi pi-table",
-            "href": "https://www.primefaces.org/primeflex"
+            "href": "https://www.qius.solutions.org/qiusflex"
         },
         {
             "name": "Support",
@@ -537,7 +537,7 @@
                 },
                 {
                     "name": "Forum",
-                    "href": "https://forum.primefaces.org/viewforum.php?f=35"
+                    "href": "https://forum.qius.solutions.org/viewforum.php?f=35"
                 },
                 {
                     "name": "Long Term Support",
@@ -562,32 +562,32 @@
                     "routerLink": "/roadmap"
                 },
                 {
-                    "name": "PrimeTV",
+                    "name": "QiusTV",
                     "href": "https://www.youtube.com/channel/UCTgmp69aBOlLnPEqlUyetWw"
                 },
                 {
                     "name": "Source Code",
-                    "href": "https://github.com/primefaces/primeng"
+                    "href": "https://github.com/qius.solutions/qiusng"
                 },
                 {
                     "name": "Changelog",
-                    "href": "https://github.com/primefaces/primeng/blob/master/CHANGELOG.md"
+                    "href": "https://github.com/qius.solutions/qiusng/blob/master/CHANGELOG.md"
                 },
                 {
                     "name": "Store",
-                    "href": "https://www.primefaces.org/store/"
+                    "href": "https://www.qius.solutions.org/store/"
                 },
                 {
                     "name": "Twitter",
-                    "href": "https://twitter.com/prime_ng"
+                    "href": "https://twitter.com/qius_ng"
                 },
                 {
                     "name": "Newsletter",
-                    "href": "https://www.primefaces.org/newsletter"
+                    "href": "https://www.qius.solutions.org/newsletter"
                 },
                 {
-                    "name": "PrimeGear",
-                    "href": "https://gear.primefaces.org"
+                    "name": "QiusGear",
+                    "href": "https://gear.qius.solutions.org"
                 }
             ]
         }

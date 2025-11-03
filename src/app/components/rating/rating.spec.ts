@@ -55,14 +55,14 @@ describe('Rating', () => {
         rating.value = 2;
         rating.iconOnClass = 'icon on';
         rating.iconOffClass = 'icon off';
-        rating.iconCancelClass = 'Primeng Rocks!';
+        rating.iconCancelClass = 'Qiusng Rocks!';
         rating.iconOnStyle = { height: '300px' };
         rating.iconOffStyle = { height: '300px' };
         rating.iconCancelStyle = { height: '300px' };
         fixture.detectChanges();
 
         const starElements = fixture.debugElement.queryAll(By.css('span'));
-        expect(starElements[0].nativeElement.className).toContain('Primeng Rocks!');
+        expect(starElements[0].nativeElement.className).toContain('Qiusng Rocks!');
         expect(starElements[0].nativeElement.style.height).toEqual('300px');
     });
 

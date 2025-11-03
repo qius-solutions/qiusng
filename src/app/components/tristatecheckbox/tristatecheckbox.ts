@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 import { CheckIcon } from '@qius.solutions/qiusng/icons/check';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 export const TRISTATECHECKBOX_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -89,7 +89,7 @@ export class TriStateCheckbox implements ControlValueAccessor {
 
     @Output() onChange: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     checkIconTemplate: TemplateRef<any>;
 

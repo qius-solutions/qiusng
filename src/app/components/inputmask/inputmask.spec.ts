@@ -39,9 +39,9 @@ describe('InputMask', () => {
     it('should change style styleClass placeholder inputId size tabindex title and autoFocus', () => {
         inputmask.mask = '99-999999';
         inputmask.style = { height: '300px' };
-        inputmask.styleClass = 'PrimengRocks';
+        inputmask.styleClass = 'QiusngRocks';
         inputmask.placeholder = 'GiveMeANumber';
-        inputmask.inputId = 'primeng';
+        inputmask.inputId = 'qiusng';
         inputmask.size = 5;
         inputmask.tabindex = '1';
         inputmask.required = true;
@@ -51,9 +51,9 @@ describe('InputMask', () => {
         const inputMaskEl = fixture.debugElement.query(By.css('input'));
         expect(inputMaskEl.nativeElement).toBeTruthy();
         expect(inputMaskEl.nativeElement.style['height']).toEqual('300px');
-        expect(inputMaskEl.nativeElement.className).toContain('PrimengRocks');
+        expect(inputMaskEl.nativeElement.className).toContain('QiusngRocks');
         expect(inputMaskEl.nativeElement.placeholder).toEqual('GiveMeANumber');
-        expect(inputMaskEl.nativeElement.id).toEqual('primeng');
+        expect(inputMaskEl.nativeElement.id).toEqual('qiusng');
         expect(inputMaskEl.nativeElement.size).toEqual(5);
         expect(inputMaskEl.nativeElement.tabIndex).toEqual(1);
         expect(inputMaskEl.nativeElement.required).toBeTruthy();

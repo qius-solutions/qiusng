@@ -21,7 +21,7 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { OverlayService, QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -113,7 +113,7 @@ export class OverlayPanel implements AfterContentInit, OnDestroy {
 
     @Output() onHide: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     container: HTMLDivElement;
 
@@ -152,7 +152,7 @@ export class OverlayPanel implements AfterContentInit, OnDestroy {
         public renderer: Renderer2,
         public cd: ChangeDetectorRef,
         private zone: NgZone,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         public overlayService: OverlayService
     ) {}
 

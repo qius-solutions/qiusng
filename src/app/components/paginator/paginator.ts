@@ -2,7 +2,7 @@ import { NgModule, Component, OnInit, Input, Output, ChangeDetectorRef, EventEmi
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from '@qius.solutions/qiusng/dropdown';
-import { PrimeTemplate, SelectItem } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SelectItem } from '@qius.solutions/qiusng/api';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { SharedModule } from '@qius.solutions/qiusng/api';
 import { InputNumberModule } from '@qius.solutions/qiusng/inputnumber';
@@ -128,7 +128,7 @@ export class Paginator implements OnInit, AfterContentInit, OnChanges {
 
     @Input() dropdownItemTemplate: TemplateRef<any>;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     firstPageLinkIconTemplate: TemplateRef<any>;
 

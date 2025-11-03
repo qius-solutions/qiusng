@@ -63,13 +63,13 @@ describe('Accordion', () => {
     it('should change header', () => {
         fixture.detectChanges();
 
-        fixture.componentInstance.header1 = 'Primeng ROCKS';
+        fixture.componentInstance.header1 = 'Qiusng ROCKS';
 
-        firstAccordionTab.header = 'Primeng ROCKS';
+        firstAccordionTab.header = 'Qiusng ROCKS';
         fixture.detectChanges();
 
         const accordionTabHeaderEl = fixture.debugElement.children[0].children[0].children[0].query(By.css('.p-accordion-header-text'));
-        expect(accordionTabHeaderEl.nativeElement.textContent).toContain('Primeng ROCKS');
+        expect(accordionTabHeaderEl.nativeElement.textContent).toContain('Qiusng ROCKS');
     });
 
     it('should have selected first accordionTab and second accordionTab should be unselected', () => {
@@ -122,11 +122,11 @@ describe('Accordion', () => {
     });
 
     it('should get styleClass', () => {
-        fixture.componentInstance.styleClass = 'alwaysbetonprime';
+        fixture.componentInstance.styleClass = 'alwaysbetonqius';
         fixture.detectChanges();
 
         const accordionEl = fixture.debugElement.children[0].query(By.css('.p-accordion')).nativeElement;
-        expect(accordionEl.className).toContain('alwaysbetonprime');
+        expect(accordionEl.className).toContain('alwaysbetonqius');
     });
 
     it('should get style', () => {

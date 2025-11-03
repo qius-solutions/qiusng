@@ -29,7 +29,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 @NgModule({
     declarations: [AppComponent, AppFooterComponent, AppMainComponent],
     imports: [
-        BrowserModule.withServerTransition({ appId: 'primeng' }),
+        BrowserModule.withServerTransition({ appId: 'qiusng' }),
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule,

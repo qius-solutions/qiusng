@@ -7,7 +7,7 @@ import { Code } from '../../domain/code';
 })
 export class LTSComponent {
     constructor(private titleService: Title, private metaService: Meta) {
-        this.titleService.setTitle('Long Term Support - PrimeNG');
+        this.titleService.setTitle('Long Term Support - QiusNG');
         this.metaService.updateTag({ name: 'description', content: 'Long Term Support' });
     }
 

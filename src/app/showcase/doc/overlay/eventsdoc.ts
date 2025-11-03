@@ -18,10 +18,10 @@ export class EventsDoc {
 
     code: Code = {
         typescript: `
-import { PrimeNGConfig, OverlayOptions, OverlayOnBeforeShowEvent, OverlayOnShowEvent, OverlayOnBeforeHideEvent, OverlayOnHideEvent } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, OverlayOptions, OverlayOnBeforeShowEvent, OverlayOnShowEvent, OverlayOnBeforeHideEvent, OverlayOnHideEvent } from '@qius.solutions/qiusng/api';
 import { AnimationEvent } from '@angular/animations';
 
-this.primengConfig.overlayOptions: OverlayOptions = {
+this.qiusngConfig.overlayOptions: OverlayOptions = {
     onBeforeShow: (event?: OverlayOnBeforeShowEvent) => {};    // Callback to invoke before the overlay is shown.
     onShow: (event?: OverlayOnShowEvent) => {};                // Callback to invoke when the overlay is shown.
     onBeforeHide: (event?: OverlayOnBeforeHideEvent) => {};    // Callback to invoke before the overlay is hidden.

@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'ripple-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>Ripple is an optional animation for the supported components such as buttons. It is disabled by default and needs to be enabled globally by injecting <i>PrimeNGConfig</i>.</p>
+            <p>Ripple is an optional animation for the supported components such as buttons. It is disabled by default and needs to be enabled globally by injecting <i>QiusNGConfig</i>.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
     </section>`
@@ -17,7 +17,7 @@ export class RippleDoc {
 
     code: Code = {
         typescript: `import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'app-root',
@@ -25,10 +25,10 @@ import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
 })
 export class AppComponent implements OnInit {
 
-    constructor(private primengConfig: PrimeNGConfig) {}
+    constructor(private qiusngConfig: QiusNGConfig) {}
 
     ngOnInit() {
-        this.primengConfig.ripple = true;
+        this.qiusngConfig.ripple = true;
     }
 }`
     };

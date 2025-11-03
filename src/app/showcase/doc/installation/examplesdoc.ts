@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
     selector: 'examples-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>An example start with Angular CLI is available at <a href="https://github.com/primefaces/primeng-quickstart-cli">github</a>.</p>
+            <p>An example start with Angular CLI is available at <a href="https://github.com/qius.solutions/qiusng-quickstart-cli">github</a>.</p>
         </app-docsectiontext>
     </section>`
 })

@@ -1,6 +1,6 @@
 import { NgModule, Component, Input, AfterViewInit, OnDestroy, ElementRef, ViewChild, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, ContentChildren, QueryList, TemplateRef, Inject, Renderer2 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { PrimeNGConfig, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, QiusTemplate } from '@qius.solutions/qiusng/api';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 
@@ -28,7 +28,7 @@ export class BlockUI implements AfterViewInit, OnDestroy {
 
     @Input() styleClass: string;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('mask') mask: ElementRef;
 
@@ -38,7 +38,7 @@ export class BlockUI implements AfterViewInit, OnDestroy {
 
     contentTemplate: TemplateRef<any>;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public cd: ChangeDetectorRef, public config: PrimeNGConfig, private renderer: Renderer2) {}
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public cd: ChangeDetectorRef, public config: QiusNGConfig, private renderer: Renderer2) {}
 
     @Input() get blocked(): boolean {
         return this._blocked;

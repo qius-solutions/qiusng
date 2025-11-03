@@ -18,7 +18,7 @@ export class ReadOnlyDoc {
 
     @Input() title: string;
 
-    text: string = 'Always bet on Prime!';
+    text: string = 'Always bet on Qius!';
 
     code: Code = {
         basic: `
@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
     templateUrl: './editor-readonly-demo.html'
 })
 export class EditorReadonlyDemo {
-    text: string = 'Always bet on Prime!';
+    text: string = 'Always bet on Qius!';
 }`
     };
 }

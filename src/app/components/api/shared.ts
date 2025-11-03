@@ -18,7 +18,7 @@ export class Footer {}
     selector: '[pTemplate]',
     host: {}
 })
-export class PrimeTemplate {
+export class QiusTemplate {
     @Input() type: string;
 
     @Input('pTemplate') name: string;
@@ -32,7 +32,7 @@ export class PrimeTemplate {
 
 @NgModule({
     imports: [CommonModule],
-    exports: [Header, Footer, PrimeTemplate],
-    declarations: [Header, Footer, PrimeTemplate]
+    exports: [Header, Footer, QiusTemplate],
+    declarations: [Header, Footer, QiusTemplate]
 })
 export class SharedModule {}

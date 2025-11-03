@@ -1,7 +1,7 @@
 import { NgModule, Component, Input, ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { MenuItem, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MenuItem, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
@@ -287,7 +287,7 @@ export class PanelMenu extends BasePanelMenuItem implements AfterContentInit {
 
     @Input() transitionOptions: string = '400ms cubic-bezier(0.86, 0, 0.07, 1)';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     submenuIconTemplate: TemplateRef<any>;
 

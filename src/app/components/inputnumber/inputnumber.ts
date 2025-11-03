@@ -22,7 +22,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 import { AngleUpIcon } from '@qius.solutions/qiusng/icons/angleup';
 import { AngleDownIcon } from '@qius.solutions/qiusng/icons/angledown';
@@ -269,7 +269,7 @@ export class InputNumber implements ControlValueAccessor {
 
     @Output() onClear: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     clearIconTemplate: TemplateRef<any>;
 

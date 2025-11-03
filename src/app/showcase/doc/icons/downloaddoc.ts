@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'download-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>PrimeIcons is available at npm, run the following command to download it to your project.</p>
+            <p>QiusIcons is available at npm, run the following command to download it to your project.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
     </section>`
@@ -16,6 +16,6 @@ export class DownloadDoc {
     @Input() title: string;
 
     code: Code = {
-        command: `npm install primeicons`
+        command: `npm install qiusicons`
     };
 }

@@ -11,7 +11,7 @@ import { Code } from '../../domain/code';
         <div class="card">
             <p-menubar [model]="items">
                 <ng-template pTemplate="start">
-                    <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+                    <img src="https://qius.solutions.org/cdn/qiusng/images/qiusng.svg" height="40" class="mr-2" />
                 </ng-template>
                 <ng-template pTemplate="end">
                     <input type="text" pInputText placeholder="Search" class="w-full" />
@@ -158,7 +158,7 @@ export class TemplateDoc implements OnInit {
         basic: `
 <p-menubar [model]="items">
     <ng-template pTemplate="start">
-        <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+        <img src="https://qius.solutions.org/cdn/qiusng/images/qiusng.svg" height="40" class="mr-2" />
     </ng-template>
     <ng-template pTemplate="end">
         <input type="text" pInputText placeholder="Search" class="w-full" />
@@ -169,7 +169,7 @@ export class TemplateDoc implements OnInit {
 <div class="card">
     <p-menubar [model]="items">
         <ng-template pTemplate="start">
-            <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+            <img src="https://qius.solutions.org/cdn/qiusng/images/qiusng.svg" height="40" class="mr-2" />
         </ng-template>
         <ng-template pTemplate="end">
             <input type="text" pInputText placeholder="Search" class="w-full" />

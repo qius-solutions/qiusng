@@ -1,6 +1,6 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, ElementRef, ChangeDetectorRef, OnDestroy, Input, EventEmitter, Renderer2, Inject, TemplateRef, AfterContentInit, QueryList, ContentChildren } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Confirmation, ConfirmationService, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { Confirmation, ConfirmationService, OverlayService, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { Subscription } from 'rxjs';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
@@ -98,7 +98,7 @@ export class ConfirmPopup implements AfterContentInit, OnDestroy {
 
     @Input() styleClass: string;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     container: HTMLDivElement;
 
@@ -133,7 +133,7 @@ export class ConfirmPopup implements AfterContentInit, OnDestroy {
         private confirmationService: ConfirmationService,
         public renderer: Renderer2,
         private cd: ChangeDetectorRef,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         public overlayService: OverlayService,
         @Inject(DOCUMENT) private document: Document
     ) {

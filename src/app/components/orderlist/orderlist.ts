@@ -20,7 +20,7 @@ import {
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
-import { SharedModule, PrimeTemplate, FilterService } from '@qius.solutions/qiusng/api';
+import { SharedModule, QiusTemplate, FilterService } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { ObjectUtils, UniqueComponentId } from '@qius.solutions/qiusng/utils';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -175,7 +175,7 @@ export class OrderList implements AfterViewChecked, AfterContentInit {
 
     @ViewChild('filter') filterViewChild: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     public itemTemplate: TemplateRef<any>;
 

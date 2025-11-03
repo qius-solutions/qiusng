@@ -5,7 +5,7 @@ import { IconService } from '../../service/iconservice';
     selector: 'list-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>Here is the full list of PrimeIcons. More icons will be added periodically and you may also <a href="https://github.com/primefaces/primeicons/issues">request new icons</a> at the issue tracker.</p>
+            <p>Here is the full list of QiusIcons. More icons will be added periodically and you may also <a href="https://github.com/qius.solutions/qiusicons/issues">request new icons</a> at the issue tracker.</p>
         </app-docsectiontext>
         <div>
             <input class="p-inputtext p-component w-full p-3 mt-3 mb-4" (input)="onFilter($event)" pInputText placeholder="Search an icon" />

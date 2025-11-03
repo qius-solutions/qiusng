@@ -17,7 +17,7 @@ import {
     AfterViewChecked
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, Header, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { SharedModule, Header, QiusTemplate } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 import Quill from 'quill';
@@ -113,7 +113,7 @@ export class Editor implements AfterViewInit, AfterViewChecked, AfterContentInit
 
     @Output() onInit: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     value: string;
 

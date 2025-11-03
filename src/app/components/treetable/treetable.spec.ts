@@ -591,14 +591,14 @@ class TestTreeTableComponent {
                 },
                 {
                     data: {
-                        name: 'primeng.png',
+                        name: 'qiusng.png',
                         size: '30kb',
                         type: 'Picture'
                     }
                 },
                 {
                     data: {
-                        name: 'prime.jpg',
+                        name: 'qius.jpg',
                         size: '30kb',
                         type: 'Picture'
                     }
@@ -614,7 +614,7 @@ class TestTreeTableComponent {
             children: [
                 {
                     data: {
-                        name: 'primefaces.mkv',
+                        name: 'qius.solutions.mkv',
                         size: '1000mb',
                         type: 'Video'
                     }

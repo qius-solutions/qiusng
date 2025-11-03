@@ -51,11 +51,11 @@ describe('Slider', () => {
 
     it('should change styles', () => {
         slider.style = { height: '300px' };
-        slider.styleClass = 'Primeng ROCKS!';
+        slider.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const sliderEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(sliderEl.className).toContain('Primeng ROCKS!');
+        expect(sliderEl.className).toContain('Qiusng ROCKS!');
         expect(sliderEl.style.height).toEqual('300px');
     });
 

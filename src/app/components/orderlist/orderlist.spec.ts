@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     template: `<p-orderList [value]="cars">
         <ng-template let-car pTemplate="item">
             <div>
-                <img src="https://primefaces.org/cdn/primeng/images/demo/car/{{ car.brand }}.png" style="display:inline-block;margin:2px 0 2px 2px" width="48" />
+                <img src="https://qius.solutions.org/cdn/qiusng/images/demo/car/{{ car.brand }}.png" style="display:inline-block;margin:2px 0 2px 2px" width="48" />
                 <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{ car.brand }} - {{ car.year }} - {{ car.color }}</div>
             </div>
         </ng-template>
@@ -67,22 +67,22 @@ describe('OrderList', () => {
     });
 
     it('should change header', () => {
-        orderlist.header = 'Primeng ROCKS!';
+        orderlist.header = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const headerEl = fixture.debugElement.query(By.css('.p-orderlist-header'));
         expect(headerEl).toBeTruthy();
-        expect(headerEl.nativeElement.textContent).toEqual('Primeng ROCKS!');
+        expect(headerEl.nativeElement.textContent).toEqual('Qiusng ROCKS!');
     });
 
     it('should show filter input', () => {
         orderlist.filterBy = 'brand';
-        orderlist.filterPlaceholder = 'Primeng ROCKS!';
+        orderlist.filterPlaceholder = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const filterInputEl = fixture.debugElement.query(By.css('.p-inputtext'));
         expect(filterInputEl).toBeTruthy();
-        expect(filterInputEl.nativeElement.placeholder).toEqual('Primeng ROCKS!');
+        expect(filterInputEl.nativeElement.placeholder).toEqual('Qiusng ROCKS!');
     });
 
     it('should show items', () => {

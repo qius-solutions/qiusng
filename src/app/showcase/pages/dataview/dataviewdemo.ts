@@ -4,7 +4,7 @@ import { BasicDoc } from '../../doc/dataview/basicdoc';
 import { ImportDoc } from '../../doc/dataview/importdoc';
 import { LayoutDoc } from '../../doc/dataview/layoutdoc';
 import { PaginationDoc } from '../../doc/dataview/paginationdoc';
-import { PrimeflexDoc } from '../../doc/dataview/primeflexdoc';
+import { QiusflexDoc } from '../../doc/dataview/qiusflexdoc';
 import { SortingDoc } from '../../doc/dataview/sortingdoc';
 import { PropsDoc } from '../../doc/dataview/propsdoc';
 import { EventsDoc } from '../../doc/dataview/eventsdoc';
@@ -23,9 +23,9 @@ export class DataViewDemo {
             component: ImportDoc
         },
         {
-            id: 'primeflex',
-            label: 'PrimeFlex',
-            component: PrimeflexDoc
+            id: 'qiusflex',
+            label: 'QiusFlex',
+            component: QiusflexDoc
         },
         {
             id: 'basic',

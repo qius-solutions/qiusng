@@ -1,6 +1,6 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, ChangeDetectorRef, Directive, ElementRef, HostListener, Inject, Input, NgModule, NgZone, OnDestroy, PLATFORM_ID, Renderer2, SimpleChanges } from '@angular/core';
-import { PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 
@@ -114,7 +114,7 @@ export class Tooltip implements AfterViewInit, OnDestroy {
 
     resizeListener: any;
 
-    constructor(@Inject(PLATFORM_ID) private platformId: any, public el: ElementRef, public zone: NgZone, public config: PrimeNGConfig, private renderer: Renderer2, private changeDetector: ChangeDetectorRef) {}
+    constructor(@Inject(PLATFORM_ID) private platformId: any, public el: ElementRef, public zone: NgZone, public config: QiusNGConfig, private renderer: Renderer2, private changeDetector: ChangeDetectorRef) {}
 
     ngAfterViewInit() {
         if (isPlatformBrowser(this.platformId)) {

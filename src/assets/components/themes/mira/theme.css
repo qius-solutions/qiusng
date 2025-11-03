@@ -3219,7 +3219,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   box-shadow: 0 0 0 0.2rem #C0D0E0;
 }
 .fc.fc-unthemed .fc-toolbar .fc-button .fc-icon-chevron-left {
-  font-family: "PrimeIcons" !important;
+  font-family: "QiusIcons" !important;
   text-indent: 0;
   font-size: 1rem;
 }
@@ -3227,7 +3227,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   content: "\e900";
 }
 .fc.fc-unthemed .fc-toolbar .fc-button .fc-icon-chevron-right {
-  font-family: "PrimeIcons" !important;
+  font-family: "QiusIcons" !important;
   text-indent: 0;
   font-size: 1rem;
 }
@@ -3308,7 +3308,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: "PrimeIcons" !important;
+  font-family: "QiusIcons" !important;
   font-size: 1rem;
   width: 2rem;
   height: 2rem;
@@ -3387,7 +3387,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   border: 2px solid #5E81AC;
 }
 .fc.fc-theme-standard .fc-toolbar .fc-button .fc-icon-chevron-left {
-  font-family: "PrimeIcons" !important;
+  font-family: "QiusIcons" !important;
   text-indent: 0;
   font-size: 1rem;
 }
@@ -3395,7 +3395,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   content: "\e900";
 }
 .fc.fc-theme-standard .fc-toolbar .fc-button .fc-icon-chevron-right {
-  font-family: "PrimeIcons" !important;
+  font-family: "QiusIcons" !important;
   text-indent: 0;
   font-size: 1rem;
 }

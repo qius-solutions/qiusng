@@ -53,7 +53,7 @@ describe('InputTextarea', () => {
 
         const inputTextEl = fixture.debugElement.query(By.css('textarea'));
         let cachedHeight = inputTextEl.nativeElement.style.height;
-        inputTextEl.nativeElement.value = 'primeng';
+        inputTextEl.nativeElement.value = 'qiusng';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 
@@ -69,7 +69,7 @@ describe('InputTextarea', () => {
         inputTextEl.nativeElement.style.maxHeight = 70 + 'px';
         fixture.detectChanges();
 
-        inputTextEl.nativeElement.value = 'primeng rocks!';
+        inputTextEl.nativeElement.value = 'qiusng rocks!';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 

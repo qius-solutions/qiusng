@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'datatable-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>Sample DataTable implementation using different Skeleton components and PrimeFlex CSS utilities.</p>
+            <p>Sample DataTable implementation using different Skeleton components and QiusFlex CSS utilities.</p>
         </app-docsectiontext>
         <div class="card">
             <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">

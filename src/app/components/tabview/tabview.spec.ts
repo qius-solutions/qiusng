@@ -4,7 +4,7 @@ import { TabView, TabPanel } from './tabview';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
 import { Tooltip } from '@qius.solutions/qiusng/tooltip';
-import { PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { QiusTemplate } from '@qius.solutions/qiusng/api';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
 
 @Component({
@@ -40,7 +40,7 @@ describe('TabView', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [NoopAnimationsModule, TimesIcon],
-            declarations: [TabView, TabPanel, Tooltip, TestTabViewComponent, PrimeTemplate]
+            declarations: [TabView, TabPanel, Tooltip, TestTabViewComponent, QiusTemplate]
         }).compileComponents();
 
         fixture = TestBed.createComponent(TestTabViewComponent);
@@ -60,15 +60,15 @@ describe('TabView', () => {
     it('should change the header', () => {
         fixture.detectChanges();
 
-        firstTabPanel.header = 'Primeng ROCKS!';
-        secondTabPanel.header = 'Primeng ROCKS!';
+        firstTabPanel.header = 'Qiusng ROCKS!';
+        secondTabPanel.header = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         tabview.cd.detectChanges();
         const firstTabViewNavEl = fixture.debugElement.children[0].children[0].children[0].children[0].children[0].children[0].nativeElement;
         const secondTabViewNavEl = fixture.debugElement.children[0].children[0].children[0].children[0].children[0].children[1].nativeElement;
-        expect(firstTabViewNavEl.textContent).toContain('Primeng ROCKS!');
-        expect(secondTabViewNavEl.textContent).toContain('Primeng ROCKS!');
+        expect(firstTabViewNavEl.textContent).toContain('Qiusng ROCKS!');
+        expect(secondTabViewNavEl.textContent).toContain('Qiusng ROCKS!');
     });
 
     it('should disabled', () => {
@@ -103,14 +103,14 @@ describe('TabView', () => {
     it('should change left and right icon', () => {
         fixture.detectChanges();
 
-        firstTabPanel.leftIcon = 'PrimeNg ROCKS!';
+        firstTabPanel.leftIcon = 'QiusNg ROCKS!';
         firstTabPanel.rightIcon = 'ALWAYS BET ON PRIME';
         fixture.detectChanges();
 
         tabview.cd.detectChanges();
         const firstTabViewLeftIconEl = fixture.debugElement.query(By.css('.p-tabview-left-icon')).nativeElement;
         const firstTabViewRightIconEl = fixture.debugElement.query(By.css('.p-tabview-right-icon')).nativeElement;
-        expect(firstTabViewLeftIconEl.className).toContain('PrimeNg ROCKS!');
+        expect(firstTabViewLeftIconEl.className).toContain('QiusNg ROCKS!');
         expect(firstTabViewRightIconEl.className).toContain('ALWAYS BET ON PRIME');
     });
 
@@ -118,12 +118,12 @@ describe('TabView', () => {
         fixture.detectChanges();
 
         firstTabPanel.headerStyle = { height: '300px' };
-        firstTabPanel.headerStyleClass = 'Primeng ROCKS!';
+        firstTabPanel.headerStyleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         tabview.cd.detectChanges();
         const firstTabViewNavEl = fixture.debugElement.children[0].children[0].children[0].children[0].children[0].children[0].nativeElement;
-        expect(firstTabViewNavEl.className).toContain('Primeng ROCKS!');
+        expect(firstTabViewNavEl.className).toContain('Qiusng ROCKS!');
         expect(firstTabViewNavEl.style.height).toContain('300px');
     });
 
@@ -131,12 +131,12 @@ describe('TabView', () => {
         fixture.detectChanges();
 
         tabview.style = { height: '300px' };
-        tabview.styleClass = 'Primeng ROCKS!';
+        tabview.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         tabview.cd.detectChanges();
         const firstTabViewNavEl = fixture.debugElement.children[0].children[0].nativeElement;
-        expect(firstTabViewNavEl.className).toContain('Primeng ROCKS!');
+        expect(firstTabViewNavEl.className).toContain('Qiusng ROCKS!');
         expect(firstTabViewNavEl.style.height).toContain('300px');
     });
 

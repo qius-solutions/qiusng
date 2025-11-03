@@ -23,7 +23,7 @@ import { ProductService } from '../../service/productservice';
             >
                 <ng-template let-product pTemplate="item">
                     <div class="flex flex-wrap p-2 align-items-center gap-3">
-                        <img class="w-4rem shadow-2 flex-shrink-0 border-round" src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" alt="{item.name}" />
+                        <img class="w-4rem shadow-2 flex-shrink-0 border-round" src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" alt="{item.name}" />
                         <div class="flex-1 flex flex-column gap-2">
                             <span class="font-bold">{{ product.name }}</span>
                             <div class="flex align-items-center gap-2">
@@ -61,7 +61,7 @@ export class BasicDoc {
     [sourceStyle]="{ height: '30rem' }" [targetStyle]="{ height: '30rem' }" breakpoint="1400px">
     <ng-template let-product pTemplate="item">
         <div class="flex flex-wrap p-2 align-items-center gap-3">
-            <img class="w-4rem shadow-2 flex-shrink-0 border-round" src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" alt="{item.name}" />
+            <img class="w-4rem shadow-2 flex-shrink-0 border-round" src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" alt="{item.name}" />
             <div class="flex-1 flex flex-column gap-2">
                 <span class="font-bold">{{ product.name }}</span>
                 <div class="flex align-items-center gap-2">
@@ -80,7 +80,7 @@ export class BasicDoc {
         [sourceStyle]="{ height: '30rem' }" [targetStyle]="{ height: '30rem' }" breakpoint="1400px">
         <ng-template let-product pTemplate="item">
             <div class="flex flex-wrap p-2 align-items-center gap-3">
-                <img class="w-4rem shadow-2 flex-shrink-0 border-round" src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" alt="{item.name}" />
+                <img class="w-4rem shadow-2 flex-shrink-0 border-round" src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" alt="{item.name}" />
                 <div class="flex-1 flex flex-column gap-2">
                     <span class="font-bold">{{ product.name }}</span>
                     <div class="flex align-items-center gap-2">

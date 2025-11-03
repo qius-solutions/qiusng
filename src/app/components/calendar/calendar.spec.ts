@@ -30,54 +30,54 @@ describe('Calendar', () => {
     });
 
     it('should change styleClass', () => {
-        calendar.styleClass = 'Primeng ROCKS!';
+        calendar.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const calendarEl = fixture.debugElement.query(By.css('span'));
-        expect(calendarEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(calendarEl.nativeElement.className).toContain('Qiusng ROCKS!');
     });
 
     it('should change inputStyleClass', () => {
-        calendar.inputStyleClass = 'Primeng ROCKS!';
+        calendar.inputStyleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const calendarEl = fixture.debugElement.query(By.css('input'));
-        expect(calendarEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(calendarEl.nativeElement.className).toContain('Qiusng ROCKS!');
     });
 
     it('should change panelStyle and panelStyleClass', () => {
-        calendar.panelStyleClass = 'Primeng ROCKS!';
+        calendar.panelStyleClass = 'Qiusng ROCKS!';
         calendar.panelStyle = { height: '300px' };
         calendar.overlayVisible = true;
         fixture.detectChanges();
 
         const panelEl = fixture.debugElement.query(By.css('div'));
-        expect(panelEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(panelEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(panelEl.nativeElement.style.height).toContain('300px');
     });
 
     it('should change inputId', () => {
-        calendar.inputId = 'PRIMENG';
+        calendar.inputId = 'QIUSNG';
         fixture.detectChanges();
 
         const calendarEl = fixture.debugElement.query(By.css('input'));
-        expect(calendarEl.nativeElement.id).toContain('PRIMENG');
+        expect(calendarEl.nativeElement.id).toContain('QIUSNG');
     });
 
     it('should change name', () => {
-        calendar.name = 'PRIMENG';
+        calendar.name = 'QIUSNG';
         fixture.detectChanges();
 
         const calendarEl = fixture.debugElement.query(By.css('input'));
-        expect(calendarEl.nativeElement.name).toContain('PRIMENG');
+        expect(calendarEl.nativeElement.name).toContain('QIUSNG');
     });
 
     it('should change placeholder', () => {
-        calendar.placeholder = 'PRIMENG';
+        calendar.placeholder = 'QIUSNG';
         fixture.detectChanges();
 
         const calendarEl = fixture.debugElement.query(By.css('input'));
-        expect(calendarEl.nativeElement.placeholder).toContain('PRIMENG');
+        expect(calendarEl.nativeElement.placeholder).toContain('QIUSNG');
     });
 
     it('should show icon', () => {
@@ -92,11 +92,11 @@ describe('Calendar', () => {
 
     it('should change icon', () => {
         calendar.showIcon = true;
-        calendar.icon = 'Primeng ROCKS!';
+        calendar.icon = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const buttonEl = fixture.debugElement.query(By.css('button'));
-        expect(buttonEl.nativeNode.outerHTML).toContain('Primeng ROCKS!');
+        expect(buttonEl.nativeNode.outerHTML).toContain('Qiusng ROCKS!');
     });
 
     it('should show panel and call onInputClick when inputClick', () => {
@@ -528,8 +528,8 @@ describe('Calendar', () => {
 
     it('should change today & clear button styleClass', () => {
         calendar.showButtonBar = true;
-        calendar.clearButtonStyleClass = 'Primeng ROCKS!';
-        calendar.todayButtonStyleClass = 'Primeng ROCKS!';
+        calendar.clearButtonStyleClass = 'Qiusng ROCKS!';
+        calendar.todayButtonStyleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input')).nativeElement;
@@ -541,8 +541,8 @@ describe('Calendar', () => {
         const buttonbar = fixture.debugElement.query(By.css('.p-datepicker-buttonbar'));
         const todayButtonEl = buttonbar.queryAll(By.css('button'))[0];
         const clearButtonEl = buttonbar.queryAll(By.css('button'))[1];
-        expect(todayButtonEl.nativeElement.className).toContain('Primeng ROCKS!');
-        expect(clearButtonEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(todayButtonEl.nativeElement.className).toContain('Qiusng ROCKS!');
+        expect(clearButtonEl.nativeElement.className).toContain('Qiusng ROCKS!');
     });
 
     it('should show multiple months', () => {

@@ -1,8 +1,8 @@
-# PRIMENG COMMUNITY VERSIONS LICENSE
+# QIUSNG COMMUNITY VERSIONS LICENSE
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2022 PrimeTek
+Copyright (c) 2016-2022 Qius Solutions
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,9 +22,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-# PRIMENG LTS VERSIONS LICENSE (Versions with -lts suffix)
+# QIUSNG LTS VERSIONS LICENSE (Versions with -lts suffix)
 
-THIS LICENSE AGREEMENT (THIS “CLA”) CONTAINS THE TERMS AND CONDITIONS FOR YOUR USE OF “PRIMENG LONG TERM SUPPORT”, A SUITE OF Angular Components (THE “Software”). THIS CLA IS A BINDING AGREEMENT BETWEEN YOU (“Licensee”) AND PrimeTek Bilişim. (“Licensor“); HOWEVER, IF YOU ARE ACTING AS AN AGENT FOR ANOTHER, SUCH AS ON BEHALF OF YOUR EMPLOYER, THEN “YOU” MEANS THE OTHER PERSON. BY INSTALLING, COPYING, USING OR OTHERWISE ACCESSING THE SOFTWARE, YOU AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.
+THIS LICENSE AGREEMENT (THIS “CLA”) CONTAINS THE TERMS AND CONDITIONS FOR YOUR USE OF “QIUSNG LONG TERM SUPPORT”, A SUITE OF Angular Components (THE “Software”). THIS CLA IS A BINDING AGREEMENT BETWEEN YOU (“Licensee”) AND Qius Solutions Bilişim. (“Licensor“); HOWEVER, IF YOU ARE ACTING AS AN AGENT FOR ANOTHER, SUCH AS ON BEHALF OF YOUR EMPLOYER, THEN “YOU” MEANS THE OTHER PERSON. BY INSTALLING, COPYING, USING OR OTHERWISE ACCESSING THE SOFTWARE, YOU AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.
 
 The term “Software” includes all source and object code, in whole and/or part; all printed materials; “online” or electronic documentation; data, data engines, images; updates and upgrades; and anything provided for use with or in conjunction with the Software.
 

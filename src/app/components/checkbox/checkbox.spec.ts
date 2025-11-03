@@ -41,7 +41,7 @@ describe('Checkbox', () => {
     });
 
     it('should disabled', () => {
-        checkbox.label = 'primeng';
+        checkbox.label = 'qiusng';
         checkbox.disabled = true;
         checkbox.cd.detectChanges();
 
@@ -63,13 +63,13 @@ describe('Checkbox', () => {
 
     it('should get a label name inputId tabindex style styleClass and labelStyleClass', () => {
         checkbox.binary = true;
-        checkbox.label = 'Primeng ROCKS!';
-        checkbox.name = 'primeng';
-        checkbox.inputId = 'primeng';
+        checkbox.label = 'Qiusng ROCKS!';
+        checkbox.name = 'qiusng';
+        checkbox.inputId = 'qiusng';
         checkbox.tabindex = 13;
         checkbox.style = { height: '300px' };
-        checkbox.styleClass = 'Primeng Rocks!';
-        checkbox.labelStyleClass = 'Primeng ROCKS';
+        checkbox.styleClass = 'Qiusng Rocks!';
+        checkbox.labelStyleClass = 'Qiusng ROCKS';
         fixture.detectChanges();
 
         const boxEl = fixture.nativeElement.querySelector('.p-checkbox-box');
@@ -80,12 +80,12 @@ describe('Checkbox', () => {
 
         const input = fixture.nativeElement.querySelector('input');
         expect(labelEl).toBeTruthy();
-        expect(labelEl.className).toContain('Primeng ROCKS');
+        expect(labelEl.className).toContain('Qiusng ROCKS');
         expect(labelEl.className).toContain('p-checkbox-label-active');
-        expect(input.name).toEqual('primeng');
-        expect(input.id).toEqual('primeng');
+        expect(input.name).toEqual('qiusng');
+        expect(input.id).toEqual('qiusng');
         expect(input.tabIndex).toEqual(13);
-        expect(containerEl.className).toContain('Primeng Rocks!');
+        expect(containerEl.className).toContain('Qiusng Rocks!');
         expect(containerEl.style.height).toContain('300px');
     });
 
@@ -117,7 +117,7 @@ describe('Checkbox', () => {
     });
 
     it('should call onBlur and onFocus', () => {
-        checkbox.label = 'primeng';
+        checkbox.label = 'qiusng';
         fixture.detectChanges();
 
         const input = fixture.nativeElement.querySelector('input');

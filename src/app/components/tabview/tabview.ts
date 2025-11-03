@@ -24,7 +24,7 @@ import {
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
-import { SharedModule, PrimeTemplate, BlockableUI } from '@qius.solutions/qiusng/api';
+import { SharedModule, QiusTemplate, BlockableUI } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { Subscription } from 'rxjs';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
@@ -64,7 +64,7 @@ export class TabPanel implements AfterContentInit, OnDestroy {
 
     @Input() tooltipStyleClass: string;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     closed: boolean;
 
@@ -289,7 +289,7 @@ export class TabView implements AfterContentInit, AfterViewChecked, OnDestroy, B
 
     @Output() activeIndexChange: EventEmitter<number> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     initialized: boolean;
 

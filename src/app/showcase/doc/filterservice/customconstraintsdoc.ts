@@ -16,7 +16,7 @@ export class CustomConstraintsDoc {
     @Input() title: string;
 
     code: Code = {
-        typescript: `this.filterService.register('isPrimeNumber', (value, filter): boolean => {
+        typescript: `this.filterService.register('isQiusNumber', (value, filter): boolean => {
     if (filter === undefined || filter === null || filter.trim() === '') {
         return true;
     }
@@ -28,8 +28,8 @@ export class CustomConstraintsDoc {
     return value.toString() === filter.toString();
 });
 
-this.filterService.filters['isPrimeNumber'](3);                      //true
-this.filterService.filters['isPrimeNumber'](5);                      //true
-this.filterService.filters['isPrimeNumber'](568985673);              //false`
+this.filterService.filters['isQiusNumber'](3);                      //true
+this.filterService.filters['isQiusNumber'](5);                      //true
+this.filterService.filters['isQiusNumber'](568985673);              //false`
     };
 }

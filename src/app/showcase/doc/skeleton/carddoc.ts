@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'card-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>Sample Card implementation using different Skeleton components and PrimeFlex CSS utilities.</p>
+            <p>Sample Card implementation using different Skeleton components and QiusFlex CSS utilities.</p>
         </app-docsectiontext>
         <div class="card">
             <div class="border-round border-1 surface-border p-4 surface-card">

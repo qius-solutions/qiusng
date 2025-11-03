@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ContentChildren, ElementRef, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { BlockableUI, Footer, Header, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { Scroller, ScrollerModule, ScrollerOptions } from '@qius.solutions/qiusng/scroller';
 
 @Component({
@@ -53,7 +53,7 @@ export class VirtualScroller implements AfterContentInit, BlockableUI {
 
     @ContentChild(Footer) footer: Footer;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('scroller') scroller: Scroller;
 

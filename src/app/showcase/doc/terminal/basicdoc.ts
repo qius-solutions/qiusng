@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
         </app-docsectiontext>
         <div class="card">
             <p>Enter "<strong>date</strong>" to display the current date, "<strong>greet &#123;0&#125;</strong>" for a message and "<strong>random</strong>" to get a random number.</p>
-            <p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>
+            <p-terminal welcomeMessage="Welcome to QiusNG" prompt="qiusng $"></p-terminal>
         </div>
         <app-code [code]="code" selector="terminal-basic-demo"></app-code>
     </section>`,
@@ -40,11 +40,11 @@ export class BasicDoc implements OnDestroy {
     code: Code = {
         basic: `
 <p>Enter "<strong>date</strong>" to display the current date, "<strong>greet &#123;0&#125;</strong>" for a message and "<strong>random</strong>" to get a random number.</p>
-<p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>`,
+<p-terminal welcomeMessage="Welcome to QiusNG" prompt="qiusng $"></p-terminal>`,
         html: `
 <div class="card">
     <p>Enter "<strong>date</strong>" to display the current date, "<strong>greet {0}</strong>" for a message and "<strong>random</strong>" to get a random number.</p>
-    <p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>
+    <p-terminal welcomeMessage="Welcome to QiusNG" prompt="qiusng $"></p-terminal>
 </div>`,
         typescript: `
 import { Component, OnDestroy } from '@angular/core';

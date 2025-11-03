@@ -8,7 +8,7 @@ import { ProductService } from '../../service/productservice';
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
             <p>
-                DataView requires a <i>value</i> to display along with an <i>pTemplate</i> that receives an object in the collection to return content. The root element should have the PrimeFlex Grid classes e.g. col-12 to define how items are
+                DataView requires a <i>value</i> to display along with an <i>pTemplate</i> that receives an object in the collection to return content. The root element should have the QiusFlex Grid classes e.g. col-12 to define how items are
                 displayed.
             </p>
         </app-docsectiontext>
@@ -17,7 +17,7 @@ import { ProductService } from '../../service/productservice';
                 <ng-template let-product pTemplate="listItem">
                     <div class="col-12">
                         <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                            <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                            <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                             <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <div class="text-2xl font-bold text-900">{{ product.name }}</div>
@@ -78,7 +78,7 @@ export class BasicDoc {
     <ng-template let-product pTemplate="listItem">
         <div class="col-12">
             <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                 <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                     <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                         <div class="text-2xl font-bold text-900">{{ product.name }}</div>
@@ -107,7 +107,7 @@ export class BasicDoc {
         <ng-template let-product pTemplate="listItem">
             <div class="col-12">
                 <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                    <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" />
+                    <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'https://qius.solutions.org/cdn/qiusng/images/demo/product/' + product.image" [alt]="product.name" />
                     <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                         <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                             <div class="text-2xl font-bold text-900">{{ product.name }}</div>

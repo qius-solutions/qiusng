@@ -1,7 +1,7 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, ContentChildren, QueryList, ElementRef, ChangeDetectorRef, TemplateRef, ViewChild, Output, EventEmitter, Renderer2, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-splitter',
@@ -48,7 +48,7 @@ export class Splitter {
 
     @Output() onResizeStart: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('container', { static: false }) containerViewChild: ElementRef;
 

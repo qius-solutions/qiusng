@@ -66,11 +66,11 @@ describe('Steps', () => {
 
     it('should change style & styleClass', () => {
         steps.style = { height: '300px' };
-        steps.styleClass = 'Primeng ROCKS!';
+        steps.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const stepsEl = fixture.debugElement.children[0].query(By.css('div')).nativeElement;
-        expect(stepsEl.className).toContain('Primeng ROCKS!');
+        expect(stepsEl.className).toContain('Qiusng ROCKS!');
         expect(stepsEl.style.height).toContain('300px');
     });
 

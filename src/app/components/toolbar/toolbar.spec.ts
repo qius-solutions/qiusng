@@ -45,11 +45,11 @@ describe('Toolbar', () => {
 
     it('should change style and styleClass', () => {
         toolbar.style = { height: '300px' };
-        toolbar.styleClass = 'Primeng ROCKS!';
+        toolbar.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const toolbarEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(toolbarEl.className).toContain('Primeng ROCKS!');
+        expect(toolbarEl.className).toContain('Qiusng ROCKS!');
         expect(toolbarEl.style.height).toEqual('300px');
     });
 

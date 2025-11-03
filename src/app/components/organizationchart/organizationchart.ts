@@ -3,7 +3,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@qius.solutions/qiusng/api';
 import { TreeNode } from '@qius.solutions/qiusng/api';
-import { PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { QiusTemplate } from '@qius.solutions/qiusng/api';
 import { Subject, Subscription } from 'rxjs';
 import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
 import { ChevronUpIcon } from '@qius.solutions/qiusng/icons/chevronup';
@@ -160,7 +160,7 @@ export class OrganizationChart implements AfterContentInit {
 
     @Output() onNodeCollapse: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     public templateMap: any;
 

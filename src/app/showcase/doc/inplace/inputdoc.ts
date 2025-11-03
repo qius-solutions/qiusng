@@ -13,7 +13,7 @@ import { Code } from '../../domain/code';
                     <span>Click to Edit</span>
                 </ng-template>
                 <ng-template pTemplate="content">
-                    <input type="text" value="PrimeNG" pInputText />
+                    <input type="text" value="QiusNG" pInputText />
                 </ng-template>
             </p-inplace>
         </div>
@@ -32,7 +32,7 @@ export class InputDoc {
         <span>Click to Edit</span>
     </ng-template>
     <ng-template pTemplate="content">
-        <input type="text" value="PrimeNG" pInputText />
+        <input type="text" value="QiusNG" pInputText />
     </ng-template>
 </p-inplace>`,
         html: `
@@ -42,7 +42,7 @@ export class InputDoc {
             <span>Click to Edit</span>
         </ng-template>
         <ng-template pTemplate="content">
-            <input type="text" value="PrimeNG" pInputText />
+            <input type="text" value="QiusNG" pInputText />
         </ng-template>
     </p-inplace>
 </div>`,

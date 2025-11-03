@@ -20,7 +20,7 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { SharedModule, PrimeTemplate, MenuItem } from '@qius.solutions/qiusng/api';
+import { SharedModule, QiusTemplate, MenuItem } from '@qius.solutions/qiusng/api';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -155,7 +155,7 @@ export class SpeedDial implements AfterViewInit, AfterContentInit, OnDestroy {
 
     @ViewChild('list') list: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     buttonTemplate: TemplateRef<any>;
 
