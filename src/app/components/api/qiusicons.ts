@@ -166,7 +166,7 @@ export class QiusIcons {
     public static readonly PLUS_CIRCLE = 'pi pi-plus-circle';
     public static readonly POUND = 'pi pi-pound';
     public static readonly POWER_OFF = 'pi pi-power-off';
-    public static readonly PRIME = 'pi pi-qius';
+    public static readonly QIUS = 'pi pi-qius';
     public static readonly PRINT = 'pi pi-print';
     public static readonly QRCODE = 'pi pi-qrcode';
     public static readonly QUESTION = 'pi pi-question';

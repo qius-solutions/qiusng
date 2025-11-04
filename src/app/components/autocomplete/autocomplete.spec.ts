@@ -305,7 +305,7 @@ describe('AutoComplete', () => {
         inputEl.nativeElement.click();
         fixture.detectChanges();
 
-        inputEl.nativeElement.value = 'PRIMENG';
+        inputEl.nativeElement.value = 'QIUSNG';
         inputEl.nativeElement.dispatchEvent(new Event('keydown'));
         inputEl.nativeElement.dispatchEvent(new Event('input'));
         inputEl.nativeElement.dispatchEvent(new Event('keyup'));
