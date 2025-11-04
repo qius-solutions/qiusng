@@ -81,12 +81,12 @@ describe('SlideMenu', () => {
     });
 
     it('should change backlabel', () => {
-        slidemenu.backLabel = 'ALWAYS BET ON PRIME';
+        slidemenu.backLabel = 'ALWAYS BET ON QIUS';
         fixture.detectChanges();
 
         slidemenu.cd.detectChanges();
         const backwardSpanEl = fixture.debugElement.query(By.css('.p-slidemenu-backward')).children[1];
-        expect(backwardSpanEl.nativeElement.textContent).toEqual('ALWAYS BET ON PRIME');
+        expect(backwardSpanEl.nativeElement.textContent).toEqual('ALWAYS BET ON QIUS');
     });
 
     it('should change menuWidth effectDuration and easing', () => {
