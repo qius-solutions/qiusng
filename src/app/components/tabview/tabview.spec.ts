@@ -104,14 +104,14 @@ describe('TabView', () => {
         fixture.detectChanges();
 
         firstTabPanel.leftIcon = 'QiusNg ROCKS!';
-        firstTabPanel.rightIcon = 'ALWAYS BET ON PRIME';
+        firstTabPanel.rightIcon = 'ALWAYS BET ON QIUS';
         fixture.detectChanges();
 
         tabview.cd.detectChanges();
         const firstTabViewLeftIconEl = fixture.debugElement.query(By.css('.p-tabview-left-icon')).nativeElement;
         const firstTabViewRightIconEl = fixture.debugElement.query(By.css('.p-tabview-right-icon')).nativeElement;
         expect(firstTabViewLeftIconEl.className).toContain('QiusNg ROCKS!');
-        expect(firstTabViewRightIconEl.className).toContain('ALWAYS BET ON PRIME');
+        expect(firstTabViewRightIconEl.className).toContain('ALWAYS BET ON QIUS');
     });
 
     it('should change headerStyle and headerStyleClass', () => {

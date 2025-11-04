@@ -4,5 +4,9 @@
     "deleteDestPath": true,
     "lib": {
       "entryFile": "public_api.ts"
-    }
-  }
+    },
+    "allowedNonPeerDependencies": [
+      "@qius.solutions/qiusicons",
+      "@qius.solutions/qiusflex"
+    ]
+}
