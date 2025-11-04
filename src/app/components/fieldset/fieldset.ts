@@ -1,7 +1,7 @@
 import { NgModule, Component, Input, Output, EventEmitter, ElementRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, QueryList, ContentChildren, TemplateRef } from '@angular/core';
 import { trigger, state, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { SharedModule, QiusTemplate } from '@qius.solutions/qiusng/api';
 import { BlockableUI } from '@qius.solutions/qiusng/api';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { PlusIcon } from '@qius.solutions/qiusng/icons/plus';
@@ -97,7 +97,7 @@ export class Fieldset implements AfterContentInit, BlockableUI {
 
     @Input() transitionOptions: string = '400ms cubic-bezier(0.86, 0, 0.07, 1)';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     public animating: boolean;
 

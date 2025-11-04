@@ -1,6 +1,6 @@
 import { NgModule, Component, ElementRef, Input, Output, EventEmitter, ViewChild, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, ContentChildren, QueryList } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItem, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { MenuItem, QiusTemplate } from '@qius.solutions/qiusng/api';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { TieredMenuModule, TieredMenu } from '@qius.solutions/qiusng/tieredmenu';
 import { ChevronDownIcon } from '@qius.solutions/qiusng/icons/chevrondown';
@@ -74,7 +74,7 @@ export class SplitButton {
 
     @ViewChild('menu') menu: TieredMenu;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     contentTemplate: TemplateRef<any>;
 

@@ -174,7 +174,7 @@ describe('KeyFilter', () => {
         fixture.detectChanges();
 
         keyfilter.isAndroid = true;
-        keyfilter.el.nativeElement.value = 'PrimeNG';
+        keyfilter.el.nativeElement.value = 'QiusNG';
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input')).nativeElement;
@@ -184,7 +184,7 @@ describe('KeyFilter', () => {
         inputEl.dispatchEvent(inputEvent);
         fixture.detectChanges();
 
-        expect(keyfilter.el.nativeElement.value).not.toContain('PrimeNG');
+        expect(keyfilter.el.nativeElement.value).not.toContain('QiusNG');
         keyfilter.el.nativeElement.value = '3507';
         inputEl.dispatchEvent(inputEvent);
         fixture.detectChanges();

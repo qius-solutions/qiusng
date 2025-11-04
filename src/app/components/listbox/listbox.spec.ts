@@ -106,11 +106,11 @@ describe('Listbox', () => {
 
     it('should change style and styleClass', () => {
         listbox.style = { height: '300px' };
-        listbox.styleClass = 'Primeng ROCKS!';
+        listbox.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const listboxEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(listboxEl.className).toContain('Primeng ROCKS!');
+        expect(listboxEl.className).toContain('Qiusng ROCKS!');
         expect(listboxEl.style.height).toEqual('300px');
     });
 

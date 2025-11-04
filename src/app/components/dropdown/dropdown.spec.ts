@@ -100,25 +100,25 @@ describe('Dropdown', () => {
     });
 
     it('should change dropdown icon', () => {
-        dropdown.dropdownIcon = 'Primeng';
+        dropdown.dropdownIcon = 'Qiusng';
         fixture.detectChanges();
 
         const dropdownSpanEl = fixture.debugElement.query(By.css('.p-dropdown-trigger-icon')).nativeElement;
-        expect(dropdownSpanEl.className).toContain('Primeng');
+        expect(dropdownSpanEl.className).toContain('Qiusng');
     });
 
     it('should change style and styleClass', () => {
-        dropdown.styleClass = 'Primeng';
+        dropdown.styleClass = 'Qiusng';
         dropdown.style = { height: '300px' };
         fixture.detectChanges();
 
         const containerEl = fixture.debugElement.query(By.css('.p-dropdown'));
-        expect(containerEl.nativeElement.className).toContain('Primeng');
+        expect(containerEl.nativeElement.className).toContain('Qiusng');
         expect(containerEl.nativeElement.style.height).toEqual('300px');
     });
 
     it('should change panelStyleClass', () => {
-        dropdown.panelStyleClass = 'Primeng';
+        dropdown.panelStyleClass = 'Qiusng';
         dropdown.options = [
             { name: 'New York', code: 'NY' },
             { name: 'Rome', code: 'RM' },
@@ -134,7 +134,7 @@ describe('Dropdown', () => {
 
         const dropdownPanel = fixture.debugElement.query(By.css('.p-dropdown-panel'));
         expect(dropdownPanel).toBeTruthy();
-        expect(dropdownPanel.nativeElement.className).toContain('Primeng');
+        expect(dropdownPanel.nativeElement.className).toContain('Qiusng');
     });
 
     it('should open when clicked', () => {
@@ -276,9 +276,9 @@ describe('Dropdown', () => {
         const filterDiv = fixture.debugElement.query(By.css('.p-dropdown-filter-container'));
         expect(filterDiv).toBeTruthy();
         const filterInputEl = fixture.debugElement.query(By.css('.p-dropdown-filter'));
-        filterInputEl.nativeElement.value = 'primeng';
+        filterInputEl.nativeElement.value = 'qiusng';
         filterInputEl.nativeElement.dispatchEvent(new Event('keydown'));
-        const event = { target: { value: 'primeng' } };
+        const event = { target: { value: 'qiusng' } };
         dropdown.onFilterInputChange(event);
         fixture.detectChanges();
 

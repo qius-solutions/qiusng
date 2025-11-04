@@ -63,7 +63,7 @@ export class AppTopBarComponent implements OnInit, OnDestroy {
         docsearch({
             appId: 'XG1L2MUWT9',
             apiKey: '6057fe1af77fee4e7e41907b0b3ec79d',
-            indexName: 'primeng',
+            indexName: 'qiusng',
             container: '#docsearch',
             transformItems: this.handleDocSearchTransformItems.bind(this)
         });

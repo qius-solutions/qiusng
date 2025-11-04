@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChildren, ElementRef, Input, NgModule, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { BlockableUI, QiusTemplate } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-toolbar',
@@ -30,7 +30,7 @@ export class Toolbar implements AfterContentInit, BlockableUI {
 
     @Input() styleClass: string;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     startTemplate: TemplateRef<any>;
 

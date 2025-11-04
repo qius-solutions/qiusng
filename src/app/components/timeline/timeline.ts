@@ -1,6 +1,6 @@
 import { NgModule, Component, Input, ElementRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, ContentChildren, QueryList, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BlockableUI, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { BlockableUI, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-timeline',
@@ -56,7 +56,7 @@ export class Timeline implements AfterContentInit, BlockableUI {
 
     @Input() layout: string = 'vertical';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     contentTemplate: TemplateRef<any>;
 

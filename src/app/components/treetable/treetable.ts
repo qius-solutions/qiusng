@@ -27,7 +27,7 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, SharedModule, SortMeta, TreeNode } from '@qius.solutions/qiusng/api';
+import { BlockableUI, FilterMetadata, FilterService, QiusTemplate, SharedModule, SortMeta, TreeNode } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { PaginatorModule } from '@qius.solutions/qiusng/paginator';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -389,7 +389,7 @@ export class TreeTable implements AfterContentInit, OnInit, OnDestroy, Blockable
 
     @ViewChild('scrollableFrozenView') scrollableFrozenViewChild;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<PrimeTemplate>;
+    @ContentChildren(QiusTemplate) templates: QueryList<QiusTemplate>;
 
     /* @deprecated */
     _virtualRowHeight: number = 28;
@@ -2965,7 +2965,7 @@ export class TTEditableColumn implements AfterViewInit {
     }
 })
 export class TreeTableCellEditor implements AfterContentInit {
-    @ContentChildren(PrimeTemplate) templates: QueryList<PrimeTemplate>;
+    @ContentChildren(QiusTemplate) templates: QueryList<QiusTemplate>;
 
     inputTemplate: TemplateRef<any>;
 

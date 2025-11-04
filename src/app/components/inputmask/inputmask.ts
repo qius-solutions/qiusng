@@ -32,7 +32,7 @@ import { AutoFocusModule } from '@qius.solutions/qiusng/autofocus';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { InputTextModule } from '@qius.solutions/qiusng/inputtext';
 import { TimesIcon } from '@qius.solutions/qiusng/icons/times';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 
 export const INPUTMASK_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -153,7 +153,7 @@ export class InputMask implements OnInit, ControlValueAccessor {
 
     @Output() onClear: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     clearIconTemplate: TemplateRef<any>;
 

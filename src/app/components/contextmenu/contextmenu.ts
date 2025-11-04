@@ -22,7 +22,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ContextMenuService, MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { ContextMenuService, MenuItem, QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -296,11 +296,11 @@ export class ContextMenu implements AfterViewInit, OnDestroy {
 
     private window: Window;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     submenuIconTemplate: TemplateRef<any>;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public zone: NgZone, public contextMenuService: ContextMenuService, private config: PrimeNGConfig) {
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public zone: NgZone, public contextMenuService: ContextMenuService, private config: QiusNGConfig) {
         this.window = this.document.defaultView as Window;
     }
 

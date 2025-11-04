@@ -100,16 +100,16 @@ describe('AutoComplete', () => {
 
     it('should change style and styleClass', () => {
         autocomplete.style = { height: '300px' };
-        autocomplete.styleClass = 'Primeng Rocks!';
+        autocomplete.styleClass = 'Qiusng Rocks!';
         autocomplete.inputStyle = { height: '300px' };
-        autocomplete.inputStyleClass = 'Primeng Rocks!';
+        autocomplete.inputStyleClass = 'Qiusng Rocks!';
         fixture.detectChanges();
 
         autocomplete.cd.detectChanges();
         const autocompleteEl = fixture.debugElement.query(By.css('span')).nativeElement;
         const inputEl = fixture.debugElement.query(By.css('input')).nativeElement;
-        expect(autocompleteEl.className).toContain('Primeng Rocks!');
-        expect(inputEl.className).toContain('Primeng Rocks!');
+        expect(autocompleteEl.className).toContain('Qiusng Rocks!');
+        expect(inputEl.className).toContain('Qiusng Rocks!');
         expect(autocompleteEl.style.height).toContain('300px');
         expect(inputEl.style.height).toContain('300px');
         autocomplete.multiple = true;
@@ -117,13 +117,13 @@ describe('AutoComplete', () => {
 
         autocomplete.cd.detectChanges();
         const inputMultipleEl = fixture.debugElement.query(By.css('ul')).query(By.css('input')).nativeElement;
-        expect(inputMultipleEl.className).toContain('Primeng Rocks!');
+        expect(inputMultipleEl.className).toContain('Qiusng Rocks!');
         expect(inputMultipleEl.style.height).toContain('300px');
     });
 
     it('should change inputId size readonly tabindex maxlength type and placeholder', () => {
-        autocomplete.inputId = 'Primeng';
-        autocomplete.placeholder = 'Primeng ROCKS!';
+        autocomplete.inputId = 'Qiusng';
+        autocomplete.placeholder = 'Qiusng ROCKS!';
         autocomplete.size = 12;
         autocomplete.required = true;
         autocomplete.readonly = true;
@@ -134,8 +134,8 @@ describe('AutoComplete', () => {
 
         autocomplete.cd.detectChanges();
         const inputEl = fixture.debugElement.query(By.css('input')).nativeElement;
-        expect(inputEl.id).toEqual('Primeng');
-        expect(inputEl.placeholder).toEqual('Primeng ROCKS!');
+        expect(inputEl.id).toEqual('Qiusng');
+        expect(inputEl.placeholder).toEqual('Qiusng ROCKS!');
         expect(inputEl.size).toEqual(12);
         expect(inputEl.required).toEqual(true);
         expect(inputEl.tabIndex).toEqual(13);
@@ -147,8 +147,8 @@ describe('AutoComplete', () => {
 
         autocomplete.cd.detectChanges();
         const inputMultipleEl = fixture.debugElement.query(By.css('ul')).query(By.css('input')).nativeElement;
-        expect(inputMultipleEl.id).toEqual('Primeng');
-        expect(inputMultipleEl.placeholder).toEqual('Primeng ROCKS!');
+        expect(inputMultipleEl.id).toEqual('Qiusng');
+        expect(inputMultipleEl.placeholder).toEqual('Qiusng ROCKS!');
     });
 
     it('should show filtered brands and change autoZIndex', fakeAsync(() => {
@@ -295,7 +295,7 @@ describe('AutoComplete', () => {
     }));
 
     it('should show emptyMessage', fakeAsync(() => {
-        autocomplete.emptyMessage = 'Primeng ROCKS!';
+        autocomplete.emptyMessage = 'Qiusng ROCKS!';
         autocomplete.showEmptyMessage = true;
         fixture.detectChanges();
 

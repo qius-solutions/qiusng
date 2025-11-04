@@ -22,7 +22,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayModeType, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ResponsiveOverlayOptions, SharedModule } from '@qius.solutions/qiusng/api';
+import { OverlayModeType, OverlayOptions, OverlayService, QiusNGConfig, QiusTemplate, ResponsiveOverlayOptions, SharedModule } from '@qius.solutions/qiusng/api';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
 import { ObjectUtils, ZIndexUtils } from '@qius.solutions/qiusng/utils';
 
@@ -217,7 +217,7 @@ export class Overlay implements AfterContentInit, OnDestroy {
 
     @Output() onAnimationDone: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any> | undefined;
+    @ContentChildren(QiusTemplate) templates: QueryList<any> | undefined;
 
     @ViewChild('overlay') overlayViewChild: ElementRef | undefined;
 
@@ -327,7 +327,7 @@ export class Overlay implements AfterContentInit, OnDestroy {
         @Inject(PLATFORM_ID) private platformId: any,
         public el: ElementRef,
         public renderer: Renderer2,
-        private config: PrimeNGConfig,
+        private config: QiusNGConfig,
         public overlayService: OverlayService,
         private zone: NgZone
     ) {

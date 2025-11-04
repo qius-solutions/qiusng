@@ -27,7 +27,7 @@ import {
     forwardRef
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { SharedModule, PrimeTemplate, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { SharedModule, QiusTemplate, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { UniqueComponentId, ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -150,7 +150,7 @@ export class Galleria implements OnChanges, OnDestroy {
 
     @Output() visibleChange: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     _visible: boolean = false;
 
@@ -176,7 +176,7 @@ export class Galleria implements OnChanges, OnDestroy {
 
     maskVisible: boolean = false;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public element: ElementRef, public cd: ChangeDetectorRef, public config: PrimeNGConfig) {}
+    constructor(@Inject(DOCUMENT) private document: Document, public element: ElementRef, public cd: ChangeDetectorRef, public config: QiusNGConfig) {}
 
     ngAfterContentInit() {
         this.templates.forEach((item) => {

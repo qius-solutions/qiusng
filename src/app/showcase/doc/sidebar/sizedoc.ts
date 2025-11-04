@@ -5,7 +5,7 @@ import { Code } from '../../domain/code';
     selector: 'size-doc',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
-            <p>Sidebar dimension can be defined with <i>style</i> or <i>styleClass</i> properties which can also be responsive when used with a CSS utility library like PrimeFlex.</p>
+            <p>Sidebar dimension can be defined with <i>style</i> or <i>styleClass</i> properties which can also be responsive when used with a CSS utility library like QiusFlex.</p>
         </app-docsectiontext>
         <div class="card flex justify-content-center">
             <p-sidebar [(visible)]="sidebarVisible" styleClass="w-30rem">

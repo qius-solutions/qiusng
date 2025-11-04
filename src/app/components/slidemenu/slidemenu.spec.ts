@@ -63,12 +63,12 @@ describe('SlideMenu', () => {
 
     it('should change style and styleClass', () => {
         slidemenu.style = { height: '300px' };
-        slidemenu.styleClass = 'Primeng ROCKS!';
+        slidemenu.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         slidemenu.cd.detectChanges();
         const containerEl = fixture.debugElement.query(By.css('.p-slidemenu'));
-        expect(containerEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(containerEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(containerEl.nativeElement.style.height).toEqual('300px');
     });
 

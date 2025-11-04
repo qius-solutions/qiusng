@@ -30,7 +30,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, OverlayService, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, OverlayService, QiusNGConfig, QiusTemplate, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { CalendarModule } from '@qius.solutions/qiusng/calendar';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
@@ -508,7 +508,7 @@ export class Table implements OnInit, AfterViewInit, AfterContentInit, Blockable
 
     @ViewChild('scroller') scroller: Scroller;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<PrimeTemplate>;
+    @ContentChildren(QiusTemplate) templates: QueryList<QiusTemplate>;
 
     /* @deprecated */
     _virtualRowHeight: number = 28;
@@ -3938,7 +3938,7 @@ export class CancelEditableRow {
     }
 })
 export class CellEditor implements AfterContentInit {
-    @ContentChildren(PrimeTemplate) templates: QueryList<PrimeTemplate>;
+    @ContentChildren(QiusTemplate) templates: QueryList<QiusTemplate>;
 
     inputTemplate: TemplateRef<any>;
 
@@ -4544,7 +4544,7 @@ export class ColumnFilter implements AfterContentInit {
 
     @ViewChild('icon') icon: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     overlaySubscription: Subscription;
 
@@ -4584,7 +4584,7 @@ export class ColumnFilter implements AfterContentInit {
 
     private window: Window;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public dt: Table, public renderer: Renderer2, public config: PrimeNGConfig, public overlayService: OverlayService) {
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public dt: Table, public renderer: Renderer2, public config: QiusNGConfig, public overlayService: OverlayService) {
         this.window = this.document.defaultView as Window;
     }
 

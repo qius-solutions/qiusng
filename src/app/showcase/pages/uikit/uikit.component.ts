@@ -13,8 +13,8 @@ export class UIKitComponent implements OnInit, OnDestroy {
     colorScheme: string = 'light';
 
     constructor(private configService: AppConfigService, private titleService: Title, private metaService: Meta) {
-        this.titleService.setTitle('UI Kit - PrimeNG');
-        this.metaService.updateTag({ name: 'description', content: 'PrimeNG Angular UI Kit' });
+        this.titleService.setTitle('UI Kit - QiusNG');
+        this.metaService.updateTag({ name: 'description', content: 'QiusNG Angular UI Kit' });
     }
 
     ngOnInit() {

@@ -21,7 +21,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MenuItem, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -144,7 +144,7 @@ export class TabMenu implements AfterContentInit, AfterViewInit, AfterViewChecke
 
     @ViewChild('nextBtn') nextBtn: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     itemTemplate: TemplateRef<any>;
 

@@ -26,11 +26,11 @@ describe('TabMenu', () => {
 
     it('should change style and styleClass', () => {
         tabmenu.style = { height: '300px' };
-        tabmenu.styleClass = 'Primeng ROCKS!';
+        tabmenu.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const tabmenuEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(tabmenuEl.className).toContain('Primeng ROCKS!');
+        expect(tabmenuEl.className).toContain('Qiusng ROCKS!');
         expect(tabmenuEl.style.height).toContain('300px');
     });
 
@@ -142,7 +142,7 @@ describe('TabMenu', () => {
                 label: 'Calendar',
                 icon: 'pi pi-fw pi-calendar',
                 command: () => {
-                    x = 'PRIMENG!';
+                    x = 'QIUSNG!';
                 }
             }
         ];
@@ -153,6 +153,6 @@ describe('TabMenu', () => {
         calenderItem.click();
         fixture.detectChanges();
 
-        expect(x).toEqual('PRIMENG!');
+        expect(x).toEqual('QIUSNG!');
     });
 });

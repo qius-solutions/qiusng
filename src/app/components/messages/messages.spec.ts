@@ -40,7 +40,7 @@ class TestMessagesComponent {
 
     showInfo() {
         this.msgs = [];
-        this.msgs.push({ severity: 'info', summary: 'Info Message', detail: 'PrimeNG rocks' });
+        this.msgs.push({ severity: 'info', summary: 'Info Message', detail: 'QiusNG rocks' });
     }
 
     showWarn() {
@@ -64,7 +64,7 @@ class TestMessagesComponent {
 
     showAllViaService() {
         this.messageService.addAll([
-            { severity: 'success', key: 'primeng', summary: 'Service Message', detail: 'Via MessageService' },
+            { severity: 'success', key: 'qiusng', summary: 'Service Message', detail: 'Via MessageService' },
             { severity: 'success', summary: 'Service Message', detail: 'Via MessageService' }
         ]);
     }
@@ -74,7 +74,7 @@ class TestMessagesComponent {
     }
 
     clearWithServiceAndKey() {
-        this.messageService.clear('primeng');
+        this.messageService.clear('qiusng');
     }
 }
 
@@ -137,7 +137,7 @@ describe('Messages', () => {
         expect(detailEl).toBeTruthy();
         expect(iconEl.nativeElement.tagName.toLowerCase()).toEqual('infocircleicon');
         expect(summaryEl.nativeElement.innerHTML).toEqual('Info Message');
-        expect(detailEl.nativeElement.innerHTML).toContain('PrimeNG rocks');
+        expect(detailEl.nativeElement.innerHTML).toContain('QiusNG rocks');
     });
 
     it('should show warning', () => {
@@ -201,7 +201,7 @@ describe('Messages', () => {
     });
 
     it('should show multiple with service', () => {
-        messages.key = 'primeng';
+        messages.key = 'qiusng';
         fixture.detectChanges();
 
         const successButton = fixture.debugElement.queryAll(By.css('button'))[6];
@@ -213,7 +213,7 @@ describe('Messages', () => {
     });
 
     it('should clear with service', () => {
-        messages.key = 'primeng';
+        messages.key = 'qiusng';
         fixture.detectChanges();
 
         const successButton = fixture.debugElement.queryAll(By.css('button'))[6];
@@ -229,7 +229,7 @@ describe('Messages', () => {
     });
 
     it('should clear with service and key', () => {
-        messages.key = 'primeng';
+        messages.key = 'qiusng';
         fixture.detectChanges();
 
         const successButton = fixture.debugElement.queryAll(By.css('button'))[6];

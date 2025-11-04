@@ -29,11 +29,11 @@ describe('Menubar', () => {
 
     it('should change style and styleClass', () => {
         menubar.style = { height: '300px' };
-        menubar.styleClass = 'Primeng ROCKS!';
+        menubar.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const menuEl = fixture.debugElement.query(By.css('.p-menubar'));
-        expect(menuEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(menuEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(menuEl.nativeElement.style.height).toContain('300px');
     });
 
@@ -368,7 +368,7 @@ describe('Menubar', () => {
                 label: 'File',
                 icon: 'pi pi-fw pi-file',
                 style: { height: '300px' },
-                styleClass: 'Primeng ROCKS!',
+                styleClass: 'Qiusng ROCKS!',
                 items: [
                     {
                         label: 'New',
@@ -395,7 +395,7 @@ describe('Menubar', () => {
         firstParentEl.nativeElement.dispatchEvent(new Event('mouseenter'));
         fixture.detectChanges();
 
-        expect(firstParentEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(firstParentEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(firstParentEl.nativeElement.style.height).toContain('300px');
     });
 

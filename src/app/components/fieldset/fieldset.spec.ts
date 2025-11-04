@@ -19,10 +19,10 @@ describe('Fieldset', () => {
     });
 
     it('should display the legend', () => {
-        fieldset.legend = 'PrimeNG Fieldset Legend';
+        fieldset.legend = 'QiusNG Fieldset Legend';
         fixture.detectChanges();
         const headerEl = fixture.debugElement.query(By.css('.p-fieldset-legend-text'));
-        expect(headerEl.nativeElement.textContent).toContain('PrimeNG Fieldset Legend');
+        expect(headerEl.nativeElement.textContent).toContain('QiusNG Fieldset Legend');
     });
 
     it('should not render toggle icon when not toggleable', () => {

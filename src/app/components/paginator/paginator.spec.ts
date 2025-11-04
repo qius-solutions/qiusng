@@ -29,11 +29,11 @@ describe('Paginator', () => {
 
     it('should change style and styleClass', () => {
         paginator.style = { height: '250px' };
-        paginator.styleClass = 'Primeng ROCKS!';
+        paginator.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const paginatorEl = fixture.debugElement.query(By.css('.p-paginator'));
-        expect(paginatorEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(paginatorEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(paginatorEl.nativeElement.style.height).toEqual('250px');
     });
 

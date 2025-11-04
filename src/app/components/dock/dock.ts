@@ -1,6 +1,6 @@
 import { NgModule, Component, Input, ElementRef, ContentChild, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, AfterContentInit, ContentChildren, QueryList, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -81,7 +81,7 @@ export class Dock implements AfterContentInit {
 
     @Input() position: string = 'bottom';
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     itemTemplate: TemplateRef<any>;
 

@@ -1,13 +1,13 @@
 {
   "version": 2,
   "public": true,
-  "name": "primeng",
+  "name": "qiusng",
   "rewrites": [
     { "source": "/(.*)", "destination": "/api" }
   ],
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/primeng/browser/**"
+      "includeFiles": "dist/qiusng/browser/**"
     }
   }
 }

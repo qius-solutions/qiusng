@@ -42,11 +42,11 @@ describe('MultiSelect', () => {
     });
 
     it('should get a name', () => {
-        multiselect.name = 'PrimeNG';
+        multiselect.name = 'QiusNG';
         fixture.detectChanges();
 
         const inputReadOnlyEl = fixture.debugElement.query(By.css('.p-hidden-accessible')).children[0].nativeElement;
-        expect(inputReadOnlyEl.name).toContain('PrimeNG');
+        expect(inputReadOnlyEl.name).toContain('QiusNG');
     });
 
     it('should set dropdown icon by default and able to change', () => {
@@ -56,24 +56,24 @@ describe('MultiSelect', () => {
         expect(dropdownIcon.tagName.toLowerCase()).toEqual('svg');
         fixture.detectChanges();
 
-        multiselect.dropdownIcon = 'Primeng Rocks!';
+        multiselect.dropdownIcon = 'Qiusng Rocks!';
         fixture.detectChanges();
 
         multiselect.cd.detectChanges();
         const dropdownIconEl = fixture.debugElement.query(By.css('.p-multiselect-trigger-icon'));
-        expect(dropdownIconEl.nativeElement.className).toContain('Primeng Rocks!');
+        expect(dropdownIconEl.nativeElement.className).toContain('Qiusng Rocks!');
     });
 
     it('should change style and styleClass', () => {
         fixture.detectChanges();
 
         multiselect.style = { height: '300px' };
-        multiselect.styleClass = 'Primeng ROCKS!';
+        multiselect.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         multiselect.cd.detectChanges();
         const multiselectEl = fixture.debugElement.children[0].nativeElement;
-        expect(multiselectEl.className).toContain('Primeng ROCKS!');
+        expect(multiselectEl.className).toContain('Qiusng ROCKS!');
         expect(multiselectEl.style.height).toContain('300px');
     });
 
@@ -81,13 +81,13 @@ describe('MultiSelect', () => {
         fixture.detectChanges();
 
         multiselect.panelStyle = { height: '300px' };
-        multiselect.panelStyleClass = 'Primeng ROCKS!';
+        multiselect.panelStyleClass = 'Qiusng ROCKS!';
         multiselect.overlayVisible = true;
         fixture.detectChanges();
 
         multiselect.cd.detectChanges();
         const multiselectPanelEl = fixture.debugElement.query(By.css('.p-multiselect-panel')).nativeElement;
-        expect(multiselectPanelEl.className).toContain('Primeng ROCKS!');
+        expect(multiselectPanelEl.className).toContain('Qiusng ROCKS!');
         expect(multiselectPanelEl.style.height).toContain('300px');
     });
 

@@ -22,7 +22,7 @@ import {
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
-import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MenuItem, QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -330,7 +330,7 @@ export class Menubar implements AfterContentInit, OnDestroy, OnInit {
 
     @Input() autoHideDelay: number = 100;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @ViewChild('menubutton') menubutton: ElementRef;
 
@@ -356,7 +356,7 @@ export class Menubar implements AfterContentInit, OnDestroy, OnInit {
         public el: ElementRef,
         public renderer: Renderer2,
         public cd: ChangeDetectorRef,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         private menubarService: MenubarService
     ) {}
 

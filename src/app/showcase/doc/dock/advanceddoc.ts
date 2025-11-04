@@ -43,7 +43,7 @@ import { PhotoService } from '../../service/photoservice';
                 </p-dialog>
 
                 <p-dialog [maximizable]="true" [(visible)]="displayTerminal" [breakpoints]="{ '960px': '50vw' }" [style]="{ width: '30vw' }" [draggable]="false" [resizable]="false">
-                    <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $"></p-terminal>
+                    <p-terminal welcomeMessage="Welcome to QiusNG (cmd: 'date', 'greet {0}', 'random')" prompt="qiusng $"></p-terminal>
                 </p-dialog>
 
                 <p-galleria
@@ -104,7 +104,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/finder.svg',
                 command: () => {
                     this.displayFinder = true;
                 }
@@ -118,7 +118,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/terminal.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/terminal.svg',
                 command: () => {
                     this.displayTerminal = true;
                 }
@@ -132,7 +132,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/appstore.svg',
                 command: () => {
                     this.messageService.add({ severity: 'error', summary: 'An unexpected error occurred while signing in.', detail: 'UNTRUSTED_CERT_TITLE' });
                 }
@@ -146,7 +146,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/safari.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/safari.svg',
                 command: () => {
                     this.messageService.add({ severity: 'warn', summary: 'Safari has stopped working' });
                 }
@@ -160,7 +160,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/photos.svg',
                 command: () => {
                     this.displayGalleria = true;
                 }
@@ -174,7 +174,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/github.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/github.svg'
             },
             {
                 label: 'Trash',
@@ -185,7 +185,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/trash.png',
                 command: () => {
                     this.messageService.add({ severity: 'info', summary: 'Empty Trash' });
                 }
@@ -399,7 +399,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
     </p-dialog>
 
     <p-dialog [maximizable]="true" [(visible)]="displayTerminal" [breakpoints]="{ '960px': '50vw' }" [style]="{ width: '30vw' }" [draggable]="false" [resizable]="false">
-        <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $"></p-terminal>
+        <p-terminal welcomeMessage="Welcome to QiusNG (cmd: 'date', 'greet {0}', 'random')" prompt="qiusng $"></p-terminal>
     </p-dialog>
 
     <p-galleria
@@ -449,7 +449,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
         </p-dialog>
 
         <p-dialog [maximizable]="true" [(visible)]="displayTerminal" [breakpoints]="{ '960px': '50vw' }" [style]="{ width: '30vw' }" [draggable]="false" [resizable]="false">
-            <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $"></p-terminal>
+            <p-terminal welcomeMessage="Welcome to QiusNG (cmd: 'date', 'greet {0}', 'random')" prompt="qiusng $"></p-terminal>
         </p-dialog>
 
         <p-galleria
@@ -517,7 +517,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/finder.svg',
                 command: () => {
                     this.displayFinder = true;
                 }
@@ -531,7 +531,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/terminal.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/terminal.svg',
                 command: () => {
                     this.displayTerminal = true;
                 }
@@ -545,7 +545,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/appstore.svg',
                 command: () => {
                     this.messageService.add({ severity: 'error', summary: 'An unexpected error occurred while signing in.', detail: 'UNTRUSTED_CERT_TITLE' });
                 }
@@ -559,7 +559,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/safari.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/safari.svg',
                 command: () => {
                     this.messageService.add({ severity: 'warn', summary: 'Safari has stopped working' });
                 }
@@ -573,7 +573,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/photos.svg',
                 command: () => {
                     this.displayGalleria = true;
                 }
@@ -587,7 +587,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/github.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/github.svg'
             },
             {
                 label: 'Trash',
@@ -598,7 +598,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/trash.png',
                 command: () => {
                     this.messageService.add({ severity: 'info', summary: 'Empty Trash' });
                 }
@@ -789,7 +789,7 @@ export class DockAdvancedDemo implements OnInit {
         width: 100%;
         height: 450px;
         position: relative;
-        background-image: url('https://primefaces.org/cdn/primeng/images/dock/window.jpg');
+        background-image: url('https://qius.solutions.org/cdn/qiusng/images/dock/window.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -1,6 +1,6 @@
 import { NgModule, Component, Input, Output, EventEmitter, ElementRef, ContentChild, ChangeDetectionStrategy, ViewEncapsulation, ContentChildren, QueryList, TemplateRef, AfterContentInit, ViewContainerRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, Footer, PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { SharedModule, Footer, QiusTemplate } from '@qius.solutions/qiusng/api';
 import { BlockableUI } from '@qius.solutions/qiusng/api';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
 import { trigger, state, style, transition, animate } from '@angular/animations';
@@ -139,7 +139,7 @@ export class Panel implements AfterContentInit, BlockableUI {
 
     @ContentChild(Footer) footerFacet;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     public iconTemplate: TemplateRef<any>;
 

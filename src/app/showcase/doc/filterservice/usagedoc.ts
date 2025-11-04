@@ -21,7 +21,7 @@ export class UsageDoc {
     constructor(private filterService: FilterService) {}
 
     ngOnInit() {
-        const value = 'PrimeNG';
+        const value = 'QiusNG';
 
         this.filterService.filters.equals(value, 'NG');                            //false
         this.filterService.filters.equals(value, 8);                               //false
@@ -31,7 +31,7 @@ export class UsageDoc {
         this.filterService.filters.endsWith(value, 'NG');                          //true
         this.filterService.filters.lt(10, 20);                                     //true
         this.filterService.filters.gt(50, 20);                                     //true
-        this.filterService.filters.in(value, ['PrimeFaces', 'PrimeNG']);           //true
+        this.filterService.filters.in(value, ['QiusSolutions', 'QiusNG']);           //true
     }
 }`
     };

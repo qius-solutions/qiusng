@@ -46,7 +46,7 @@ describe('Dialog', () => {
     });
 
     it('should display the header', () => {
-        dialog.header = 'PrimeNG Dialog Header';
+        dialog.header = 'QiusNG Dialog Header';
         fixture.detectChanges();
 
         const buttonEl = fixture.debugElement.query(By.css('button'));
@@ -54,7 +54,7 @@ describe('Dialog', () => {
         fixture.detectChanges();
 
         const headerEl = fixture.debugElement.query(By.css('.p-dialog-title'));
-        expect(headerEl.nativeElement.textContent).toContain('PrimeNG Dialog Header');
+        expect(headerEl.nativeElement.textContent).toContain('QiusNG Dialog Header');
     });
 
     it('should display the close icon when closable', () => {

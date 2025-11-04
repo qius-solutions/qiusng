@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class RoadmapComponent {
     constructor(private titleService: Title, private metaService: Meta) {
-        this.titleService.setTitle('Roadmap - PrimeNG');
-        this.metaService.updateTag({ name: 'description', content: 'PrimeNG Roadmap' });
+        this.titleService.setTitle('Roadmap - QiusNG');
+        this.metaService.updateTag({ name: 'description', content: 'QiusNG Roadmap' });
     }
 }

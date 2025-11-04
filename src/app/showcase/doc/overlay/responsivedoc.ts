@@ -39,7 +39,7 @@ export class ResponsiveDoc {
 
     code: Code = {
         basic: `
-import { PrimeNGConfig, OverlayOptions, ResponsiveOverlayDirectionType } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, OverlayOptions, ResponsiveOverlayDirectionType } from '@qius.solutions/qiusng/api';
 
 const responsiveOptions: ResponsiveOverlayOptions = {
     // style?: any;                                     // Style of component in given breakpoint or media query
@@ -52,7 +52,7 @@ const responsiveOptions: ResponsiveOverlayOptions = {
     // hideOnEscape?: boolean;                          // Hides overlay when escape key pressed.
 }
 
-this.primengConfig.overlayOptions: OverlayOptions = {
+this.qiusngConfig.overlayOptions: OverlayOptions = {
     responsive: responsiveOptions
 };`
     };

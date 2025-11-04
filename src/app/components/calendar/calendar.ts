@@ -22,7 +22,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { OverlayService, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { ConnectedOverlayScrollHandler, DomHandler } from '@qius.solutions/qiusng/dom';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -504,7 +504,7 @@ export class Calendar implements OnInit, OnDestroy, ControlValueAccessor {
 
     @Output() onShow: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Input() tabindex: number;
 
@@ -799,7 +799,7 @@ export class Calendar implements OnInit, OnDestroy, ControlValueAccessor {
 
     private window: Window;
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, private zone: NgZone, private config: PrimeNGConfig, public overlayService: OverlayService) {
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, private zone: NgZone, private config: QiusNGConfig, public overlayService: OverlayService) {
         this.window = this.document.defaultView as Window;
     }
 
@@ -2338,7 +2338,7 @@ export class Calendar implements OnInit, OnDestroy, ControlValueAccessor {
     }
 
     onUserInput(event) {
-        // IE 11 Workaround for input placeholder : https://github.com/primefaces/primeng/issues/2026
+        // IE 11 Workaround for input placeholder : https://github.com/qius.solutions/qiusng/issues/2026
         if (!this.isKeydown) {
             return;
         }

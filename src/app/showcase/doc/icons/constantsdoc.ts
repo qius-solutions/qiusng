@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { MenuItem, PrimeIcons } from '@qius.solutions/qiusng/api';
+import { MenuItem, QiusIcons } from '@qius.solutions/qiusng/api';
 import { Code } from '../../domain/code';
 
 @Component({
-    selector: 'prime-icons-constants-demo',
+    selector: 'qius-icons-constants-demo',
     template: ` <section>
         <app-docsectiontext [title]="title" [id]="id">
             <p>Constants API is available to reference icons easily when used programmatically.</p>
@@ -11,7 +11,7 @@ import { Code } from '../../domain/code';
         <div class="card flex justify-content-center">
             <p-menu [model]="items"></p-menu>
         </div>
-        <app-code [code]="code" selector="prime-icons-constants-demo" [hideToggleCode]="true"></app-code>
+        <app-code [code]="code" selector="qius-icons-constants-demo" [hideToggleCode]="true"></app-code>
     </section>`
 })
 export class ConstantsDoc {
@@ -25,11 +25,11 @@ export class ConstantsDoc {
         this.items = [
             {
                 label: 'New',
-                icon: PrimeIcons.PLUS
+                icon: QiusIcons.PLUS
             },
             {
                 label: 'Delete',
-                icon: PrimeIcons.TRASH
+                icon: QiusIcons.TRASH
             }
         ];
     }
@@ -37,24 +37,24 @@ export class ConstantsDoc {
     code: Code = {
         typescript: `
 import { Component } from '@angular/core';
-import { PrimeIcons, MenuItem } from '@qius.solutions/qiusng/api';
+import { QiusIcons, MenuItem } from '@qius.solutions/qiusng/api';
         
 @Component({
-    selector: 'prime-icons-constants-demo',
-    templateUrl: './prime-icons-constants-demo.html'
+    selector: 'qius-icons-constants-demo',
+    templateUrl: './qius-icons-constants-demo.html'
 })
-export class PrimeIconsConstantsDemo {
+export class QiusIconsConstantsDemo {
     items: MenuItem[];
 
     ngOnInit() {
         this.items = [
             {
                 label: 'New',
-                icon: PrimeIcons.PLUS,
+                icon: QiusIcons.PLUS,
             },
             {
                 label: 'Delete',
-                icon: PrimeIcons.TRASH
+                icon: QiusIcons.TRASH
             }
         ];
     }

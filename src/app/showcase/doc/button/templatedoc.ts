@@ -9,8 +9,8 @@ import { Code } from '../../domain/code';
         </app-docsectiontext>
         <div class="card flex justify-content-center">
             <p-button styleClass="p-button-outlined">
-                <img alt="logo" src="https://primefaces.org/cdn/primeng/images/primeng-icon.svg" style="width: 1.5rem" />
-                <span class="ml-2 font-bold">PrimeNG</span>
+                <img alt="logo" src="https://qius.solutions.org/cdn/qiusng/images/qiusng-icon.svg" style="width: 1.5rem" />
+                <span class="ml-2 font-bold">QiusNG</span>
             </p-button>
         </div>
         <app-code [code]="code" selector="button-template-demo"></app-code>
@@ -24,15 +24,15 @@ export class TemplateDoc {
     code: Code = {
         basic: `
 <p-button styleClass="p-button-outlined">
-    <img alt="logo" src="https://primefaces.org/cdn/primeng/images/primeng-icon.svg" style="width: 1.5rem" />
-    <span class="ml-2 font-bold">PrimeNG</span>
+    <img alt="logo" src="https://qius.solutions.org/cdn/qiusng/images/qiusng-icon.svg" style="width: 1.5rem" />
+    <span class="ml-2 font-bold">QiusNG</span>
 </p-button>`,
 
         html: `
 <div class="card flex justify-content-center">
     <p-button styleClass="p-button-outlined">
-        <img alt="logo" src="https://primefaces.org/cdn/primeng/images/primeng-icon.svg" style="width: 1.5rem" />
-        <span class="ml-2 font-bold">PrimeNG</span>
+        <img alt="logo" src="https://qius.solutions.org/cdn/qiusng/images/qiusng-icon.svg" style="width: 1.5rem" />
+        <span class="ml-2 font-bold">QiusNG</span>
     </p-button>
 </div>`,
 

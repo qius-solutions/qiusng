@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
     template: `
         <div class="layout-footer">
             <div>
-                <span>PrimeNG {{ version }} by </span>
-                <a href="https://www.primetek.com.tr">PrimeTek</a>
+                <span>QiusNG {{ version }} by </span>
+                <a href="https://www.qius.solutions.com.tr">Qius Solutions</a>
             </div>
         </div>
     `

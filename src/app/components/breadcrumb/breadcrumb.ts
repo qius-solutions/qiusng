@@ -1,6 +1,6 @@
 import { NgModule, Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEncapsulation, ContentChildren, QueryList, TemplateRef, AfterContentInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItem, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MenuItem, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
 import { ChevronRightIcon } from '@qius.solutions/qiusng/icons/chevronright';
@@ -134,7 +134,7 @@ export class Breadcrumb implements AfterContentInit {
 
     @Output() onItemClick: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     separatorTemplate: TemplateRef<any>;
 

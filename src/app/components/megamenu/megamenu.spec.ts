@@ -26,11 +26,11 @@ describe('MegaMenu', () => {
 
     it('should change style and styleClass', () => {
         megamenu.style = { height: '300px' };
-        megamenu.styleClass = 'Primeng ROCKS!';
+        megamenu.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const megaMenuEl = fixture.debugElement.query(By.css('div')).nativeElement;
-        expect(megaMenuEl.className).toContain('Primeng ROCKS!');
+        expect(megaMenuEl.className).toContain('Qiusng ROCKS!');
         expect(megaMenuEl.style.height).toContain('300px');
     });
 

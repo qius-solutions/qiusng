@@ -26,11 +26,11 @@ describe('Breadcrumb', () => {
 
     it('should change style and styleClass', () => {
         breadcrumb.style = { height: '300px' };
-        breadcrumb.styleClass = 'Primeng ROCKS!';
+        breadcrumb.styleClass = 'Qiusng ROCKS!';
         fixture.detectChanges();
 
         const breadcrumbEl = fixture.debugElement.query(By.css('div'));
-        expect(breadcrumbEl.nativeElement.className).toContain('Primeng ROCKS!');
+        expect(breadcrumbEl.nativeElement.className).toContain('Qiusng ROCKS!');
         expect(breadcrumbEl.styles.height).toEqual('300px');
     });
 
@@ -43,11 +43,11 @@ describe('Breadcrumb', () => {
     });
 
     it('should change home icon', () => {
-        breadcrumb.home = { icon: 'primeng' };
+        breadcrumb.home = { icon: 'qiusng' };
         fixture.detectChanges();
 
         const homeEl = fixture.debugElement.query(By.css('.p-breadcrumb-home')).query(By.css('span')).nativeElement;
-        expect(homeEl.className).toContain('primeng');
+        expect(homeEl.className).toContain('qiusng');
     });
 
     it('should display items', () => {
@@ -122,7 +122,7 @@ describe('Breadcrumb', () => {
             {
                 label: 'Squad',
                 command: () => {
-                    breadcrumb.styleClass = 'primengRocks!';
+                    breadcrumb.styleClass = 'qiusngRocks!';
                 }
             },
             { label: 'Lionel Messi', url: 'https://en.wikipedia.org/wiki/Lionel_Messi', icon: 'pi pi-external-link' }
@@ -135,7 +135,7 @@ describe('Breadcrumb', () => {
         fixture.detectChanges();
 
         expect(itemClickSpy).toHaveBeenCalled();
-        expect(breadcrumb.styleClass).toEqual('primengRocks!');
+        expect(breadcrumb.styleClass).toEqual('qiusngRocks!');
     });
 
     it('should call itemClick with home item', () => {
@@ -144,7 +144,7 @@ describe('Breadcrumb', () => {
             {
                 label: 'Squad',
                 command: () => {
-                    breadcrumb.styleClass = 'primengRocks!';
+                    breadcrumb.styleClass = 'qiusngRocks!';
                 }
             },
             { label: 'Lionel Messi', url: 'https://en.wikipedia.org/wiki/Lionel_Messi', icon: 'pi pi-external-link' }

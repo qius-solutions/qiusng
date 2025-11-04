@@ -123,7 +123,7 @@ export class LandingComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.titleService.setTitle('PrimeNG - Angular UI Component Library');
+        this.titleService.setTitle('QiusNG - Angular UI Component Library');
         this.metaService.updateTag({ name: 'description', content: 'The ultimate collection of design-agnostic, flexible and accessible Angular UI Components.' });
         this.config = this.configService.config;
         this.changeTableTheme(this.config.dark ? 'lara-dark-blue' : 'lara-light-blue');
@@ -166,7 +166,7 @@ export class LandingComponent implements OnInit, OnDestroy {
         };
 
         this.selectButtonOptions = [
-            { label: 'Prime', value: 1 },
+            { label: 'Qius', value: 1 },
             { label: 'Angular', value: 2 },
             { label: 'Themes', value: 3 }
         ];
@@ -236,7 +236,7 @@ export class LandingComponent implements OnInit, OnDestroy {
     }
 
     copyNpm() {
-        navigator.clipboard.writeText('npm i primeng');
+        navigator.clipboard.writeText('npm i qiusng');
         this.isNpmCopied = true;
         setTimeout(() => {
             this.isNpmCopied = false;

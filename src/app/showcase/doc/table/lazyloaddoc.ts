@@ -58,7 +58,7 @@ import { CustomerService } from '../../service/customerservice';
                                     <p-multiSelect [ngModel]="value" appendTo="body" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name" [maxSelectedLabels]="1" [selectedItemsLabel]="'{0} items'">
                                         <ng-template let-option pTemplate="item">
                                             <div class="inline-block vertical-align-middle">
-                                                <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                                <img [alt]="option.label" src="https://qius.solutions.org/cdn/qiusng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                                 <span class="ml-1 mt-1">{{ option.name }}</span>
                                             </div>
                                         </ng-template>
@@ -198,7 +198,7 @@ export class LazyLoadDoc implements OnInit {
                         <p-multiSelect [ngModel]="value" appendTo="body" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name" [maxSelectedLabels]="1" [selectedItemsLabel]="'{0} items'">
                             <ng-template let-option pTemplate="item">
                                 <div class="inline-block vertical-align-middle">
-                                    <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                    <img [alt]="option.label" src="https://qius.solutions.org/cdn/qiusng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                     <span class="ml-1 mt-1">{{ option.name }}</span>
                                 </div>
                             </ng-template>
@@ -265,7 +265,7 @@ export class LazyLoadDoc implements OnInit {
                             <p-multiSelect [ngModel]="value" appendTo="body" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name" [maxSelectedLabels]="1" [selectedItemsLabel]="'{0} items'">
                                 <ng-template let-option pTemplate="item">
                                     <div class="inline-block vertical-align-middle">
-                                        <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                        <img [alt]="option.label" src="https://qius.solutions.org/cdn/qiusng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                         <span class="ml-1 mt-1">{{ option.name }}</span>
                                     </div>
                                 </ng-template>

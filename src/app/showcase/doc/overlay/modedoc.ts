@@ -23,7 +23,7 @@ export class ModeDoc {
 
     code: Code = {
         typescript: `
-import { PrimeNGConfig, OverlayOptions } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, OverlayOptions } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'app-root',
@@ -31,10 +31,10 @@ import { PrimeNGConfig, OverlayOptions } from '@qius.solutions/qiusng/api';
 })
 export class AppComponent implements OnInit {
 
-    constructor(private primengConfig: PrimeNGConfig) {}
+    constructor(private qiusngConfig: QiusNGConfig) {}
 
     ngOnInit() {
-        this.primengConfig.overlayOptions: OverlayOptions = {
+        this.qiusngConfig.overlayOptions: OverlayOptions = {
             mode: 'modal'
         };
     } 
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
 
     code2: Code = {
         basic: `
-import { PrimeNGConfig, OverlayOptions, ResponsiveOverlayDirectionType } from '@qius.solutions/qiusng/api';
+import { QiusNGConfig, OverlayOptions, ResponsiveOverlayDirectionType } from '@qius.solutions/qiusng/api';
 
 const responsiveOptions: ResponsiveOverlayOptions = {
     // style?: any;                                     // Style of component in given breakpoint or media query
@@ -56,7 +56,7 @@ const responsiveOptions: ResponsiveOverlayOptions = {
     // hideOnEscape?: boolean;                          // Hides overlay when escape key pressed.
 }
 
-this.primengConfig.overlayOptions: OverlayOptions = {
+this.qiusngConfig.overlayOptions: OverlayOptions = {
     responsive: responsiveOptions
 };`
     };

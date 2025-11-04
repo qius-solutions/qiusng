@@ -23,7 +23,7 @@ import {
 import { trigger, style, transition, animate, AnimationEvent, useAnimation, animation } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
-import { Footer, SharedModule, PrimeTemplate, PrimeNGConfig, TranslationKeys, ConfirmEventType } from '@qius.solutions/qiusng/api';
+import { Footer, SharedModule, QiusTemplate, QiusNGConfig, TranslationKeys, ConfirmEventType } from '@qius.solutions/qiusng/api';
 import { ButtonModule } from '@qius.solutions/qiusng/button';
 import { Confirmation } from '@qius.solutions/qiusng/api';
 import { ConfirmationService } from '@qius.solutions/qiusng/api';
@@ -229,7 +229,7 @@ export class ConfirmDialog implements AfterContentInit, OnInit, OnDestroy {
 
     @ViewChild('content') contentViewChild: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     ngAfterContentInit() {
         this.templates.forEach((item) => {
@@ -292,7 +292,7 @@ export class ConfirmDialog implements AfterContentInit, OnInit, OnDestroy {
 
     translationSubscription: Subscription;
 
-    constructor(public el: ElementRef, public renderer: Renderer2, private confirmationService: ConfirmationService, public zone: NgZone, private cd: ChangeDetectorRef, public config: PrimeNGConfig, @Inject(DOCUMENT) private document: Document) {
+    constructor(public el: ElementRef, public renderer: Renderer2, private confirmationService: ConfirmationService, public zone: NgZone, private cd: ChangeDetectorRef, public config: QiusNGConfig, @Inject(DOCUMENT) private document: Document) {
         this.subscription = this.confirmationService.requireConfirmation$.subscribe((confirmation) => {
             if (!confirmation) {
                 this.hide();

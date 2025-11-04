@@ -9,7 +9,7 @@ import { ArchitectureDoc } from './architecturedoc';
 import { BuiltInThemesDoc } from './builtinthemesdoc';
 import { CSSVariablesDoc } from './cssvariablesdoc';
 import { CustomThemeDoc } from './customthemedoc';
-import { PrimeFlexDoc } from './primeflexdoc';
+import { QiusFlexDoc } from './qiusflexdoc';
 import { ScalingDoc } from './scalingdoc';
 import { ScopedCSSDoc } from './scopedcssdoc';
 import { SwitchThemesDoc } from './switchthemesdoc';
@@ -17,7 +17,7 @@ import { UtilsDoc } from './utilsdoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, ButtonModule, PanelModule],
-    declarations: [ArchitectureDoc, CSSVariablesDoc, CustomThemeDoc, ScopedCSSDoc, PrimeFlexDoc, ScalingDoc, BuiltInThemesDoc, SwitchThemesDoc, UtilsDoc],
+    declarations: [ArchitectureDoc, CSSVariablesDoc, CustomThemeDoc, ScopedCSSDoc, QiusFlexDoc, ScalingDoc, BuiltInThemesDoc, SwitchThemesDoc, UtilsDoc],
     exports: [AppDocModule]
 })
 export class ThemingDocModule {}

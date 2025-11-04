@@ -19,7 +19,7 @@ import { Component, Input } from '@angular/core';
                         <td>promptLabel</td>
                         <td>string</td>
                         <td>null</td>
-                        <td>Text to prompt password entry. Defaults to PrimeNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
+                        <td>Text to prompt password entry. Defaults to QiusNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
                     </tr>
                     <tr>
                         <td>mediumRegex</td>
@@ -37,19 +37,19 @@ import { Component, Input } from '@angular/core';
                         <td>weakLabel</td>
                         <td>string</td>
                         <td>null</td>
-                        <td>Text for a weak password. Defaults to PrimeNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
+                        <td>Text for a weak password. Defaults to QiusNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
                     </tr>
                     <tr>
                         <td>mediumLabel</td>
                         <td>string</td>
                         <td>null</td>
-                        <td>Text for a medium password. Defaults to PrimeNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
+                        <td>Text for a medium password. Defaults to QiusNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
                     </tr>
                     <tr>
                         <td>strongLabel</td>
                         <td>string</td>
                         <td>null</td>
-                        <td>Text for a strong password. Defaults to PrimeNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
+                        <td>Text for a strong password. Defaults to QiusNG <a href="#" [routerLink]="['/i18n']">I18N API</a> configuration.</td>
                     </tr>
                     <tr>
                         <td>feedback</td>

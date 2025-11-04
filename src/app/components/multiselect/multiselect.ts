@@ -24,7 +24,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, QiusNGConfig, QiusTemplate, SharedModule, TranslationKeys } from '@qius.solutions/qiusng/api';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
 import { Overlay, OverlayModule } from '@qius.solutions/qiusng/overlay';
 import { RippleModule } from '@qius.solutions/qiusng/ripple';
@@ -470,7 +470,7 @@ export class MultiSelect implements OnInit, AfterViewInit, AfterContentInit, Aft
 
     @ContentChild(Header) headerFacet;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     @Output() onChange: EventEmitter<any> = new EventEmitter();
 
@@ -642,7 +642,7 @@ export class MultiSelect implements OnInit, AfterViewInit, AfterContentInit, Aft
 
     preventDocumentDefault: boolean;
 
-    constructor(public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public zone: NgZone, public filterService: FilterService, public config: PrimeNGConfig, public overlayService: OverlayService) {}
+    constructor(public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public zone: NgZone, public filterService: FilterService, public config: QiusNGConfig, public overlayService: OverlayService) {}
 
     ngOnInit() {
         this.updateLabel();

@@ -24,7 +24,7 @@ import {
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomHandler, ConnectedOverlayScrollHandler } from '@qius.solutions/qiusng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@qius.solutions/qiusng/api';
+import { MenuItem, OverlayService, QiusNGConfig, QiusTemplate, SharedModule } from '@qius.solutions/qiusng/api';
 import { RouterModule } from '@angular/router';
 import { ZIndexUtils } from '@qius.solutions/qiusng/utils';
 import { TooltipModule } from '@qius.solutions/qiusng/tooltip';
@@ -289,7 +289,7 @@ export class SlideMenu implements AfterViewChecked, AfterContentInit, OnDestroy 
 
     @Output() onHide: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     containerViewChild: ElementRef;
 
@@ -327,7 +327,7 @@ export class SlideMenu implements AfterViewChecked, AfterContentInit, OnDestroy 
         public el: ElementRef,
         public renderer: Renderer2,
         public cd: ChangeDetectorRef,
-        public config: PrimeNGConfig,
+        public config: QiusNGConfig,
         public overlayService: OverlayService
     ) {
         this.window = this.document.defaultView as Window;

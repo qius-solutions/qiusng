@@ -15,7 +15,7 @@ import { ProductService } from '../../service/productservice';
                     <div class="product-item">
                         <div class="product-item-content">
                             <div class="mb-3">
-                                <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.name" class="product-image" />
+                                <img src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}" [alt]="product.name" class="product-image" />
                             </div>
                             <div>
                                 <h4 class="mb-1">{{ product.name }}</h4>
@@ -68,7 +68,7 @@ export class VerticalDoc implements OnInit {
         <div class="product-item">
             <div class="product-item-content">
                 <div class="mb-3">
-                    <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"[alt]="product.name" class="product-image" />
+                    <img src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}"[alt]="product.name" class="product-image" />
                 </div>
                 <div>
                     <h4 class="mb-1">{{product.name}}</h4>
@@ -91,7 +91,7 @@ export class VerticalDoc implements OnInit {
             <div class="product-item">
                 <div class="product-item-content">
                     <div class="mb-3">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"[alt]="product.name" class="product-image" />
+                        <img src="https://qius.solutions.org/cdn/qiusng/images/demo/product/{{ product.image }}"[alt]="product.name" class="product-image" />
                     </div>
                     <div>
                         <h4 class="mb-1">{{product.name}}</h4>

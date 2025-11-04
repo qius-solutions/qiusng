@@ -20,7 +20,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ObjectUtils } from '@qius.solutions/qiusng/utils';
-import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from '@qius.solutions/qiusng/api';
+import { Header, Footer, QiusTemplate, SharedModule, FilterService, TranslationKeys, QiusNGConfig } from '@qius.solutions/qiusng/api';
 import { PaginatorModule } from '@qius.solutions/qiusng/paginator';
 import { BlockableUI } from '@qius.solutions/qiusng/api';
 import { Subscription } from 'rxjs';
@@ -184,7 +184,7 @@ export class DataView implements OnInit, AfterContentInit, OnDestroy, BlockableU
 
     @ContentChild(Footer) footer;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     _value: any[];
 
@@ -234,7 +234,7 @@ export class DataView implements OnInit, AfterContentInit, OnDestroy, BlockableU
         }
     }
 
-    constructor(public el: ElementRef, public cd: ChangeDetectorRef, public filterService: FilterService, public config: PrimeNGConfig) {}
+    constructor(public el: ElementRef, public cd: ChangeDetectorRef, public filterService: FilterService, public config: QiusNGConfig) {}
 
     ngOnInit() {
         if (this.lazy) {

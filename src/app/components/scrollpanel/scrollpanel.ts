@@ -20,7 +20,7 @@ import {
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomHandler } from '@qius.solutions/qiusng/dom';
-import { PrimeTemplate } from '@qius.solutions/qiusng/api';
+import { QiusTemplate } from '@qius.solutions/qiusng/api';
 
 @Component({
     selector: 'p-scrollPanel',
@@ -56,7 +56,7 @@ export class ScrollPanel implements AfterViewInit, AfterContentInit, OnDestroy {
 
     @ViewChild('yBar') yBarViewChild: ElementRef;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(QiusTemplate) templates: QueryList<any>;
 
     scrollYRatio: number;
 

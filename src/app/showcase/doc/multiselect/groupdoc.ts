@@ -17,7 +17,7 @@ interface City {
             <p-multiSelect [options]="groupedCities" [group]="true" [(ngModel)]="selectedCities" defaultLabel="Select a City" scrollHeight="250px" display="chip">
                 <ng-template let-group pTemplate="group">
                     <div class="flex align-items-center">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + group.value" style="width: 20px" />
+                        <img src="https://qius.solutions.org/cdn/qiusng/images/demo/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + group.value" style="width: 20px" />
                         <span>{{ group.label }}</span>
                     </div>
                 </ng-template>
@@ -75,7 +75,7 @@ export class GroupDoc {
 <p-multiSelect [options]="groupedCities" [group]="true" [(ngModel)]="selectedCities" defaultLabel="Select a City" scrollHeight="250px" display="chip">
     <ng-template let-group pTemplate="group">
         <div class="flex align-items-center">
-            <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + group.value" style="width: 20px" />
+            <img src="https://qius.solutions.org/cdn/qiusng/images/demo/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + group.value" style="width: 20px" />
             <span>{{ group.label }}</span>
         </div>
     </ng-template>
@@ -86,7 +86,7 @@ export class GroupDoc {
     <p-multiSelect [options]="groupedCities" [group]="true" [(ngModel)]="selectedCities" defaultLabel="Select a City" scrollHeight="250px" display="chip">
         <ng-template let-group pTemplate="group">
             <div class="flex align-items-center">
-                <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + group.value" style="width: 20px" />
+                <img src="https://qius.solutions.org/cdn/qiusng/images/demo/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + group.value" style="width: 20px" />
                 <span>{{ group.label }}</span>
             </div>
         </ng-template>

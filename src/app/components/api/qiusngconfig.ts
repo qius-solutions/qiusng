@@ -5,7 +5,7 @@ import { OverlayOptions } from './overlayoptions';
 import { Translation } from './translation';
 
 @Injectable({ providedIn: 'root' })
-export class PrimeNGConfig {
+export class QiusNGConfig {
     ripple: boolean = false;
 
     overlayOptions: OverlayOptions = {};

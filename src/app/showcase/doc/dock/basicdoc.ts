@@ -58,19 +58,19 @@ export class BasicDoc implements OnInit {
         this.items = [
             {
                 label: 'Finder',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/finder.svg'
             },
             {
                 label: 'App Store',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/appstore.svg'
             },
             {
                 label: 'Photos',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/photos.svg'
             },
             {
                 label: 'Trash',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/trash.png'
             }
         ];
     }
@@ -133,19 +133,19 @@ export class BasicDoc implements OnInit {
         this.items = [
             {
                 label: 'Finder',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/finder.svg'
             },
             {
                 label: 'App Store',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/appstore.svg'
             },
             {
                 label: 'Photos',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/photos.svg'
             },
             {
                 label: 'Trash',
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png'
+                icon: 'https://qius.solutions.org/cdn/qiusng/images/dock/trash.png'
             }
         ];
     }
@@ -157,7 +157,7 @@ export class BasicDoc implements OnInit {
         width: 100%;
         height: 450px;
         position: relative;
-        background-image: url('https://primefaces.org/cdn/primeng/images/dock/window.jpg');
+        background-image: url('https://qius.solutions.org/cdn/qiusng/images/dock/window.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -380,7 +380,7 @@ export class NodeService {
                     {
                         key: '7-1',
                         data: {
-                            name: 'primeng.png',
+                            name: 'qiusng.png',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -388,7 +388,7 @@ export class NodeService {
                     {
                         key: '7-2',
                         data: {
-                            name: 'prime.jpg',
+                            name: 'qius.jpg',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -406,7 +406,7 @@ export class NodeService {
                     {
                         key: '8-0',
                         data: {
-                            name: 'primefaces.mkv',
+                            name: 'qius.solutions.mkv',
                             size: '1000kb',
                             type: 'Video'
                         }
@@ -723,14 +723,14 @@ export class NodeService {
                     },
                     {
                         data: {
-                            name: 'primeng.png',
+                            name: 'qiusng.png',
                             size: '30kb',
                             type: 'Picture'
                         }
                     },
                     {
                         data: {
-                            name: 'prime.jpg',
+                            name: 'qius.jpg',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -746,7 +746,7 @@ export class NodeService {
                 children: [
                     {
                         data: {
-                            name: 'primefaces.mkv',
+                            name: 'qius.solutions.mkv',
                             size: '1000mb',
                             type: 'Video'
                         }
