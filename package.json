@@ -1,6 +1,6 @@
 {
     "name": "@qius.solutions/qiusng",
-    "version": "15.4.7",
+    "version": "15.4.8",
     "license": "MIT",
     "publishConfig": {
         "access": "public"
@@ -111,7 +111,7 @@
         "@docsearch/js": "^3.3.3",
         "@types/react": "^18.0.28",
         "@qius.solutions/qiusicons": "^7.0.1",
-        "@qius.solutions/qiusflex": "^4.0.5"
+        "@qius.solutions/qiusflex": "^4.0.6"
     },
     "description": "QiusNG - Components library powered by Qius Solutions",
     "author": "Qius Solutions <qius.solutions@gmail.com>"
