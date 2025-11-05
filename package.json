@@ -110,7 +110,7 @@
     "dependencies": {
         "@docsearch/js": "^3.3.3",
         "@types/react": "^18.0.28",
-        "@qius.solutions/qiusicons": "^7.0.2",
+        "@qius.solutions/qiusicons": "^7.0.3",
         "@qius.solutions/qiusflex": "^4.0.7"
     },
     "description": "QiusNG - Components library powered by Qius Solutions",
