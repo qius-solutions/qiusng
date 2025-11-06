@@ -1,6 +1,6 @@
 {
     "name": "@qius.solutions/qiusng",
-    "version": "15.5.4",
+    "version": "15.5.5",
     "license": "MIT",
     "publishConfig": {
         "access": "public"
